@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Add user and Department -->
+
+	<test name="Add user and Department">
+		<classes>
+			<class name="testcases.CompanySetupConfiguration">
+				<methods>
+					<include name="addUserAndDepartment" />
+					<include name="addNewUser" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Add Ticket Test -->
+	<!-- <test name="Add Ticket Test"> -->
+	<!-- <classes> -->
+	<!-- <class name="testcases.AddTicketTest"> -->
+
+	<!-- Ticket Listing Test -->
+	<!-- </class> -->
+	<!-- <class name="testcases.TicketListingTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="Add Ticket Test"> -->
+	<!-- <classes> -->
+	<!-- <class name="testcases.AddTicketTest"> -->
+	<!-- <methods> -->
+	<!-- <include name="addTicket" /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- SLA Flow -->
+	<!-- <test name="Add SLA Test"> -->
+
+	<!-- <classes> -->
+	<!-- <class name="testcases.SLATest"> -->
+	<!-- <methods> -->
+	<!-- <include name="verifyAddSLA" /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- <class name="testcases.AddSLA"> -->
+	<!-- <methods> -->
+	<!-- <include name="addTicketForSLA" /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- SLA All Testcases -->
+	<!-- <test name="SLA All TestCases"> -->
+
+	<!-- <classes> -->
+	<!-- <class name="testcases.SLATest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- Ticket Detail Report -->
+	<!-- <test name="Ticket Detail Report TestCases"> -->
+
+	<!-- <classes> -->
+	<!-- <class name="testcases.TicketDetailReportTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- TicketSummary Report Test -->
+	<!-- <test name="TicketSummary Report TestCases"> -->
+
+	<!-- <classes> -->
+	<!-- <class name="testcases.TicketSummaryReportTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- Ticketing ServiceBoard Test -->
+	<!-- <test name="Ticketing ServiceBoard Report TestCases"> -->
+
+	<!-- <classes> -->
+	<!-- <class name="testcases.TicketingServiceBoardTest" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- TicketingGroup Test -->
+	<test name="TicketingGroup Test">
+
+		<classes>
+			<class name="testcases.TicketingGroupTest" />
+		</classes>
+	</test>
+
+</suite>

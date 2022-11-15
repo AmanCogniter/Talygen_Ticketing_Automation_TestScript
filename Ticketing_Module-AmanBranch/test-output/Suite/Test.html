@@ -1,0 +1,261 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 03 16:42:53 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1347 seconds (1347299 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TicketingGroupTest.verifyAddGroup()'><b>verifyAddGroup</b><br>Test class: testcases.TicketingGroupTest</td>
+<td></td>
+<td>38</td>
+<td>testcases.TicketingGroupTest@39529185</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupOne()'><b>verifyAddServiceBoardGroupOne</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>51</td>
+<td>testcases.TicketingServiceBoardTest@68999068</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation()'><b>verifyUpdateServiceBoardNavigation</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>40</td>
+<td>testcases.TicketingServiceBoardTest@68999068</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyResponseTimeValidations()'><b>verifyResponseTimeValidations</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-71859662" onClick='toggleBox("Output-71859662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-71859662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-71859662">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>100</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.TicketingGroupTest.verifyCancelButton()'><b>verifyCancelButton</b><br>Test class: testcases.TicketingGroupTest</td>
+<td></td>
+<td>50</td>
+<td>testcases.TicketingGroupTest@39529185</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyServiceboardElements()'><b>verifyServiceboardElements</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>29</td>
+<td>testcases.TicketingServiceBoardTest@68999068</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyProductCategoryFunctionality()'><b>verifyProductCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1510527745" onClick='toggleBox("Output-1510527745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1510527745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1510527745">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyAddSLA()'><b>verifyAddSLA</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1043907698" onClick='toggleBox("Output-1043907698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1043907698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1043907698">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>152</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyClientCategoryFunctionality()'><b>verifyClientCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-2144329829" onClick='toggleBox("Output-2144329829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2144329829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2144329829">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyResolveTimeValidations()'><b>verifyResolveTimeValidations</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-72600191" onClick='toggleBox("Output-72600191", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-72600191" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-72600191">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>91</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyMandatoryValidation()'><b>verifyMandatoryValidation</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-952833542" onClick='toggleBox("Output-952833542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-952833542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-952833542">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyDepartmentCategoryFunctionality()'><b>verifyDepartmentCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-402847244" onClick='toggleBox("Output-402847244", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-402847244" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-402847244">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyRadioButtonsFunctionality()'><b>verifyRadioButtonsFunctionality</b><br>Test class: testcases.SLATest</td>
+<td></td>
+<td>39</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyCancelButtonFunctionality()'><b>verifyCancelButtonFunctionality</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>47</td>
+<td>testcases.TicketingServiceBoardTest@68999068</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo()'><b>verifyAddServiceBoardGroupTwo</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>47</td>
+<td>testcases.TicketingServiceBoardTest@68999068</td></tr>
+<tr>
+<td title='testcases.SLATest.VerifyCharactersValidation()'><b>VerifyCharactersValidation</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-234107628" onClick='toggleBox("Output-234107628", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-234107628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-234107628">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyBooleanSaveButtonFunctionality()'><b>verifyBooleanSaveButtonFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1833806934" onClick='toggleBox("Output-1833806934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1833806934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1833806934">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyBooleanFunctionality()'><b>verifyBooleanFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1737229072" onClick='toggleBox("Output-1737229072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1737229072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1737229072">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyDeleteButtonFunctionality()'><b>verifyDeleteButtonFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-975361695" onClick='toggleBox("Output-975361695", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-975361695" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-975361695">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyPolicyDatePickerFunctionality()'><b>verifyPolicyDatePickerFunctionality</b><br>Test class: testcases.SLATest</td>
+<td></td>
+<td>42</td>
+<td>testcases.SLATest@7722c3c3</td></tr>
+<tr>
+<td title='testcases.TicketingGroupTest.verifyNoRecordsMessage()'><b>verifyNoRecordsMessage</b><br>Test class: testcases.TicketingGroupTest</td>
+<td></td>
+<td>45</td>
+<td>testcases.TicketingGroupTest@39529185</td></tr>
+</table><p>
+</body>
+</html>

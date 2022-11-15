@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="23" passed="21" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+    <line>
+      <![CDATA[Policy checkbox clicked]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-03T16:42:53 IST" name="Suite" finished-at="2022-11-03T17:05:21 IST" duration-ms="1347299">
+    <groups>
+    </groups>
+    <test started-at="2022-11-03T16:42:53 IST" name="Test" finished-at="2022-11-03T17:05:21 IST" duration-ms="1347299">
+      <class name="testcases.TicketingGroupTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:42:53 IST" name="setUp" finished-at="2022-11-03T16:43:06 IST" duration-ms="12296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:43:06 IST" name="beforeMethod" finished-at="2022-11-03T16:43:06 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingGroupTest.verifyAddGroup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddGroup()[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:43:06 IST" name="verifyAddGroup" finished-at="2022-11-03T16:43:44 IST" duration-ms="38224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddGroup -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:43:44 IST" name="reportWrapUp" finished-at="2022-11-03T16:43:44 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddGroup status=SUCCESS method=TicketingGroupTest.verifyAddGroup()[pri:0, instance:testcases.TicketingGroupTest@39529185] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingGroupTest.verifyAddGroup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:43:44 IST" name="beforeMethod" finished-at="2022-11-03T16:43:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingGroupTest.verifyCancelButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyCancelButton()[pri:1, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:43:44 IST" name="verifyCancelButton" finished-at="2022-11-03T16:44:35 IST" duration-ms="50879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelButton -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:44:35 IST" name="reportWrapUp" finished-at="2022-11-03T16:44:35 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCancelButton status=SUCCESS method=TicketingGroupTest.verifyCancelButton()[pri:1, instance:testcases.TicketingGroupTest@39529185] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingGroupTest.verifyCancelButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:44:35 IST" name="beforeMethod" finished-at="2022-11-03T16:44:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingGroupTest.verifyNoRecordsMessage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyNoRecordsMessage()[pri:2, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:44:35 IST" name="verifyNoRecordsMessage" finished-at="2022-11-03T16:45:21 IST" duration-ms="45770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoRecordsMessage -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T16:45:21 IST" name="reportWrapUp" finished-at="2022-11-03T16:45:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNoRecordsMessage status=SUCCESS method=TicketingGroupTest.verifyNoRecordsMessage()[pri:2, instance:testcases.TicketingGroupTest@39529185] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingGroupTest.verifyNoRecordsMessage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.TicketingGroupTest@39529185]" started-at="2022-11-03T17:05:21 IST" name="close" finished-at="2022-11-03T17:05:21 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testcases.TicketingGroupTest -->
+      <class name="testcases.SLATest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:49:13 IST" name="setUp" finished-at="2022-11-03T16:49:28 IST" duration-ms="14420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:49:28 IST" name="beforeMethod" finished-at="2022-11-03T16:49:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyAddSLA()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddSLA()[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:49:28 IST" name="verifyAddSLA" finished-at="2022-11-03T16:52:00 IST" duration-ms="152331" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddSLA -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:52:00 IST" name="reportWrapUp" finished-at="2022-11-03T16:52:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddSLA status=SUCCESS method=SLATest.verifyAddSLA()[pri:0, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyAddSLA()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:52:00 IST" name="beforeMethod" finished-at="2022-11-03T16:52:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyMandatoryValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyMandatoryValidation()[pri:1, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:52:00 IST" name="verifyMandatoryValidation" finished-at="2022-11-03T16:53:30 IST" duration-ms="89749" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMandatoryValidation -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:53:30 IST" name="reportWrapUp" finished-at="2022-11-03T16:53:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMandatoryValidation status=SUCCESS method=SLATest.verifyMandatoryValidation()[pri:1, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyMandatoryValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:53:30 IST" name="beforeMethod" finished-at="2022-11-03T16:53:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.VerifyCharactersValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyCharactersValidation()[pri:2, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:53:30 IST" name="VerifyCharactersValidation" finished-at="2022-11-03T16:55:02 IST" duration-ms="92370" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyCharactersValidation -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:55:02 IST" name="reportWrapUp" finished-at="2022-11-03T16:55:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCharactersValidation status=SUCCESS method=SLATest.VerifyCharactersValidation()[pri:2, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.VerifyCharactersValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:55:02 IST" name="beforeMethod" finished-at="2022-11-03T16:55:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyRadioButtonsFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyRadioButtonsFunctionality()[pri:3, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:55:02 IST" name="verifyRadioButtonsFunctionality" finished-at="2022-11-03T16:55:42 IST" duration-ms="39715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRadioButtonsFunctionality -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:55:42 IST" name="reportWrapUp" finished-at="2022-11-03T16:55:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRadioButtonsFunctionality status=SUCCESS method=SLATest.verifyRadioButtonsFunctionality()[pri:3, instance:testcases.SLATest@7722c3c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyRadioButtonsFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method signature="verifyClientCategoryFunctionality()[pri:4, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:55:42 IST" name="verifyClientCategoryFunctionality" finished-at="2022-11-03T16:56:29 IST" duration-ms="46911" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClientCategoryFunctionality -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:55:42 IST" name="beforeMethod" finished-at="2022-11-03T16:55:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyClientCategoryFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:56:29 IST" name="reportWrapUp" finished-at="2022-11-03T16:56:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClientCategoryFunctionality status=SUCCESS method=SLATest.verifyClientCategoryFunctionality()[pri:4, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyClientCategoryFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method signature="verifyDepartmentCategoryFunctionality()[pri:5, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:56:29 IST" name="verifyDepartmentCategoryFunctionality" finished-at="2022-11-03T16:57:26 IST" duration-ms="57430" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDepartmentCategoryFunctionality -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:56:29 IST" name="beforeMethod" finished-at="2022-11-03T16:56:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyDepartmentCategoryFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:57:26 IST" name="reportWrapUp" finished-at="2022-11-03T16:57:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDepartmentCategoryFunctionality status=SUCCESS method=SLATest.verifyDepartmentCategoryFunctionality()[pri:5, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyDepartmentCategoryFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:57:26 IST" name="beforeMethod" finished-at="2022-11-03T16:57:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyProductCategoryFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyProductCategoryFunctionality()[pri:6, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:57:26 IST" name="verifyProductCategoryFunctionality" finished-at="2022-11-03T16:58:14 IST" duration-ms="47565" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductCategoryFunctionality -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:58:14 IST" name="reportWrapUp" finished-at="2022-11-03T16:58:14 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductCategoryFunctionality status=SUCCESS method=SLATest.verifyProductCategoryFunctionality()[pri:6, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyProductCategoryFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:58:14 IST" name="beforeMethod" finished-at="2022-11-03T16:58:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyDeleteButtonFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyDeleteButtonFunctionality()[pri:7, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:58:14 IST" name="verifyDeleteButtonFunctionality" finished-at="2022-11-03T16:59:16 IST" duration-ms="61797" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteButtonFunctionality -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:59:16 IST" name="reportWrapUp" finished-at="2022-11-03T16:59:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteButtonFunctionality status=SUCCESS method=SLATest.verifyDeleteButtonFunctionality()[pri:7, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyDeleteButtonFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:59:16 IST" name="beforeMethod" finished-at="2022-11-03T16:59:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyPolicyDatePickerFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyPolicyDatePickerFunctionality()[pri:8, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:59:16 IST" name="verifyPolicyDatePickerFunctionality" finished-at="2022-11-03T16:59:58 IST" duration-ms="42518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPolicyDatePickerFunctionality -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:59:58 IST" name="reportWrapUp" finished-at="2022-11-03T16:59:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPolicyDatePickerFunctionality status=SUCCESS method=SLATest.verifyPolicyDatePickerFunctionality()[pri:8, instance:testcases.SLATest@7722c3c3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyPolicyDatePickerFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method signature="verifyBooleanFunctionality()[pri:9, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:59:58 IST" name="verifyBooleanFunctionality" finished-at="2022-11-03T17:01:05 IST" duration-ms="66832" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBooleanFunctionality -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T16:59:58 IST" name="beforeMethod" finished-at="2022-11-03T16:59:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyBooleanFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:01:05 IST" name="reportWrapUp" finished-at="2022-11-03T17:01:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBooleanFunctionality status=SUCCESS method=SLATest.verifyBooleanFunctionality()[pri:9, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyBooleanFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method signature="verifyBooleanSaveButtonFunctionality()[pri:10, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:01:05 IST" name="verifyBooleanSaveButtonFunctionality" finished-at="2022-11-03T17:02:08 IST" duration-ms="63166" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBooleanSaveButtonFunctionality -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:01:05 IST" name="beforeMethod" finished-at="2022-11-03T17:01:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyBooleanSaveButtonFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:02:08 IST" name="reportWrapUp" finished-at="2022-11-03T17:02:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBooleanSaveButtonFunctionality status=SUCCESS method=SLATest.verifyBooleanSaveButtonFunctionality()[pri:10, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyBooleanSaveButtonFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:02:08 IST" name="beforeMethod" finished-at="2022-11-03T17:02:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyResponseTimeValidations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyResponseTimeValidations()[pri:11, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:02:08 IST" name="verifyResponseTimeValidations" finished-at="2022-11-03T17:03:49 IST" duration-ms="100616" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyResponseTimeValidations -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:03:49 IST" name="reportWrapUp" finished-at="2022-11-03T17:03:49 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResponseTimeValidations status=SUCCESS method=SLATest.verifyResponseTimeValidations()[pri:11, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyResponseTimeValidations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:03:49 IST" name="beforeMethod" finished-at="2022-11-03T17:03:49 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyResolveTimeValidations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyResolveTimeValidations()[pri:12, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:03:49 IST" name="verifyResolveTimeValidations" finished-at="2022-11-03T17:05:21 IST" duration-ms="91919" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Policy checkbox clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyResolveTimeValidations -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.SLATest@7722c3c3]" started-at="2022-11-03T17:05:21 IST" name="reportWrapUp" finished-at="2022-11-03T17:05:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResolveTimeValidations status=SUCCESS method=SLATest.verifyResolveTimeValidations()[pri:12, instance:testcases.SLATest@7722c3c3] output=Policy checkbox clicked]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.SLATest.verifyResolveTimeValidations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+      </class> <!-- testcases.SLATest -->
+      <class name="testcases.TicketingServiceBoardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:45:21 IST" name="setUp" finished-at="2022-11-03T16:45:37 IST" duration-ms="16030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyServiceboardElements()[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:45:37 IST" name="verifyServiceboardElements" finished-at="2022-11-03T16:46:06 IST" duration-ms="29678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceboardElements -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:45:37 IST" name="beforeMethod" finished-at="2022-11-03T16:45:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyServiceboardElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:46:07 IST" name="reportWrapUp" finished-at="2022-11-03T16:46:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyServiceboardElements status=SUCCESS method=TicketingServiceBoardTest.verifyServiceboardElements()[pri:0, instance:testcases.TicketingServiceBoardTest@68999068] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyServiceboardElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:46:07 IST" name="beforeMethod" finished-at="2022-11-03T16:46:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddServiceBoardGroupOne()[pri:1, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:46:07 IST" name="verifyAddServiceBoardGroupOne" finished-at="2022-11-03T16:46:58 IST" duration-ms="51222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddServiceBoardGroupOne -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:46:58 IST" name="reportWrapUp" finished-at="2022-11-03T16:46:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddServiceBoardGroupOne status=SUCCESS method=TicketingServiceBoardTest.verifyAddServiceBoardGroupOne()[pri:1, instance:testcases.TicketingServiceBoardTest@68999068] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:46:58 IST" name="beforeMethod" finished-at="2022-11-03T16:46:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddServiceBoardGroupTwo()[pri:2, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:46:58 IST" name="verifyAddServiceBoardGroupTwo" finished-at="2022-11-03T16:47:45 IST" duration-ms="47703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddServiceBoardGroupTwo -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:47:45 IST" name="reportWrapUp" finished-at="2022-11-03T16:47:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddServiceBoardGroupTwo status=SUCCESS method=TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo()[pri:2, instance:testcases.TicketingServiceBoardTest@68999068] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:47:45 IST" name="beforeMethod" finished-at="2022-11-03T16:47:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyCancelButtonFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyCancelButtonFunctionality()[pri:3, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:47:45 IST" name="verifyCancelButtonFunctionality" finished-at="2022-11-03T16:48:33 IST" duration-ms="47739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelButtonFunctionality -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:48:33 IST" name="reportWrapUp" finished-at="2022-11-03T16:48:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCancelButtonFunctionality status=SUCCESS method=TicketingServiceBoardTest.verifyCancelButtonFunctionality()[pri:3, instance:testcases.TicketingServiceBoardTest@68999068] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyCancelButtonFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:48:33 IST" name="beforeMethod" finished-at="2022-11-03T16:48:33 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUpdateServiceBoardNavigation()[pri:4, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:48:33 IST" name="verifyUpdateServiceBoardNavigation" finished-at="2022-11-03T16:49:13 IST" duration-ms="40095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateServiceBoardNavigation -->
+        <test-method is-config="true" signature="reportWrapUp(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:testcases.TicketingServiceBoardTest@68999068]" started-at="2022-11-03T16:49:13 IST" name="reportWrapUp" finished-at="2022-11-03T16:49:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUpdateServiceBoardNavigation status=SUCCESS method=TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation()[pri:4, instance:testcases.TicketingServiceBoardTest@68999068] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testcases.TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+      </class> <!-- testcases.TicketingServiceBoardTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
