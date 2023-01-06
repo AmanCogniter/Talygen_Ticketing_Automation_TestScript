@@ -88,6 +88,7 @@ public class TicketDetailReportPage extends WebBasePage {
 
 	// click on Side menu
 	public void clickTicketingSideMenu() {
+		staticWait(3000);
 		waitForVisibilityOfElement(By.xpath("//li[@data-name='Ticketing']//a//i//following::text()[1]//following::span[1]"), 50);
 		click(By.xpath("//li[@data-name='Ticketing']//a//i//following::text()[1]//following::span[1]"),
 				"Ticketing Side menu", 20);
@@ -95,6 +96,7 @@ public class TicketDetailReportPage extends WebBasePage {
 
 	// click on ticketing
 	public void clickTicketingOption() {
+		staticWait(3000);
 		waitForVisibilityOfElement(By.xpath("//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='Ticketing']"), 50);
 		click(By.xpath("//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='Ticketing']"), "Ticketing",10);
 
@@ -174,6 +176,7 @@ public class TicketDetailReportPage extends WebBasePage {
 
 	// click on Status
 	public void clickSelectStatus() {
+		staticWait(2000);
 		click(By.xpath("//*[@id='frmReport']/div[1]/div[8]/div/span/div/button"), "Status", 20);
 	}
 
@@ -487,11 +490,12 @@ public class TicketDetailReportPage extends WebBasePage {
 	}
 
 	public void enterOpenedDateOnListingPage(String startDate, String endDate) {
+		staticWait(3000);
 //		clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 0);
 		enter(By.xpath(
 				"//div[@class='card-header' and @id='headingOneDateFrom']//following::input[@id='dateFromForTicketSearch']"),
 				startDate, "Opened start Date", 30);
-
+		staticWait(2000);
 		enter(By.xpath(
 				"//div[@class='card-header' and @id='headingOneDateFrom']//following::input[@id='dateToForTicketSearch']"),
 				endDate, "Opened end Date", 30);
@@ -545,50 +549,101 @@ public class TicketDetailReportPage extends WebBasePage {
 	// page -
 
 	public void verifyCategoryStatusValues() {
-		try {
-			int counter = 0;
-			statusvalue = TicketingDashboardPage.statulist;
+		/*
+		 * try { int counter = 0; statusvalue = TicketingDashboardPage.statulist;
+		 * 
+		 * statusCount = TicketingDashboardPage.statusCountFromDashboard; for (int int2
+		 * : statusCount) { logger.info("" + int2); } for (int j = 0; j <
+		 * statusvalue.size(); j++) { logger.info("" + statusvalue.get(j)); statusText =
+		 * statusvalue.get(j);
+		 * 
+		 * }
+		 * 
+		 * if (statusvalue.contains("NA") && (statusCount.size() == 1)) {
+		 * 
+		 * logger.info("less than size ::" + statusCount.size()); clickFullMenu();
+		 * clickTicketingSideMenu(); clickTicketingOption();
+		 * ticketListingPage.ticketListing();
+		 * clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 20);
+		 * 
+		 * if (TicketingDashboardPage.SelectedFilterText.contains("Today")) {
+		 * 
+		 * enterOpenedDateOnListingPage(datevalue, datevalue);
+		 * 
+		 * } else if (TicketingDashboardPage.SelectedFilterText.contains("This Week")) {
+		 * 
+		 * enterOpenedDateOnListingPage(weekStartDate, weekEndDate);
+		 * 
+		 * } else if (TicketingDashboardPage.SelectedFilterText.contains("Yesterday")) {
+		 * enterOpenedDateOnListingPage(yesterdayDate, yesterdayDate);
+		 * 
+		 * } else if (TicketingDashboardPage.SelectedFilterText.contains("This Year")) {
+		 * enterOpenedDateOnListingPage(prop.getProperty("enterStartYearDate") +
+		 * currentYear, prop.getProperty("enterEndYearDate") + currentYear); } else if
+		 * (TicketingDashboardPage.SelectedFilterText.contains("Last Week")) {
+		 * enterOpenedDateOnListingPage(lastWeekStartDate, lastWeekEndDate);
+		 * 
+		 * } else if (TicketingDashboardPage.SelectedFilterText.contains("This Month"))
+		 * {
+		 * 
+		 * enterOpenedDateOnListingPage(monthStartDate, monthEndDate); } else if
+		 * (TicketingDashboardPage.SelectedFilterText.contains("Last Month")) {
+		 * enterOpenedDateOnListingPage(lastMonthStartDate, lastMonthEndDate); }
+		 */		try {
+				int counter = 0;
+				statusvalue = TicketingDashboardPage.statulist;
 
-			statusCount = TicketingDashboardPage.statusCountFromDashboard;
-			for (int int2 : statusCount) {
-				logger.info("" + int2);
-			}
-			for (int j = 0; j < statusvalue.size(); j++) {
-				logger.info("" + statusvalue.get(j));
-				statusText = statusvalue.get(j);
-
-			}
-
-			if (statusvalue.contains("NA") && (statusCount.size() == 1)) {
-
-				logger.info("less than size ::" + statusCount.size());
-				clickFullMenu();
-				
-				clickTicketingOption();
-				ticketListingPage.ticketListing();
-				clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 20);
-
-				if (TicketingDashboardPage.SelectedFilterText.contains("Today")) {
-					enterOpenedDateOnListingPage(datevalue, datevalue);
-
-				} else if (TicketingDashboardPage.SelectedFilterText.contains("This Week")) {
-					enterOpenedDateOnListingPage(weekStartDate, weekEndDate);
-
-				} else if (TicketingDashboardPage.SelectedFilterText.contains("Yesterday")) {
-					enterOpenedDateOnListingPage(yesterdayDate, yesterdayDate);
-
-				} else if (TicketingDashboardPage.SelectedFilterText.contains("This Year")) {
-					enterOpenedDateOnListingPage(prop.getProperty("enterStartYearDate") + currentYear,
-							prop.getProperty("enterEndYearDate") + currentYear);
-				} else if (TicketingDashboardPage.SelectedFilterText.contains("Last Week")) {
-					enterOpenedDateOnListingPage(lastWeekStartDate, lastWeekEndDate);
-
-				} else if (TicketingDashboardPage.SelectedFilterText.contains("This Month")) {
-
-					enterOpenedDateOnListingPage(monthStartDate, monthEndDate);
-				} else if (TicketingDashboardPage.SelectedFilterText.contains("Last Month")) {
-					enterOpenedDateOnListingPage(lastMonthStartDate, lastMonthEndDate);
+				statusCount = TicketingDashboardPage.statusCountFromDashboard;
+				for (int int2 : statusCount) {
+					logger.info("" + int2);
 				}
+				for (int j = 0; j < statusvalue.size(); j++) {
+					logger.info("" + statusvalue.get(j));
+					statusText = statusvalue.get(j);
+
+				}
+
+				if (statusvalue.contains("NA") && (statusCount.size() == 1)) {
+
+					logger.info("less than size ::" + statusCount.size());
+					clickFullMenu();
+					clickTicketingSideMenu();
+					clickTicketingOption();
+					ticketListingPage.ticketListing();
+					clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 20);
+
+					if (TicketingDashboardPage.SelectedFilterText.contains("Today")) {
+
+						enterOpenedDateOnListingPage(datevalue, datevalue);
+
+					} else if (TicketingDashboardPage.SelectedFilterText.contains("This Week")) {
+						getWeekStartEndDate();
+
+						enterOpenedDateOnListingPage(weekStartDate, weekEndDate);
+
+					} else if (TicketingDashboardPage.SelectedFilterText.contains("Yesterday")) {
+						getYesterdayDate();
+						getYesterdayDate();
+
+						enterOpenedDateOnListingPage(yesterdayDate, yesterdayDate);
+
+					} else if (TicketingDashboardPage.SelectedFilterText.contains("This Year")) {
+						enterOpenedDateOnListingPage(prop.getProperty("enterStartYearDate") + currentYear,
+								prop.getProperty("enterEndYearDate") + currentYear);
+					} else if (TicketingDashboardPage.SelectedFilterText.contains("Last Week")) {
+						getLastWeekStartEndDate();
+
+						enterOpenedDateOnListingPage(lastWeekStartDate, lastWeekEndDate);
+
+					} else if (TicketingDashboardPage.SelectedFilterText.contains("This Month")) {
+						getCurrentMonthStartEndDate();
+
+						enterOpenedDateOnListingPage(monthStartDate, monthEndDate);
+					} else if (TicketingDashboardPage.SelectedFilterText.contains("Last Month")) {
+						getLastMonthStartEndDate();
+
+						enterOpenedDateOnListingPage(lastMonthStartDate, lastMonthEndDate);
+					}
 				clickListingcategory();
 				clickNocategory();
 				WebElement m = driver.findElement(By.xpath("//div[@class='card-header filter-head']"));
@@ -599,7 +654,7 @@ public class TicketDetailReportPage extends WebBasePage {
 				logger.info("greater than size ::" + statusCount.size());
 
 				clickFullMenu();
-
+				clickTicketingSideMenu();
 				clickTicketingOption();
 				ticketListingPage.ticketListing();
 				clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 20);
@@ -631,7 +686,8 @@ public class TicketDetailReportPage extends WebBasePage {
 				ticketListingPage.clickSearchIcon();
 
 				clickFullMenu();
-				clickTicketingOption();
+				clickTicketingSideMenu();
+				//clickTicketingOption();
 				clickTicketReport();
 
 				statusCount.remove(0);
@@ -1469,6 +1525,7 @@ public class TicketDetailReportPage extends WebBasePage {
 			logger.error("Error from verifyTodayStatusValues method." + e);
 			e.printStackTrace();
 		}
+		driver.navigate().refresh();
 	}
 
 	public void clickCategoryDropdownStatus() {
@@ -1514,7 +1571,8 @@ public class TicketDetailReportPage extends WebBasePage {
 	}
 
 	public void clickProductDropdown() {
-		click(By.xpath("//*[@id='frmReport']/div[1]/div[11]/div/span/div/button"), "product dropdown", 20);
+		staticWait(3000);
+		click(By.xpath("//*[@id='frmReport']/div[1]/div[11]/div/span/div/button"), "product dropdown", 30);
 	}
 
 	// -----------match product widget values from detail report----
@@ -1538,6 +1596,7 @@ public class TicketDetailReportPage extends WebBasePage {
 
 				logger.info("less than size ::" + statusCount.size());
 				clickFullMenu();
+				clickTicketingSideMenu();
 				clickTicketingOption();
 				ticketListingPage.ticketListing();
 				clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 20);
@@ -1584,6 +1643,7 @@ public class TicketDetailReportPage extends WebBasePage {
 				logger.info("greater than size ::" + statusCount.size());
 
 				clickFullMenu();
+				clickTicketingSideMenu();
 				clickTicketingOption();
 				ticketListingPage.ticketListing();
 				clickByJavascript(By.xpath("//span[@id='dateFromQS']"), "opened date", 20);
@@ -1597,7 +1657,8 @@ public class TicketDetailReportPage extends WebBasePage {
 				ticketListingPage.clickSearchIcon();
 
 				clickFullMenu();
-				clickTicketingOption();
+				clickTicketingSideMenu();
+				//clickTicketingOption();
 				clickTicketReport();
 
 				statusCount.remove(0);
@@ -1605,12 +1666,13 @@ public class TicketDetailReportPage extends WebBasePage {
 
 				for (String value : statusvalue) {
 					clickProductDropdown();
-
+					staticWait(2000);
 					clickByJavascript(By.xpath("//div[@class='btn-group show']//li//a//label[text()=' " + value + "']"),value, 30);
-					//clickByJavascript(By.xpath("//div[@class='btn-group show']//li//a//label[text()=' Issue in Software']"),value, 30);
+					//clickByJavascript(By.xpath("//div[@class='btn-group show']//li//a//label[text()=' Others']"),"Others", 30);
 					logger.info(value);
+					//logger.info("Others");
 
-					clickSelectStatus();
+					//clickSelectStatus();
 					if (TicketingDashboardPage.SelectedFilterText.contains("Today")) {
 						if (driver.getCurrentUrl().contains("TicketReport")) {
 							enterStartTodaysDate();
@@ -1672,7 +1734,7 @@ public class TicketDetailReportPage extends WebBasePage {
 						logger.info("record count is :: " + recordCount
 								+ " is matched succesfully from Detail Report count.");
 						pageRefresh("Detail report page");
-						clickProductDropdown();
+						//clickProductDropdown();
 						counter++;
 					} else {
 						getTest().log(LogStatus.FAIL, "record count is not matched");
@@ -1684,12 +1746,13 @@ public class TicketDetailReportPage extends WebBasePage {
 			} else if (!statusvalue.contains("NA")) {
 				for (String value : statusvalue) {
 					clickProductDropdown();
-
+					staticWait(3000);
 					clickByJavascript(By.xpath("//div[@class='btn-group show']//li//a//label[text()=' " + value + "']"),value, 30);
-					//clickByJavascript(By.xpath("//div[@class='btn-group show']//li//a//label[text()=' Issue in Software']"),value, 30);
+					//clickByJavascript(By.xpath("//div[@class='btn-group show']//li//a//label[text()=' Others']"),"Others", 30);
 					logger.info(value);
+					//logger.info("Others");
 
-					clickSelectStatus();
+					//clickSelectStatus();
 					if (TicketingDashboardPage.SelectedFilterText.contains("Today")) {
 						enterStartTodaysDate();
 						enterEndTodaysDate();
@@ -1721,7 +1784,7 @@ public class TicketDetailReportPage extends WebBasePage {
 						logger.info("record count is :: " + recordCount
 								+ " is matched succesfully from Detail Report count.");
 						pageRefresh("Detail report page");
-						clickSelectStatus();
+						//clickSelectStatus();
 						counter++;
 					} else {
 						getTest().log(LogStatus.FAIL, "record count is not matched");
@@ -1734,5 +1797,6 @@ public class TicketDetailReportPage extends WebBasePage {
 		} catch (Exception e) {
 			logger.error("Error from verifyTodayValuesByProduct method." + e);
 		}
+		driver.navigate().refresh();
 	}
 }

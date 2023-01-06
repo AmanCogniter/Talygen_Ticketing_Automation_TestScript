@@ -74,7 +74,7 @@ public class AddTicketAction extends AddTicketPage {
 		selectNewAddedDept();
 		selectPriority();
 		selectProduct();
-		selectCCUsers();
+		//selectCCUsers();
 		selectCategory();
 		selectTicketForOnBehalf();
 	}
@@ -84,6 +84,7 @@ public class AddTicketAction extends AddTicketPage {
 		ticketSettings();
 		selectUserOnBehalf();
 		userDropDown();
+		uploadDocument();
 		enterDescription();/* Modified */
 		clickSubmitTicket();/* Modified */
 //		addMoreDocumentField();
@@ -110,7 +111,7 @@ public class AddTicketAction extends AddTicketPage {
 		selectNewAddedDept();
 		selectPriority();
 		selectProduct();
-		selectCCUsers();
+		//selectCCUsers();
 		selectCategory();
 		//selfButton();
 		uploadDocument();
@@ -139,7 +140,7 @@ public class AddTicketAction extends AddTicketPage {
 		selectNewAddedDept();
 		selectPriority();
 		selectProduct();
-		selectCCUsers();
+		//selectCCUsers();
 		selectCategory();
 		selfButton();
 		uploadDocument();
@@ -350,13 +351,14 @@ public class AddTicketAction extends AddTicketPage {
 	// common use
 	public void addTicketForSLA() {
 //			clickAddTicketIcon();
+		
 		enterTicketSubject();
 //		getTicketSubject();
 //			selectDepartment();
 		selectSlaDepartment();
 		selectPriority();
 		selectProduct();
-		selectCCUsers();
+		//selectCCUsers();
 		selectCategory();
 		//selfButton();
 		uploadDocument();

@@ -10,6 +10,7 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -216,16 +217,29 @@ public class AddTicketPage extends WebBasePage {
 
 	// click on save draft
 	public void clickSaveDraft() {
+		staticWait(2000);
 		click(By.cssSelector("a#btnSaveDraft"), "Save as Draft", 8);
 	}
 
 	// click on submit ticket
 	public void clickSubmitTicket() {
-		click(By.cssSelector("#btnSaveTicket"), "Submit button", 10);
+		staticWait(3000);
+		WebElement submitButton = driver.findElement(By.xpath("//div/a[@id='btnSaveTicket']"));
+		Actions action= new Actions(driver);
+		action.moveToElement(submitButton).click().perform();
+		logger.info("Submit button clicked");
+		//clickByJavascript(By.xpath("//div/a[@id='btnSaveTicket']"), "Submit button", 10);
 	}
+	// click on Close notify message popup
+		public void clickOncloseNotifyMessagePopUp() {
+			staticWait(3000);
+			click(By.xpath("//button[@id='closenotifymessage']"), "Close Notify Message PopUp", 10);
+			driver.navigate().refresh();
+		}
 
 	// click on back to list
 	public void clickBackToList() {
+		staticWait(2000);
 		click(By.cssSelector("a#btnback"), "Back To List", 10);
 	}
 
@@ -233,12 +247,14 @@ public class AddTicketPage extends WebBasePage {
 
 	public void movetoEditPage() {
 		click(By.xpath("(//a[text()='" + ticketSubject + "']//following::a[@class='btnright'])[1]"), "Option Arrow", 8);
+		staticWait(2000);
 		click(By.xpath("(//a[text()='" + ticketSubject + "']//following::span[contains(text(),'Edit')])[1]"), "Edit",
 				5);
 	}
 
 	// click on submit ticket
 	public void submitTicket() {
+		staticWait(2000);
 		click(By.cssSelector("a#btnSaveTicket"), "Submit", 10);
 	}
 
@@ -516,6 +532,7 @@ public class AddTicketPage extends WebBasePage {
 //	}
 
 	public void selectCreatedDepartment() {
+		staticWait(3000);
 		selectValueWithText(By.cssSelector("#DepartmentId"), CompanySetupPage.departmentname, "Select added department",
 				30);
 	}
@@ -562,6 +579,7 @@ public class AddTicketPage extends WebBasePage {
 	}
 
 	public void selectSlaDepartment() {
+		staticWait(3000);
 		selectValueWithText(By.cssSelector("#DepartmentId"), CompanySetupPage.departmentname,
 				"Department name" + CompanySetupPage.departmentname, 20);
 	}

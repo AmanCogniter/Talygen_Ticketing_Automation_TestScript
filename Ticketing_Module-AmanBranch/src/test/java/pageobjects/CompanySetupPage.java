@@ -36,7 +36,7 @@ public class CompanySetupPage extends WebBasePage {
 
 	// click on full menu
 	public void clickFullMenu() {
-		staticWait(3000);
+		staticWait(5000);
 		click(By.cssSelector("a#navbarDropdownPortfolio"), "Full Menu", 20);
 	}
 
@@ -99,7 +99,7 @@ public class CompanySetupPage extends WebBasePage {
 
 	// enter Email One
 	public void enterEmailOne() {
-		enter(By.cssSelector("#txtEmail"), prop.getProperty("enterEmailOne"), "Email 1", 20);
+		enter(By.cssSelector("#txtEmail"), prop.getProperty("enterEmailOne")+datevalue+prop.getProperty("email"), "Email 1", 20);
 	}
 
 	// Select Gender
@@ -171,6 +171,11 @@ public class CompanySetupPage extends WebBasePage {
 		selectValueWithText(By.cssSelector("#Clientdetail_department_id"), "Select", "Select", 20);
 		selectValueWithText(By.cssSelector("#Clientdetail_department_id"), "Sales", "Sales", 20);
 	}
+	// Select Department
+		public void selectDepartmentForSLA() {
+			//selectValueWithText(By.cssSelector("#Clientdetail_department_id"), "Select", "Select", 20);
+			selectValueWithText(By.cssSelector("#Clientdetail_department_id"), CompanySetupPage.departmentname, "Department", 20);
+		}
 
 	// Select Designation
 	public void selectDesignation() {
@@ -272,7 +277,7 @@ public class CompanySetupPage extends WebBasePage {
 	public void clickCloseConfiguration() {
 		staticWait(6000);
 
-		clickByJavascript(By.xpath("//h5[@id='ui-id-16']//following::button[@data-original-title='Close'][1]"),
+		clickByJavascript(By.xpath("//div[@id='divDialogConfiguration']/ancestor::div[@class='modal-dialog ui-draggable']/descendant::button[@data-original-title='Close']"),
 				"click close configuration", 20);
 	}
 
@@ -466,12 +471,24 @@ public class CompanySetupPage extends WebBasePage {
 		departmentname = prop.getProperty("departmentname") + datevalue;
 		return departmentname;
 	}
+	
 
 	public void enterDepartmentDesciption() {
 		staticWait(2000);
 
 		enter(By.xpath("//tg-input/input[@id='DepartmentName']"), departmentname, " Department Name", 25);
 	}
+	public void clickOnVisibleToClient() {
+		staticWait(2000);
+
+		click(By.xpath("//label[@class='switch']/input[@id='isVisibleToClientN']/ancestor::asp-checkbox-toggle/descendant::span")," Visible to client", 25);
+	}
+	public void clickOnVisibleToTicketing() {
+		staticWait(2000);
+
+		click(By.xpath("//label/input[@id='IsTicketHandlerN']/ancestor::asp-checkbox-toggle/descendant::span")," Visible in Ticketing", 25);
+	}
+
 
 	public void departmentDesciption() {
 		staticWait(2000);
@@ -482,6 +499,7 @@ public class CompanySetupPage extends WebBasePage {
 	public void Save() {
 		staticWait(2000);
 		clickByJavascript(By.xpath("//button[text()='Save']"), "save button", 30);
+		driver.navigate().refresh();
 		staticWait(2500);
 	}
 

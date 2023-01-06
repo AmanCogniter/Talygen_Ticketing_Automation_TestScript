@@ -62,11 +62,13 @@ public class TicketListingTest extends WebTestBase {
 	public void verifySearchFunctionality() {
 
 		test = getTest("TC_Ticketing_TicketListing_66");
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicketAction = new AddTicketAction(driver);
 		addTicketAction.navigatetoAddTicket();
@@ -96,11 +98,13 @@ public class TicketListingTest extends WebTestBase {
 		new LoginAction(driver).logoutLogin();
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
 		ticketListingAction.navigatetoTicketListing();
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicketAction = new AddTicketAction(driver);
 		addTicketAction.navigatetoAddTicket();
@@ -115,11 +119,13 @@ public class TicketListingTest extends WebTestBase {
 		new LoginAction(driver).logoutLogin();
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
 		ticketListingAction.navigatetoTicketListing();
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver) ;
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver) ;
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicketAction = new AddTicketAction(driver);
 		addTicketAction.navigatetoAddTicket();
@@ -141,11 +147,13 @@ public class TicketListingTest extends WebTestBase {
 	@Test(priority = 8)
 	public void verifyUpdateTicketFunctionality() {
 		test = getTest("TC_Ticketing_TicketListing_76,87,109,102,101,104,105");
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addticketAction = new AddTicketAction(driver);
 		addticketAction.navigatetoAddTicket();
@@ -161,11 +169,13 @@ public class TicketListingTest extends WebTestBase {
 	public void verifyDeleteTicketFunctionality() {
 		test = getTest("TC_Ticketing_TicketListing_78,79,68");
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicketAction = new AddTicketAction(driver);
 		addTicketAction.navigatetoAddTicket();
@@ -181,11 +191,13 @@ public class TicketListingTest extends WebTestBase {
 	public void verifyNotesFunctionality() {
 		test = getTest("TC_Ticketing_TicketListing_84,85,86");
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicketAction = new AddTicketAction(driver);
 		addTicketAction.navigatetoAddTicket();
@@ -227,9 +239,21 @@ public class TicketListingTest extends WebTestBase {
 	@Test(priority = 13)
 	public void verifyCannedReplyFunctionality() {
 		test = getTest("TC_Ticketing_TicketListing_93");
+		
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
+		 
 		new LoginAction(driver).logoutLogin();
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
 		AddTicketAction addticketAction = new AddTicketAction(driver);
+		
+		  
+		 
 		addticketAction.navigatetoAddTicket();
 		addticketAction.addTicketOnSelf();
 		new LoginAction(driver).logoutLogin();
@@ -242,6 +266,13 @@ public class TicketListingTest extends WebTestBase {
 	@Test(priority = 14)
 	public void verifyDraftReplyFunctionality() {
 		test = getTest("TC_Ticketing_TicketListing_88");
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
 		AddTicketAction addticketAction = new AddTicketAction(driver);

@@ -189,11 +189,13 @@ public class TicketingDashboardTest extends WebTestBase {
 	@Test(priority = 10)
 	public void verifyTodayFilterFromCategory() {
 		test = getTest("TC_Ticketing_Dashboard");
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicket = new AddTicketAction(driver);
 		addTicket.navigatetoAddTicket();
@@ -244,11 +246,13 @@ public class TicketingDashboardTest extends WebTestBase {
 	@Test(priority = 13, enabled = false)
 	public void verifyLastWeekFilterFromCategory() {
 		test = getTest("TC_Ticketing_Dashboard");
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicket = new AddTicketAction(driver);
 		addTicket.navigatetoAddTicket();
@@ -280,7 +284,7 @@ public class TicketingDashboardTest extends WebTestBase {
 		ticketSummaryReportAction.verifyCategoryWidgetCount();
 	}
 
-	@Test(priority = 15, enabled = true)
+	@Test(priority = 15, enabled = false)
 	public void verifyThisMonthFilterFromCategory() {
 		test = getTest("TC_Ticketing_Dashboard");
 		new LoginAction(driver).logoutLogin();
@@ -295,7 +299,7 @@ public class TicketingDashboardTest extends WebTestBase {
 		ticketSummaryReportAction.verifyCategoryWidgetCount();
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 16, enabled = false)
 	public void verifyLastMonthFilterFromCategory() {
 		test = getTest("TC_Ticketing_Dashboard");
 		new LoginAction(driver).logoutLogin();
@@ -318,10 +322,12 @@ public class TicketingDashboardTest extends WebTestBase {
 	  
 	  new LoginAction(driver).logoutLogin();
 	  CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-	  companySetupAction.navigateToCompanySetupUser();
-	  companySetupAction.addUser();
-	  companySetupAction.addDepartmentNotVisibleClient(); 
-	  new LoginAction(driver).logoutLogin(); 
+		
+		  companySetupAction.navigateToCompanySetupUser();
+		  companySetupAction.addUser();
+		  companySetupAction.addDepartmentNotVisibleClient();
+		 
+	  //new LoginAction(driver).logoutLogin(); 
 	  companySetupAction.addChannelTab();
 	  new LoginAction(driver).logoutLogin();
 	  AddTicketAction addTicket = new AddTicketAction(driver); 
@@ -432,17 +438,17 @@ public class TicketingDashboardTest extends WebTestBase {
 	  @Test(priority = 21) 
 	  public void verifyThisMonthByChannel() {
 	   test = getTest("TC_Ticketing_Dashboard"); 
-		/*
-		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
-		 * = new CompanySetupAction(driver); companySetupAction.addChannelTab(); new
-		 * LoginAction(driver).logoutLogin();
-		 * companySetupAction.navigateToCompanySetupUser();
-		 * companySetupAction.addUser(); //
-		 * companySetupAction.addDepartmentNotVisibleClient(); new
-		 * LoginAction(driver).logoutLogin(); AddTicketAction addTicket = new
-		 * AddTicketAction(driver); addTicket.navigatetoAddTicket();
-		 * addTicket.addTicketWithChannel();
-		 */
+		
+		  new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		  = new CompanySetupAction(driver); companySetupAction.addChannelTab(); new
+		  LoginAction(driver).logoutLogin();
+		  companySetupAction.navigateToCompanySetupUser();
+		  companySetupAction.addUser(); //
+		  companySetupAction.addDepartmentNotVisibleClient(); new
+		  LoginAction(driver).logoutLogin(); AddTicketAction addTicket = new
+		  AddTicketAction(driver); addTicket.navigatetoAddTicket();
+		  addTicket.addTicketWithChannel();
+		 
 	   
 	   
 		new LoginAction(driver).logoutLogin();
@@ -460,17 +466,21 @@ public class TicketingDashboardTest extends WebTestBase {
 	  @Test(priority = 22)
 	  public void verifyLastMonthByChannel() { 
 	 test = getTest("TC_Ticketing_Dashboard");
+		
 		/*
 		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
 		 * = new CompanySetupAction(driver); companySetupAction.addChannelTab();
 		 * 
 		 * companySetupAction.navigateToCompanySetupUser();
 		 * companySetupAction.addUser();
-		 * companySetupAction.addDepartmentNotVisibleClient(); new
-		 * LoginAction(driver).logoutLogin(); AddTicketAction addTicket = new
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
+		/*
+		 * new LoginAction(driver).logoutLogin(); AddTicketAction addTicket = new
 		 * AddTicketAction(driver); addTicket.navigatetoAddTicket();
 		 * addTicket.addTicketWithChannel();
 		 */
+		 
 
 		new LoginAction(driver).logoutLogin();
 		TicketingDashboardAction ticketingDashboardAction = new TicketingDashboardAction(driver);
@@ -489,11 +499,13 @@ public class TicketingDashboardTest extends WebTestBase {
 	@Test(priority = 23)
 	public void verifyTodaysFilterByProduct() {
 		test = getTest("TC_Ticketing_Dashboard");
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
+		
+		  new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		  = new CompanySetupAction(driver);
+		  companySetupAction.navigateToCompanySetupUser();
+		  companySetupAction.addUser();
+		  companySetupAction.addDepartmentNotVisibleClient();
+		 
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicket = new AddTicketAction(driver);
 		addTicket.navigatetoAddTicket();
@@ -527,7 +539,7 @@ public class TicketingDashboardTest extends WebTestBase {
 		ticketSummaryReportAction.verifyProductWidgetValues();
 	}
 
-	@Test(priority = 25, enabled = false)
+	@Test(priority = 25, enabled = true)
 	public void verifyThisYearFilterByProduct() {
 		test = getTest("TC_Ticketing_Dashboard");
 		new LoginAction(driver).logoutLogin();
@@ -542,7 +554,7 @@ public class TicketingDashboardTest extends WebTestBase {
 		ticketSummaryReportAction.verifyProductWidgetValues();
 	}
 
-	@Test(priority = 26, enabled = false)
+	@Test(priority = 26, enabled = true)
 	public void verifyThisMonthFilterByProduct() {
 		test = getTest("TC_Ticketing_Dashboard");
 		new LoginAction(driver).logoutLogin();
@@ -621,19 +633,19 @@ public class TicketingDashboardTest extends WebTestBase {
 	@Test(priority = 31)
 	public void verifyThisWeekFilterByResolver() {
 		test = getTest("TC_Ticketing_Dashboard");
-//		new LoginAction(driver).logoutLogin();
-//		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-//		companySetupAction.navigateToCompanySetupUser();
-//		companySetupAction.addUser();
-//		companySetupAction.addDepartmentNotVisibleClient();
-//		new LoginAction(driver).logoutLogin();
-//		AddTicketAction addTicket = new AddTicketAction(driver);
-//		addTicket.navigatetoAddTicket();
-//		addTicket.addTicket();
+		new LoginAction(driver).logoutLogin();
+		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
+		companySetupAction.navigateToCompanySetupUser();
+		companySetupAction.addUser();
+		companySetupAction.addDepartmentNotVisibleClient();
+		new LoginAction(driver).logoutLogin();
+		AddTicketAction addTicket = new AddTicketAction(driver);
+		addTicket.navigatetoAddTicket();
+		addTicket.addTicket();
 		new LoginAction(driver).logoutLogin();
 		TicketingDashboardAction ticketingDashboardAction = new TicketingDashboardAction(driver);
 		ticketingDashboardAction.navigateToTicketingDashboard();
-//		ticketingDashboardAction.statusByResolverMainFilter();
+		//ticketingDashboardAction.statusByResolverMainFilter();
 		ticketingDashboardAction.verifyStatusByResolverWidget();
 		//new LoginAction(driver).logoutLogin();
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);

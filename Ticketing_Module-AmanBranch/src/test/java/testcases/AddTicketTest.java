@@ -12,10 +12,11 @@ import utils.WebTestBase;
 
 public class AddTicketTest extends WebTestBase {
 
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void verifyAssignToDeptDropDown() {
 
 		test = getTest("TC_Ticketing_AddTicket_125");
+		
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicket = new AddTicketAction(driver);
 		addTicket.navigatetoAddTicket();
@@ -34,7 +35,7 @@ public class AddTicketTest extends WebTestBase {
 		addTicket.ticketCategoryDropDown();
 	}
 
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void verifyPriorityDeptDropDown() {
 		try {
 			test = getTest("TC_Ticketing_AddTicket_127");
@@ -227,11 +228,13 @@ public class AddTicketTest extends WebTestBase {
 	@Test(priority = 14)
 	public void addTicket() {
 		test = getTest("TC_Ticketing_AddTicket");
-//		new LoginAction(driver).logoutLogin();
-//		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-//		companySetupAction.navigateToCompanySetupUser();
-//		companySetupAction.addUser();
-//		companySetupAction.addDepartmentNotVisibleClient();
+		/*
+		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		 * = new CompanySetupAction(driver);
+		 * companySetupAction.navigateToCompanySetupUser();
+		 * companySetupAction.addUser();
+		 * companySetupAction.addDepartmentNotVisibleClient();
+		 */
 		new LoginAction(driver).logoutLogin();
 		AddTicketAction addTicketAction = new AddTicketAction(driver);
 		addTicketAction.navigatetoAddTicket();

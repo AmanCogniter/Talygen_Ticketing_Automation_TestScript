@@ -22,6 +22,9 @@ public class AddSLA extends WebTestBase {
 		  companySetupAction.navigateToCompanySetupUser();
 		  companySetupAction.addUser();
 		  companySetupAction.addDepartmentNotVisibleClient();
+		  //companySetupAction.addDepartmentVisibleToClient();
+		  //companySetupAction.addUserGeneralSettings();
+		  //companySetupAction.addUserAdvanceSettingsforSLA();
 		 
 			new LoginAction(driver).logoutLogin();
 			AddSLAAction addSLAAction = new AddSLAAction(driver);

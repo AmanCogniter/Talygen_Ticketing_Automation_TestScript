@@ -50,7 +50,8 @@ public class ExternalLinkPage extends WebBasePage {
 
 	// click on ticketing
 	public void clickTicketingOption() {
-		click(By.cssSelector("#menuitem22  a"), "Ticketing", 20);
+		staticWait(3000);
+		click(By.xpath("(//div/ul[@data-p-name='Ticketing']/li/a[@id='cadmin_messageboard_link'])[1]"), "Ticketing", 20);
 //		click(By.cssSelector("#menuitem16"), "Ticketing", 20);
 	}
 

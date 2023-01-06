@@ -50,6 +50,21 @@ public final class CompanySetupAction {
 		companySetupPage.enterAliasName();
 		companySetupPage.clickVirtualUserSwitch();
 	}
+	public void addUserAdvanceSettingsforSLA() {
+
+		companySetupPage.selectTimezone();
+		companySetupPage.selectDOB();
+		companySetupPage.selectDOD();
+		companySetupPage.selectDOJ();
+		companySetupPage.selectDOL();
+		companySetupPage.selectDepartmentForSLA();
+		companySetupPage.selectDesignation();
+		companySetupPage.selectShift();
+		companySetupPage.enterEmployeeId();
+		companySetupPage.enterAliasName();
+		companySetupPage.clickVirtualUserSwitch();
+	}
+
 
 	public void clickSaveButton() {
 		companySetupPage.clickSave();
@@ -99,6 +114,16 @@ public final class CompanySetupAction {
 		companySetupPage.AddButton();
 		companySetupPage.enterDepttNameNotVisibleClient();
 		companySetupPage.enterDepartmentDesciption();
+		companySetupPage.clickOnVisibleToTicketing();
+		companySetupPage.departmentDesciption();
+		companySetupPage.Save();
+	}
+	public void addDepartmentVisibleToClient() {
+		companySetupPage.AddButton();
+		companySetupPage.enterDepttNameNotVisibleClient();
+		companySetupPage.enterDepartmentDesciption();
+		companySetupPage.clickOnVisibleToClient();
+		companySetupPage.clickOnVisibleToTicketing();
 		companySetupPage.departmentDesciption();
 		companySetupPage.Save();
 	}

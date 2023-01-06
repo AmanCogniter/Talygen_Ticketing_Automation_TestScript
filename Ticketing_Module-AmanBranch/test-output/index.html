@@ -1,0 +1,3100 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\aanand\eclipse-workspace\Ticketing_Module-AmanBranch\Ticketing_Module-AmanBranch\talygen_ticketing_testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">84 methods, 5 failed,  4 skipped,  75 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyAddSLA">verifyAddSLA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyNotesFunctionality">verifyNotesFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyReportsValidation">verifyReportsValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketSummaryReportTest" class="method navigator-link" hash-for-method="verifySearchTicket">verifySearchTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisMonthByChannel">verifyThisMonthByChannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyAttachmentTabFunctionality">verifyAttachmentTabFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyCannedReplyFunctionality">verifyCannedReplyFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyDraftReplyFunctionality">verifyDraftReplyFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyWidgetsFunctionality">verifyWidgetsFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="VerifyCharactersValidation">VerifyCharactersValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="addOwnTickets">addOwnTickets</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="addTicket">addTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddSLA" class="method navigator-link" hash-for-method="addTicketForSLA">addTicketForSLA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="checkAddMoreFunctionality">checkAddMoreFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="validateWidgetsCount">validateWidgetsCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingGroupTest" class="method navigator-link" hash-for-method="verifyAddGroup">verifyAddGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingServiceBoardTest" class="method navigator-link" hash-for-method="verifyAddServiceBoardGroupOne">verifyAddServiceBoardGroupOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingServiceBoardTest" class="method navigator-link" hash-for-method="verifyAddServiceBoardGroupTwo">verifyAddServiceBoardGroupTwo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyAssignToDeptDropDown">verifyAssignToDeptDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyBooleanFunctionality">verifyBooleanFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyBooleanSaveButtonFunctionality">verifyBooleanSaveButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingGroupTest" class="method navigator-link" hash-for-method="verifyCancelButton">verifyCancelButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingServiceBoardTest" class="method navigator-link" hash-for-method="verifyCancelButtonFunctionality">verifyCancelButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyCharctersInDescriptionField">verifyCharctersInDescriptionField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyClientCategoryFunctionality">verifyClientCategoryFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyDeleteButtonFunctionality">verifyDeleteButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyDeleteTicketFunctionality">verifyDeleteTicketFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyDepartmentCategoryFunctionality">verifyDepartmentCategoryFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyExpandCollapseFeature">verifyExpandCollapseFeature</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyFollowUpFunctionality">verifyFollowUpFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyFontOfUserGuide">verifyFontOfUserGuide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyLastMonthByChannel">verifyLastMonthByChannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyLastMonthFilter">verifyLastMonthFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyLastMonthFilterByProduct">verifyLastMonthFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyLastWeekByChannel">verifyLastWeekByChannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyLastWeekFilter">verifyLastWeekFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyLastWeekFilterByProduct">verifyLastWeekFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyMandatoryValidation">verifyMandatoryValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyMergeButtonFunctionality">verifyMergeButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingGroupTest" class="method navigator-link" hash-for-method="verifyNoRecordsMessage">verifyNoRecordsMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyNoValidations">verifyNoValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyPolicyDatePickerFunctionality">verifyPolicyDatePickerFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyPriorityDeptDropDown">verifyPriorityDeptDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyProductCategoryFunctionality">verifyProductCategoryFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyProductDropDown">verifyProductDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyRadioButtonsFunctionality">verifyRadioButtonsFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyReplyCount">verifyReplyCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyResetButtonFunctionality">verifyResetButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketGroupListingTest" class="method navigator-link" hash-for-method="verifyResetFunctionality">verifyResetFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyResolveTimeValidations">verifyResolveTimeValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SLATest" class="method navigator-link" hash-for-method="verifyResponseTimeValidations">verifyResponseTimeValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketGroupListingTest" class="method navigator-link" hash-for-method="verifySearchFunctionality">verifySearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifySearchFunctionality">verifySearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketDetailReportTest" class="method navigator-link" hash-for-method="verifySearchTicket">verifySearchTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingServiceBoardTest" class="method navigator-link" hash-for-method="verifyServiceboardElements">verifyServiceboardElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisMonthFilter">verifyThisMonthFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisMonthFilterByProduct">verifyThisMonthFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisWeekByChannel">verifyThisWeekByChannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisWeekFilter">verifyThisWeekFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisWeekFilterByProduct">verifyThisWeekFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisWeekFilterByResolver">verifyThisWeekFilterByResolver</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisWeekFilterFromCategory">verifyThisWeekFilterFromCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisYearFilter">verifyThisYearFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyThisYearFilterByProduct">verifyThisYearFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyTicketCategoryDropdown">verifyTicketCategoryDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyTicketForRadioButtons">verifyTicketForRadioButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyTodayFilterByResolver">verifyTodayFilterByResolver</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyTodayFilterFromCategory">verifyTodayFilterFromCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyTodaysFilter">verifyTodaysFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyTodaysFilterByChannel">verifyTodaysFilterByChannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyTodaysFilterByProduct">verifyTodaysFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyTwoRadioButtons">verifyTwoRadioButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyUnassignedTicketWidget">verifyUnassignedTicketWidget</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.UnassignedTicketsTest" class="method navigator-link" hash-for-method="verifyUnassignedTicketsCount">verifyUnassignedTicketsCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingServiceBoardTest" class="method navigator-link" hash-for-method="verifyUpdateServiceBoardNavigation">verifyUpdateServiceBoardNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyUpdateTicketFunctionality">verifyUpdateTicketFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketListingTest" class="method navigator-link" hash-for-method="verifyUrlOnClickingBreadCrumb">verifyUrlOnClickingBreadCrumb</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyValidationForEmptyUser">verifyValidationForEmptyUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyValidationOnClientsField">verifyValidationOnClientsField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.AddTicketTest" class="method navigator-link" hash-for-method="verifyValidations">verifyValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyYesterDayFilter">verifyYesterDayFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyYesterdayFilterByChannel">verifyYesterdayFilterByChannel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyYesterdayFilterByProduct">verifyYesterdayFilterByProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TicketingDashboardTest" class="method navigator-link" hash-for-method="verifyYesterdayFilterFromCategory">verifyYesterdayFilterFromCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TicketingDashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReportsValidation">
+                  </a> <!-- verifyReportsValidation -->
+                  <span class="method-name">verifyReportsValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: Save -  element not clikabke
+	at utils.WebBasePage.click(WebBasePage.java:91)
+	at pageobjects.TicketingDashboardPage.clickSaveButton(TicketingDashboardPage.java:156)
+	at pageobjects.TicketingDashboardPage.selectAllReports(TicketingDashboardPage.java:161)
+	at action.TicketingDashboardAction.validateReportsValidation(TicketingDashboardAction.java:40)
+	at testcases.TicketingDashboardTest.verifyReportsValidation(TicketingDashboardTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisMonthByChannel">
+                  </a> <!-- verifyThisMonthByChannel -->
+                  <span class="method-name">verifyThisMonthByChannel</span>
+                  <div class="stack-trace">java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.TicketingDashboardTest.verifyThisMonthByChannel(TicketingDashboardTest.java:460)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TicketListingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNotesFunctionality">
+                  </a> <!-- verifyNotesFunctionality -->
+                  <span class="method-name">verifyNotesFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=108.0.5359.96)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 001ff77af679af95bcbef8c4944b792e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at utils.WebBasePage.takeScreenshot(WebBasePage.java:249)
+	at utils.WebBasePage.enter(WebBasePage.java:62)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.TicketListingTest.verifyNotesFunctionality(TicketListingTest.java:201)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TicketSummaryReportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchTicket">
+                  </a> <!-- verifySearchTicket -->
+                  <span class="method-name">verifySearchTicket</span>
+                  <div class="stack-trace">java.lang.AssertionError: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table/tbody/tr[4]/td/div&quot;}
+  (Session info: chrome=108.0.5359.96)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f2bad0701d8481433cb94c4db995d6e
+*** Element info: {Using=xpath, value=//table/tbody/tr[4]/td/div}
+	at utils.WebBasePage.gettextByJSexecuter(WebBasePage.java:320)
+	at pageobjects.TicketSummaryReportPage.ticketNoTextFromSearch(TicketSummaryReportPage.java:87)
+	at action.TicketSummaryReportAction.validateSearchedValues(TicketSummaryReportAction.java:46)
+	at testcases.TicketSummaryReportTest.verifySearchTicket(TicketSummaryReportTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.SLATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddSLA">
+                  </a> <!-- verifyAddSLA -->
+                  <span class="method-name">verifyAddSLA</span>
+                  <div class="stack-trace">java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.SLAPage.searchPolicyName(SLAPage.java:35)
+	at action.SLAAction.searchPolicy(SLAAction.java:25)
+	at testcases.SLATest.verifyAddSLA(SLATest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.TicketListingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAttachmentTabFunctionality">
+                  </a> <!-- verifyAttachmentTabFunctionality -->
+                  <span class="method-name">verifyAttachmentTabFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=108.0.5359.96)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 001ff77af679af95bcbef8c4944b792e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCannedReplyFunctionality">
+                  </a> <!-- verifyCannedReplyFunctionality -->
+                  <span class="method-name">verifyCannedReplyFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=108.0.5359.96)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 001ff77af679af95bcbef8c4944b792e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDraftReplyFunctionality">
+                  </a> <!-- verifyDraftReplyFunctionality -->
+                  <span class="method-name">verifyDraftReplyFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=108.0.5359.96)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 001ff77af679af95bcbef8c4944b792e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWidgetsFunctionality">
+                  </a> <!-- verifyWidgetsFunctionality -->
+                  <span class="method-name">verifyWidgetsFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=108.0.5359.96)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 001ff77af679af95bcbef8c4944b792e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AddTicketTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addOwnTickets">
+                  </a> <!-- addOwnTickets -->
+                  <span class="method-name">addOwnTickets</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTicket">
+                  </a> <!-- addTicket -->
+                  <span class="method-name">addTicket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAddMoreFunctionality">
+                  </a> <!-- checkAddMoreFunctionality -->
+                  <span class="method-name">checkAddMoreFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAssignToDeptDropDown">
+                  </a> <!-- verifyAssignToDeptDropDown -->
+                  <span class="method-name">verifyAssignToDeptDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCharctersInDescriptionField">
+                  </a> <!-- verifyCharctersInDescriptionField -->
+                  <span class="method-name">verifyCharctersInDescriptionField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFontOfUserGuide">
+                  </a> <!-- verifyFontOfUserGuide -->
+                  <span class="method-name">verifyFontOfUserGuide</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoValidations">
+                  </a> <!-- verifyNoValidations -->
+                  <span class="method-name">verifyNoValidations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriorityDeptDropDown">
+                  </a> <!-- verifyPriorityDeptDropDown -->
+                  <span class="method-name">verifyPriorityDeptDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDropDown">
+                  </a> <!-- verifyProductDropDown -->
+                  <span class="method-name">verifyProductDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTicketCategoryDropdown">
+                  </a> <!-- verifyTicketCategoryDropdown -->
+                  <span class="method-name">verifyTicketCategoryDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTicketForRadioButtons">
+                  </a> <!-- verifyTicketForRadioButtons -->
+                  <span class="method-name">verifyTicketForRadioButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTwoRadioButtons">
+                  </a> <!-- verifyTwoRadioButtons -->
+                  <span class="method-name">verifyTwoRadioButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidationForEmptyUser">
+                  </a> <!-- verifyValidationForEmptyUser -->
+                  <span class="method-name">verifyValidationForEmptyUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidationOnClientsField">
+                  </a> <!-- verifyValidationOnClientsField -->
+                  <span class="method-name">verifyValidationOnClientsField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidations">
+                  </a> <!-- verifyValidations -->
+                  <span class="method-name">verifyValidations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TicketingGroupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddGroup">
+                  </a> <!-- verifyAddGroup -->
+                  <span class="method-name">verifyAddGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCancelButton">
+                  </a> <!-- verifyCancelButton -->
+                  <span class="method-name">verifyCancelButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoRecordsMessage">
+                  </a> <!-- verifyNoRecordsMessage -->
+                  <span class="method-name">verifyNoRecordsMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TicketGroupListingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetFunctionality">
+                  </a> <!-- verifyResetFunctionality -->
+                  <span class="method-name">verifyResetFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunctionality">
+                  </a> <!-- verifySearchFunctionality -->
+                  <span class="method-name">verifySearchFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TicketingServiceBoardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddServiceBoardGroupOne">
+                  </a> <!-- verifyAddServiceBoardGroupOne -->
+                  <span class="method-name">verifyAddServiceBoardGroupOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddServiceBoardGroupTwo">
+                  </a> <!-- verifyAddServiceBoardGroupTwo -->
+                  <span class="method-name">verifyAddServiceBoardGroupTwo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCancelButtonFunctionality">
+                  </a> <!-- verifyCancelButtonFunctionality -->
+                  <span class="method-name">verifyCancelButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceboardElements">
+                  </a> <!-- verifyServiceboardElements -->
+                  <span class="method-name">verifyServiceboardElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateServiceBoardNavigation">
+                  </a> <!-- verifyUpdateServiceBoardNavigation -->
+                  <span class="method-name">verifyUpdateServiceBoardNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.UnassignedTicketsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnassignedTicketsCount">
+                  </a> <!-- verifyUnassignedTicketsCount -->
+                  <span class="method-name">verifyUnassignedTicketsCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TicketingDashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWidgetsCount">
+                  </a> <!-- validateWidgetsCount -->
+                  <span class="method-name">validateWidgetsCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLastMonthByChannel">
+                  </a> <!-- verifyLastMonthByChannel -->
+                  <span class="method-name">verifyLastMonthByChannel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLastMonthFilter">
+                  </a> <!-- verifyLastMonthFilter -->
+                  <span class="method-name">verifyLastMonthFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLastMonthFilterByProduct">
+                  </a> <!-- verifyLastMonthFilterByProduct -->
+                  <span class="method-name">verifyLastMonthFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLastWeekByChannel">
+                  </a> <!-- verifyLastWeekByChannel -->
+                  <span class="method-name">verifyLastWeekByChannel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLastWeekFilter">
+                  </a> <!-- verifyLastWeekFilter -->
+                  <span class="method-name">verifyLastWeekFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLastWeekFilterByProduct">
+                  </a> <!-- verifyLastWeekFilterByProduct -->
+                  <span class="method-name">verifyLastWeekFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisMonthFilter">
+                  </a> <!-- verifyThisMonthFilter -->
+                  <span class="method-name">verifyThisMonthFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisMonthFilterByProduct">
+                  </a> <!-- verifyThisMonthFilterByProduct -->
+                  <span class="method-name">verifyThisMonthFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisWeekByChannel">
+                  </a> <!-- verifyThisWeekByChannel -->
+                  <span class="method-name">verifyThisWeekByChannel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisWeekFilter">
+                  </a> <!-- verifyThisWeekFilter -->
+                  <span class="method-name">verifyThisWeekFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisWeekFilterByProduct">
+                  </a> <!-- verifyThisWeekFilterByProduct -->
+                  <span class="method-name">verifyThisWeekFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisWeekFilterByResolver">
+                  </a> <!-- verifyThisWeekFilterByResolver -->
+                  <span class="method-name">verifyThisWeekFilterByResolver</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisWeekFilterFromCategory">
+                  </a> <!-- verifyThisWeekFilterFromCategory -->
+                  <span class="method-name">verifyThisWeekFilterFromCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisYearFilter">
+                  </a> <!-- verifyThisYearFilter -->
+                  <span class="method-name">verifyThisYearFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThisYearFilterByProduct">
+                  </a> <!-- verifyThisYearFilterByProduct -->
+                  <span class="method-name">verifyThisYearFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTodayFilterByResolver">
+                  </a> <!-- verifyTodayFilterByResolver -->
+                  <span class="method-name">verifyTodayFilterByResolver</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTodayFilterFromCategory">
+                  </a> <!-- verifyTodayFilterFromCategory -->
+                  <span class="method-name">verifyTodayFilterFromCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTodaysFilter">
+                  </a> <!-- verifyTodaysFilter -->
+                  <span class="method-name">verifyTodaysFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTodaysFilterByChannel">
+                  </a> <!-- verifyTodaysFilterByChannel -->
+                  <span class="method-name">verifyTodaysFilterByChannel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTodaysFilterByProduct">
+                  </a> <!-- verifyTodaysFilterByProduct -->
+                  <span class="method-name">verifyTodaysFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyYesterDayFilter">
+                  </a> <!-- verifyYesterDayFilter -->
+                  <span class="method-name">verifyYesterDayFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyYesterdayFilterByChannel">
+                  </a> <!-- verifyYesterdayFilterByChannel -->
+                  <span class="method-name">verifyYesterdayFilterByChannel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyYesterdayFilterByProduct">
+                  </a> <!-- verifyYesterdayFilterByProduct -->
+                  <span class="method-name">verifyYesterdayFilterByProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyYesterdayFilterFromCategory">
+                  </a> <!-- verifyYesterdayFilterFromCategory -->
+                  <span class="method-name">verifyYesterdayFilterFromCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AddSLA</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTicketForSLA">
+                  </a> <!-- addTicketForSLA -->
+                  <span class="method-name">addTicketForSLA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TicketDetailReportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchTicket">
+                  </a> <!-- verifySearchTicket -->
+                  <span class="method-name">verifySearchTicket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TicketListingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteTicketFunctionality">
+                  </a> <!-- verifyDeleteTicketFunctionality -->
+                  <span class="method-name">verifyDeleteTicketFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExpandCollapseFeature">
+                  </a> <!-- verifyExpandCollapseFeature -->
+                  <span class="method-name">verifyExpandCollapseFeature</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFollowUpFunctionality">
+                  </a> <!-- verifyFollowUpFunctionality -->
+                  <span class="method-name">verifyFollowUpFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMergeButtonFunctionality">
+                  </a> <!-- verifyMergeButtonFunctionality -->
+                  <span class="method-name">verifyMergeButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReplyCount">
+                  </a> <!-- verifyReplyCount -->
+                  <span class="method-name">verifyReplyCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetButtonFunctionality">
+                  </a> <!-- verifyResetButtonFunctionality -->
+                  <span class="method-name">verifyResetButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchFunctionality">
+                  </a> <!-- verifySearchFunctionality -->
+                  <span class="method-name">verifySearchFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnassignedTicketWidget">
+                  </a> <!-- verifyUnassignedTicketWidget -->
+                  <span class="method-name">verifyUnassignedTicketWidget</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateTicketFunctionality">
+                  </a> <!-- verifyUpdateTicketFunctionality -->
+                  <span class="method-name">verifyUpdateTicketFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUrlOnClickingBreadCrumb">
+                  </a> <!-- verifyUrlOnClickingBreadCrumb -->
+                  <span class="method-name">verifyUrlOnClickingBreadCrumb</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.SLATest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCharactersValidation">
+                  </a> <!-- VerifyCharactersValidation -->
+                  <span class="method-name">VerifyCharactersValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBooleanFunctionality">
+                  </a> <!-- verifyBooleanFunctionality -->
+                  <span class="method-name">verifyBooleanFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBooleanSaveButtonFunctionality">
+                  </a> <!-- verifyBooleanSaveButtonFunctionality -->
+                  <span class="method-name">verifyBooleanSaveButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClientCategoryFunctionality">
+                  </a> <!-- verifyClientCategoryFunctionality -->
+                  <span class="method-name">verifyClientCategoryFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteButtonFunctionality">
+                  </a> <!-- verifyDeleteButtonFunctionality -->
+                  <span class="method-name">verifyDeleteButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDepartmentCategoryFunctionality">
+                  </a> <!-- verifyDepartmentCategoryFunctionality -->
+                  <span class="method-name">verifyDepartmentCategoryFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMandatoryValidation">
+                  </a> <!-- verifyMandatoryValidation -->
+                  <span class="method-name">verifyMandatoryValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPolicyDatePickerFunctionality">
+                  </a> <!-- verifyPolicyDatePickerFunctionality -->
+                  <span class="method-name">verifyPolicyDatePickerFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductCategoryFunctionality">
+                  </a> <!-- verifyProductCategoryFunctionality -->
+                  <span class="method-name">verifyProductCategoryFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRadioButtonsFunctionality">
+                  </a> <!-- verifyRadioButtonsFunctionality -->
+                  <span class="method-name">verifyRadioButtonsFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResolveTimeValidations">
+                  </a> <!-- verifyResolveTimeValidations -->
+                  <span class="method-name">verifyResolveTimeValidations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResponseTimeValidations">
+                  </a> <!-- verifyResponseTimeValidations -->
+                  <span class="method-name">verifyResponseTimeValidations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\aanand\eclipse-workspace\Ticketing_Module-AmanBranch\Ticketing_Module-AmanBranch\talygen_ticketing_testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.AddSLA&quot;/&gt;
+      &lt;class name=&quot;testcases.AddTicketTest&quot;/&gt;
+      &lt;class name=&quot;testcases.SLATest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketDetailReportTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketGroupListingTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketingDashboardTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketingGroupTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketingServiceBoardTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketListingTest&quot;/&gt;
+      &lt;class name=&quot;testcases.TicketSummaryReportTest&quot;/&gt;
+      &lt;class name=&quot;testcases.UnassignedTicketsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(84);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyThisWeekFilterByResolver')
+data.setCell(0, 2, 'testcases.TicketingDashboardTest')
+data.setCell(0, 3, 479140);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyTodaysFilterByProduct')
+data.setCell(1, 2, 'testcases.TicketingDashboardTest')
+data.setCell(1, 3, 421803);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyDeleteTicketFunctionality')
+data.setCell(2, 2, 'testcases.TicketListingTest')
+data.setCell(2, 3, 410038);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyResetButtonFunctionality')
+data.setCell(3, 2, 'testcases.TicketListingTest')
+data.setCell(3, 3, 406042);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyYesterdayFilterByChannel')
+data.setCell(4, 2, 'testcases.TicketingDashboardTest')
+data.setCell(4, 3, 390635);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyTodaysFilter')
+data.setCell(5, 2, 'testcases.TicketingDashboardTest')
+data.setCell(5, 3, 381853);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyThisMonthFilterByProduct')
+data.setCell(6, 2, 'testcases.TicketingDashboardTest')
+data.setCell(6, 3, 379170);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLastWeekFilterByProduct')
+data.setCell(7, 2, 'testcases.TicketingDashboardTest')
+data.setCell(7, 3, 359691);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyThisYearFilterByProduct')
+data.setCell(8, 2, 'testcases.TicketingDashboardTest')
+data.setCell(8, 3, 359219);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifySearchFunctionality')
+data.setCell(9, 2, 'testcases.TicketListingTest')
+data.setCell(9, 3, 357480);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyThisMonthByChannel')
+data.setCell(10, 2, 'testcases.TicketingDashboardTest')
+data.setCell(10, 3, 334379);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addTicketForSLA')
+data.setCell(11, 2, 'testcases.AddSLA')
+data.setCell(11, 3, 330893);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyLastMonthFilterByProduct')
+data.setCell(12, 2, 'testcases.TicketingDashboardTest')
+data.setCell(12, 3, 313075);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyUpdateTicketFunctionality')
+data.setCell(13, 2, 'testcases.TicketListingTest')
+data.setCell(13, 3, 284246);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifySearchTicket')
+data.setCell(14, 2, 'testcases.TicketSummaryReportTest')
+data.setCell(14, 3, 283278);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyFollowUpFunctionality')
+data.setCell(15, 2, 'testcases.TicketListingTest')
+data.setCell(15, 3, 283041);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyTodayFilterFromCategory')
+data.setCell(16, 2, 'testcases.TicketingDashboardTest')
+data.setCell(16, 3, 265758);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyReplyCount')
+data.setCell(17, 2, 'testcases.TicketListingTest')
+data.setCell(17, 3, 259832);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifySearchTicket')
+data.setCell(18, 2, 'testcases.TicketDetailReportTest')
+data.setCell(18, 3, 248842);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyTodayFilterByResolver')
+data.setCell(19, 2, 'testcases.TicketingDashboardTest')
+data.setCell(19, 3, 246906);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyThisMonthFilter')
+data.setCell(20, 2, 'testcases.TicketingDashboardTest')
+data.setCell(20, 3, 213678);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyThisYearFilter')
+data.setCell(21, 2, 'testcases.TicketingDashboardTest')
+data.setCell(21, 3, 208720);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyThisWeekFilterByProduct')
+data.setCell(22, 2, 'testcases.TicketingDashboardTest')
+data.setCell(22, 3, 205738);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyLastWeekFilter')
+data.setCell(23, 2, 'testcases.TicketingDashboardTest')
+data.setCell(23, 3, 201907);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyThisWeekFilter')
+data.setCell(24, 2, 'testcases.TicketingDashboardTest')
+data.setCell(24, 3, 200227);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyAddSLA')
+data.setCell(25, 2, 'testcases.SLATest')
+data.setCell(25, 3, 191354);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyThisWeekByChannel')
+data.setCell(26, 2, 'testcases.TicketingDashboardTest')
+data.setCell(26, 3, 168157);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyYesterdayFilterByProduct')
+data.setCell(27, 2, 'testcases.TicketingDashboardTest')
+data.setCell(27, 3, 162499);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'addTicket')
+data.setCell(28, 2, 'testcases.AddTicketTest')
+data.setCell(28, 3, 161337);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyLastWeekByChannel')
+data.setCell(29, 2, 'testcases.TicketingDashboardTest')
+data.setCell(29, 3, 158119);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyTodaysFilterByChannel')
+data.setCell(30, 2, 'testcases.TicketingDashboardTest')
+data.setCell(30, 3, 157117);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyThisWeekFilterFromCategory')
+data.setCell(31, 2, 'testcases.TicketingDashboardTest')
+data.setCell(31, 3, 154262);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyYesterdayFilterFromCategory')
+data.setCell(32, 2, 'testcases.TicketingDashboardTest')
+data.setCell(32, 3, 151015);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyYesterDayFilter')
+data.setCell(33, 2, 'testcases.TicketingDashboardTest')
+data.setCell(33, 3, 148505);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyLastMonthFilter')
+data.setCell(34, 2, 'testcases.TicketingDashboardTest')
+data.setCell(34, 3, 146566);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'addOwnTickets')
+data.setCell(35, 2, 'testcases.AddTicketTest')
+data.setCell(35, 3, 142947);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verifyLastMonthByChannel')
+data.setCell(36, 2, 'testcases.TicketingDashboardTest')
+data.setCell(36, 3, 140155);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifyValidationForEmptyUser')
+data.setCell(37, 2, 'testcases.AddTicketTest')
+data.setCell(37, 3, 107994);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verifyMergeButtonFunctionality')
+data.setCell(38, 2, 'testcases.TicketListingTest')
+data.setCell(38, 3, 106532);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'validateWidgetsCount')
+data.setCell(39, 2, 'testcases.TicketingDashboardTest')
+data.setCell(39, 3, 100341);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyMandatoryValidation')
+data.setCell(40, 2, 'testcases.SLATest')
+data.setCell(40, 3, 96464);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'VerifyCharactersValidation')
+data.setCell(41, 2, 'testcases.SLATest')
+data.setCell(41, 3, 94475);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifyNotesFunctionality')
+data.setCell(42, 2, 'testcases.TicketListingTest')
+data.setCell(42, 3, 93367);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verifyResolveTimeValidations')
+data.setCell(43, 2, 'testcases.SLATest')
+data.setCell(43, 3, 93052);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'verifyResponseTimeValidations')
+data.setCell(44, 2, 'testcases.SLATest')
+data.setCell(44, 3, 92674);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verifyUnassignedTicketWidget')
+data.setCell(45, 2, 'testcases.TicketListingTest')
+data.setCell(45, 3, 91361);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verifyExpandCollapseFeature')
+data.setCell(46, 2, 'testcases.TicketListingTest')
+data.setCell(46, 3, 87404);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verifyUrlOnClickingBreadCrumb')
+data.setCell(47, 2, 'testcases.TicketListingTest')
+data.setCell(47, 3, 83198);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'verifyReportsValidation')
+data.setCell(48, 2, 'testcases.TicketingDashboardTest')
+data.setCell(48, 3, 82368);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verifyCharctersInDescriptionField')
+data.setCell(49, 2, 'testcases.AddTicketTest')
+data.setCell(49, 3, 78221);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyDepartmentCategoryFunctionality')
+data.setCell(50, 2, 'testcases.SLATest')
+data.setCell(50, 3, 64635);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyResetFunctionality')
+data.setCell(51, 2, 'testcases.TicketGroupListingTest')
+data.setCell(51, 3, 64415);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'verifyBooleanFunctionality')
+data.setCell(52, 2, 'testcases.SLATest')
+data.setCell(52, 3, 63864);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifyBooleanSaveButtonFunctionality')
+data.setCell(53, 2, 'testcases.SLATest')
+data.setCell(53, 3, 63650);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyUnassignedTicketsCount')
+data.setCell(54, 2, 'testcases.UnassignedTicketsTest')
+data.setCell(54, 3, 63571);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'verifyAssignToDeptDropDown')
+data.setCell(55, 2, 'testcases.AddTicketTest')
+data.setCell(55, 3, 63403);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'verifyDeleteButtonFunctionality')
+data.setCell(56, 2, 'testcases.SLATest')
+data.setCell(56, 3, 61255);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'verifyCancelButton')
+data.setCell(57, 2, 'testcases.TicketingGroupTest')
+data.setCell(57, 3, 51035);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'verifyAddServiceBoardGroupOne')
+data.setCell(58, 2, 'testcases.TicketingServiceBoardTest')
+data.setCell(58, 3, 50337);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'verifySearchFunctionality')
+data.setCell(59, 2, 'testcases.TicketGroupListingTest')
+data.setCell(59, 3, 49547);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'verifyClientCategoryFunctionality')
+data.setCell(60, 2, 'testcases.SLATest')
+data.setCell(60, 3, 49352);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'verifyValidationOnClientsField')
+data.setCell(61, 2, 'testcases.AddTicketTest')
+data.setCell(61, 3, 49152);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'verifyProductCategoryFunctionality')
+data.setCell(62, 2, 'testcases.SLATest')
+data.setCell(62, 3, 48484);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'verifyCancelButtonFunctionality')
+data.setCell(63, 2, 'testcases.TicketingServiceBoardTest')
+data.setCell(63, 3, 45443);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifyTwoRadioButtons')
+data.setCell(64, 2, 'testcases.AddTicketTest')
+data.setCell(64, 3, 45131);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'checkAddMoreFunctionality')
+data.setCell(65, 2, 'testcases.AddTicketTest')
+data.setCell(65, 3, 44205);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'verifyAddServiceBoardGroupTwo')
+data.setCell(66, 2, 'testcases.TicketingServiceBoardTest')
+data.setCell(66, 3, 43373);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'verifyNoRecordsMessage')
+data.setCell(67, 2, 'testcases.TicketingGroupTest')
+data.setCell(67, 3, 42359);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'verifyTicketCategoryDropdown')
+data.setCell(68, 2, 'testcases.AddTicketTest')
+data.setCell(68, 3, 42118);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'verifyRadioButtonsFunctionality')
+data.setCell(69, 2, 'testcases.SLATest')
+data.setCell(69, 3, 42084);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'verifyPriorityDeptDropDown')
+data.setCell(70, 2, 'testcases.AddTicketTest')
+data.setCell(70, 3, 41701);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'verifyPolicyDatePickerFunctionality')
+data.setCell(71, 2, 'testcases.SLATest')
+data.setCell(71, 3, 41204);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'verifyProductDropDown')
+data.setCell(72, 2, 'testcases.AddTicketTest')
+data.setCell(72, 3, 41171);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'verifyUpdateServiceBoardNavigation')
+data.setCell(73, 2, 'testcases.TicketingServiceBoardTest')
+data.setCell(73, 3, 39837);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'verifyValidations')
+data.setCell(74, 2, 'testcases.AddTicketTest')
+data.setCell(74, 3, 39806);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'verifyNoValidations')
+data.setCell(75, 2, 'testcases.AddTicketTest')
+data.setCell(75, 3, 38794);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'verifyAddGroup')
+data.setCell(76, 2, 'testcases.TicketingGroupTest')
+data.setCell(76, 3, 38593);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'verifyFontOfUserGuide')
+data.setCell(77, 2, 'testcases.AddTicketTest')
+data.setCell(77, 3, 37804);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'verifyTicketForRadioButtons')
+data.setCell(78, 2, 'testcases.AddTicketTest')
+data.setCell(78, 3, 35926);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'verifyServiceboardElements')
+data.setCell(79, 2, 'testcases.TicketingServiceBoardTest')
+data.setCell(79, 3, 29805);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'verifyDraftReplyFunctionality')
+data.setCell(80, 2, 'testcases.TicketListingTest')
+data.setCell(80, 3, 0);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'verifyWidgetsFunctionality')
+data.setCell(81, 2, 'testcases.TicketListingTest')
+data.setCell(81, 3, 0);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'verifyAttachmentTabFunctionality')
+data.setCell(82, 2, 'testcases.TicketListingTest')
+data.setCell(82, 3, 0);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'verifyCannedReplyFunctionality')
+data.setCell(83, 2, 'testcases.TicketListingTest')
+data.setCell(83, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 hours</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyClientCategoryFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyBooleanSaveButtonFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addTicketForSLA</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyResponseTimeValidations</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyBooleanFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyDepartmentCategoryFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyDeleteButtonFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyResolveTimeValidations</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductCategoryFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyMandatoryValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyCharactersValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyAddSLA</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Policy checkbox clicked</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">14 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketingGroupTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.AddTicketTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketGroupListingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketingServiceBoardTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.UnassignedTicketsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketingDashboardTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLastMonthFilterFromCategory</span>
+                <br/>
+                <span class="ignored-method-name">verifyLastWeekFilterFromCategory</span>
+                <br/>
+                <span class="ignored-method-name">verifyThisMonthFilterFromCategory</span>
+                <br/>
+                <span class="ignored-method-name">verifyThisYearFilterFromCategory</span>
+                <br/>
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketDetailReportTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketListingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.TicketSummaryReportTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.SLATest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AddSLA</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddSLA.addTicketForSLA())</span>
+                <span class="method-start">19664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addTicketForSLA</span>
+                <span class="method-start">21122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=addTicketForSLA status=SUCCESS method=AddSLA.addTicketForSLA()[pri:15, instance:tes...)</span>
+                <span class="method-start">352042 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AddTicketTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">352062 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyAssignToDeptDropDown())</span>
+                <span class="method-start">362578 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAssignToDeptDropDown</span>
+                <span class="method-start">362579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyAssignToDeptDropDown status=SUCCESS method=AddTicketTest.verifyAssignToDeptDr...)</span>
+                <span class="method-start">425984 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyTicketCategoryDropdown())</span>
+                <span class="method-start">425986 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTicketCategoryDropdown</span>
+                <span class="method-start">425987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTicketCategoryDropdown status=SUCCESS method=AddTicketTest.verifyTicketCatego...)</span>
+                <span class="method-start">468107 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyPriorityDeptDropDown())</span>
+                <span class="method-start">468109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriorityDeptDropDown</span>
+                <span class="method-start">468109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyPriorityDeptDropDown status=SUCCESS method=AddTicketTest.verifyPriorityDeptDr...)</span>
+                <span class="method-start">509812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyValidations())</span>
+                <span class="method-start">509814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidations</span>
+                <span class="method-start">509815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyValidations status=SUCCESS method=AddTicketTest.verifyValidations()[pri:3, in...)</span>
+                <span class="method-start">549623 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyTicketForRadioButtons</span>
+                <span class="method-start">549624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyTicketForRadioButtons())</span>
+                <span class="method-start">549624 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTicketForRadioButtons status=SUCCESS method=AddTicketTest.verifyTicketForRadi...)</span>
+                <span class="method-start">585551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyProductDropDown())</span>
+                <span class="method-start">585553 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductDropDown</span>
+                <span class="method-start">585553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyProductDropDown status=SUCCESS method=AddTicketTest.verifyProductDropDown()[p...)</span>
+                <span class="method-start">626726 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyNoValidations</span>
+                <span class="method-start">626727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyNoValidations())</span>
+                <span class="method-start">626727 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyNoValidations status=SUCCESS method=AddTicketTest.verifyNoValidations()[pri:6...)</span>
+                <span class="method-start">665523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyTwoRadioButtons</span>
+                <span class="method-start">665524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyTwoRadioButtons())</span>
+                <span class="method-start">665524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTwoRadioButtons status=SUCCESS method=AddTicketTest.verifyTwoRadioButtons()[p...)</span>
+                <span class="method-start">710656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.addOwnTickets())</span>
+                <span class="method-start">710658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addOwnTickets</span>
+                <span class="method-start">710658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=addOwnTickets status=SUCCESS method=AddTicketTest.addOwnTickets()[pri:8, instance:t...)</span>
+                <span class="method-start">853606 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyValidationForEmptyUser())</span>
+                <span class="method-start">853608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidationForEmptyUser</span>
+                <span class="method-start">853608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyValidationForEmptyUser status=SUCCESS method=AddTicketTest.verifyValidationFo...)</span>
+                <span class="method-start">961604 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyValidationOnClientsField())</span>
+                <span class="method-start">961605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidationOnClientsField</span>
+                <span class="method-start">961606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyValidationOnClientsField status=SUCCESS method=AddTicketTest.verifyValidation...)</span>
+                <span class="method-start">1010759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.checkAddMoreFunctionality())</span>
+                <span class="method-start">1010760 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkAddMoreFunctionality</span>
+                <span class="method-start">1010761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=checkAddMoreFunctionality status=SUCCESS method=AddTicketTest.checkAddMoreFunctiona...)</span>
+                <span class="method-start">1054968 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyCharctersInDescriptionField</span>
+                <span class="method-start">1054969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyCharctersInDescriptionField())</span>
+                <span class="method-start">1054969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyCharctersInDescriptionField status=SUCCESS method=AddTicketTest.verifyCharcte...)</span>
+                <span class="method-start">1133191 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.verifyFontOfUserGuide())</span>
+                <span class="method-start">1133192 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFontOfUserGuide</span>
+                <span class="method-start">1133193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyFontOfUserGuide status=SUCCESS method=AddTicketTest.verifyFontOfUserGuide()[p...)</span>
+                <span class="method-start">1170998 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.AddTicketTest.addTicket())</span>
+                <span class="method-start">1170999 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addTicket</span>
+                <span class="method-start">1171001 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=addTicket status=SUCCESS method=AddTicketTest.addTicket()[pri:14, instance:testcase...)</span>
+                <span class="method-start">1332340 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SLATest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1332343 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyAddSLA())</span>
+                <span class="method-start">1342436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddSLA</span>
+                <span class="method-start">1342436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyAddSLA status=FAILURE method=SLATest.verifyAddSLA()[pri:0, instance:testcases...)</span>
+                <span class="method-start">1533792 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyMandatoryValidation</span>
+                <span class="method-start">1534079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyMandatoryValidation())</span>
+                <span class="method-start">1534079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyMandatoryValidation status=SUCCESS method=SLATest.verifyMandatoryValidation()...)</span>
+                <span class="method-start">1630545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">VerifyCharactersValidation</span>
+                <span class="method-start">1630546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.VerifyCharactersValidation())</span>
+                <span class="method-start">1630546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=VerifyCharactersValidation status=SUCCESS method=SLATest.VerifyCharactersValidation...)</span>
+                <span class="method-start">1725022 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyRadioButtonsFunctionality</span>
+                <span class="method-start">1725023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyRadioButtonsFunctionality())</span>
+                <span class="method-start">1725023 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyRadioButtonsFunctionality status=SUCCESS method=SLATest.verifyRadioButtonsFun...)</span>
+                <span class="method-start">1767108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyClientCategoryFunctionality())</span>
+                <span class="method-start">1767109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClientCategoryFunctionality</span>
+                <span class="method-start">1767110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyClientCategoryFunctionality status=SUCCESS method=SLATest.verifyClientCategor...)</span>
+                <span class="method-start">1816463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyDepartmentCategoryFunctionality())</span>
+                <span class="method-start">1816465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDepartmentCategoryFunctionality</span>
+                <span class="method-start">1816465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyDepartmentCategoryFunctionality status=SUCCESS method=SLATest.verifyDepartmen...)</span>
+                <span class="method-start">1881101 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyProductCategoryFunctionality())</span>
+                <span class="method-start">1881102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductCategoryFunctionality</span>
+                <span class="method-start">1881103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyProductCategoryFunctionality status=SUCCESS method=SLATest.verifyProductCateg...)</span>
+                <span class="method-start">1929588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteButtonFunctionality</span>
+                <span class="method-start">1929590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyDeleteButtonFunctionality())</span>
+                <span class="method-start">1929590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyDeleteButtonFunctionality status=SUCCESS method=SLATest.verifyDeleteButtonFun...)</span>
+                <span class="method-start">1990846 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyPolicyDatePickerFunctionality())</span>
+                <span class="method-start">1990848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPolicyDatePickerFunctionality</span>
+                <span class="method-start">1990849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyPolicyDatePickerFunctionality status=SUCCESS method=SLATest.verifyPolicyDateP...)</span>
+                <span class="method-start">2032055 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyBooleanFunctionality())</span>
+                <span class="method-start">2032058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBooleanFunctionality</span>
+                <span class="method-start">2032059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyBooleanFunctionality status=SUCCESS method=SLATest.verifyBooleanFunctionality...)</span>
+                <span class="method-start">2095925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyBooleanSaveButtonFunctionality</span>
+                <span class="method-start">2095926 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyBooleanSaveButtonFunctionality())</span>
+                <span class="method-start">2095926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyBooleanSaveButtonFunctionality status=SUCCESS method=SLATest.verifyBooleanSav...)</span>
+                <span class="method-start">2159578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyResponseTimeValidations</span>
+                <span class="method-start">2159579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyResponseTimeValidations())</span>
+                <span class="method-start">2159579 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyResponseTimeValidations status=SUCCESS method=SLATest.verifyResponseTimeValid...)</span>
+                <span class="method-start">2252254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyResolveTimeValidations</span>
+                <span class="method-start">2252255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.SLATest.verifyResolveTimeValidations())</span>
+                <span class="method-start">2252255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyResolveTimeValidations status=SUCCESS method=SLATest.verifyResolveTimeValidat...)</span>
+                <span class="method-start">2345308 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketDetailReportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2345309 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchTicket</span>
+                <span class="method-start">2357163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketDetailReportTest.verifySearchTicket())</span>
+                <span class="method-start">2357163 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifySearchTicket status=SUCCESS method=TicketDetailReportTest.verifySearchTicket(...)</span>
+                <span class="method-start">2606006 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketGroupListingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2606007 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketGroupListingTest.verifySearchFunctionality())</span>
+                <span class="method-start">2623407 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFunctionality</span>
+                <span class="method-start">2623408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifySearchFunctionality status=SUCCESS method=TicketGroupListingTest.verifySearch...)</span>
+                <span class="method-start">2672957 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketGroupListingTest.verifyResetFunctionality())</span>
+                <span class="method-start">2672958 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetFunctionality</span>
+                <span class="method-start">2672958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyResetFunctionality status=SUCCESS method=TicketGroupListingTest.verifyResetFu...)</span>
+                <span class="method-start">2737374 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketingDashboardTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2737375 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyReportsValidation())</span>
+                <span class="method-start">2748866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyReportsValidation</span>
+                <span class="method-start">2748867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyReportsValidation status=FAILURE method=TicketingDashboardTest.verifyReportsV...)</span>
+                <span class="method-start">2831237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validateWidgetsCount</span>
+                <span class="method-start">2831529 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.validateWidgetsCount())</span>
+                <span class="method-start">2831529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=validateWidgetsCount status=SUCCESS method=TicketingDashboardTest.validateWidgetsCo...)</span>
+                <span class="method-start">2931872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyTodaysFilter())</span>
+                <span class="method-start">2931873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTodaysFilter</span>
+                <span class="method-start">2931874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTodaysFilter status=SUCCESS method=TicketingDashboardTest.verifyTodaysFilter(...)</span>
+                <span class="method-start">3313729 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisYearFilter())</span>
+                <span class="method-start">3313730 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisYearFilter</span>
+                <span class="method-start">3313731 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisYearFilter status=SUCCESS method=TicketingDashboardTest.verifyThisYearFil...)</span>
+                <span class="method-start">3522452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyYesterDayFilter())</span>
+                <span class="method-start">3522454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyYesterDayFilter</span>
+                <span class="method-start">3522454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyYesterDayFilter status=SUCCESS method=TicketingDashboardTest.verifyYesterDayF...)</span>
+                <span class="method-start">3670960 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyLastWeekFilter())</span>
+                <span class="method-start">3670962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLastWeekFilter</span>
+                <span class="method-start">3670962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyLastWeekFilter status=SUCCESS method=TicketingDashboardTest.verifyLastWeekFil...)</span>
+                <span class="method-start">3872870 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisWeekFilter())</span>
+                <span class="method-start">3872873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisWeekFilter</span>
+                <span class="method-start">3872873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisWeekFilter status=SUCCESS method=TicketingDashboardTest.verifyThisWeekFil...)</span>
+                <span class="method-start">4073101 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisMonthFilter())</span>
+                <span class="method-start">4073103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisMonthFilter</span>
+                <span class="method-start">4073103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisMonthFilter status=SUCCESS method=TicketingDashboardTest.verifyThisMonthF...)</span>
+                <span class="method-start">4286782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyLastMonthFilter())</span>
+                <span class="method-start">4286784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLastMonthFilter</span>
+                <span class="method-start">4286785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyLastMonthFilter status=SUCCESS method=TicketingDashboardTest.verifyLastMonthF...)</span>
+                <span class="method-start">4433352 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyTodayFilterFromCategory</span>
+                <span class="method-start">4433354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyTodayFilterFromCategory())</span>
+                <span class="method-start">4433354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTodayFilterFromCategory status=SUCCESS method=TicketingDashboardTest.verifyTo...)</span>
+                <span class="method-start">4699114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisWeekFilterFromCategory())</span>
+                <span class="method-start">4699116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisWeekFilterFromCategory</span>
+                <span class="method-start">4699116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisWeekFilterFromCategory status=SUCCESS method=TicketingDashboardTest.verif...)</span>
+                <span class="method-start">4853380 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyYesterdayFilterFromCategory())</span>
+                <span class="method-start">4853381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyYesterdayFilterFromCategory</span>
+                <span class="method-start">4853382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyYesterdayFilterFromCategory status=SUCCESS method=TicketingDashboardTest.veri...)</span>
+                <span class="method-start">5004398 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyYesterdayFilterByChannel())</span>
+                <span class="method-start">5004400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyYesterdayFilterByChannel</span>
+                <span class="method-start">5004400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyYesterdayFilterByChannel status=SUCCESS method=TicketingDashboardTest.verifyY...)</span>
+                <span class="method-start">5395037 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyTodaysFilterByChannel())</span>
+                <span class="method-start">5395038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTodaysFilterByChannel</span>
+                <span class="method-start">5395039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTodaysFilterByChannel status=SUCCESS method=TicketingDashboardTest.verifyToda...)</span>
+                <span class="method-start">5552158 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyThisWeekByChannel</span>
+                <span class="method-start">5552160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisWeekByChannel())</span>
+                <span class="method-start">5552160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisWeekByChannel status=SUCCESS method=TicketingDashboardTest.verifyThisWeek...)</span>
+                <span class="method-start">5720319 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyLastWeekByChannel())</span>
+                <span class="method-start">5720321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLastWeekByChannel</span>
+                <span class="method-start">5720322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyLastWeekByChannel status=SUCCESS method=TicketingDashboardTest.verifyLastWeek...)</span>
+                <span class="method-start">5878443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisMonthByChannel())</span>
+                <span class="method-start">5878444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThisMonthByChannel</span>
+                <span class="method-start">5878445 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisMonthByChannel status=FAILURE method=TicketingDashboardTest.verifyThisMon...)</span>
+                <span class="method-start">6212827 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLastMonthByChannel</span>
+                <span class="method-start">6214291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyLastMonthByChannel())</span>
+                <span class="method-start">6214291 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyLastMonthByChannel status=SUCCESS method=TicketingDashboardTest.verifyLastMon...)</span>
+                <span class="method-start">6354448 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyTodaysFilterByProduct())</span>
+                <span class="method-start">6354451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTodaysFilterByProduct</span>
+                <span class="method-start">6354452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTodaysFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyToda...)</span>
+                <span class="method-start">6776257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyThisWeekFilterByProduct</span>
+                <span class="method-start">6776263 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisWeekFilterByProduct())</span>
+                <span class="method-start">6776263 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisWeekFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyTh...)</span>
+                <span class="method-start">6982003 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisYearFilterByProduct())</span>
+                <span class="method-start">6982004 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisYearFilterByProduct</span>
+                <span class="method-start">6982005 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisYearFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyTh...)</span>
+                <span class="method-start">7341226 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisMonthFilterByProduct())</span>
+                <span class="method-start">7341227 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisMonthFilterByProduct</span>
+                <span class="method-start">7341228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisMonthFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyT...)</span>
+                <span class="method-start">7720400 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyYesterdayFilterByProduct())</span>
+                <span class="method-start">7720402 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyYesterdayFilterByProduct</span>
+                <span class="method-start">7720403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyYesterdayFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyY...)</span>
+                <span class="method-start">7882903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLastWeekFilterByProduct</span>
+                <span class="method-start">7882905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyLastWeekFilterByProduct())</span>
+                <span class="method-start">7882905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyLastMonthFilterByProduct())</span>
+                <span class="method-start">8242598 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyLastWeekFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyLa...)</span>
+                <span class="method-start">8242598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyLastMonthFilterByProduct</span>
+                <span class="method-start">8242599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyLastMonthFilterByProduct status=SUCCESS method=TicketingDashboardTest.verifyL...)</span>
+                <span class="method-start">8555678 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyTodayFilterByResolver())</span>
+                <span class="method-start">8555679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTodayFilterByResolver</span>
+                <span class="method-start">8555680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyTodayFilterByResolver status=SUCCESS method=TicketingDashboardTest.verifyToda...)</span>
+                <span class="method-start">8802587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingDashboardTest.verifyThisWeekFilterByResolver())</span>
+                <span class="method-start">8802588 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThisWeekFilterByResolver</span>
+                <span class="method-start">8802589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyThisWeekFilterByResolver status=SUCCESS method=TicketingDashboardTest.verifyT...)</span>
+                <span class="method-start">9281729 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketingGroupTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9281730 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingGroupTest.verifyAddGroup())</span>
+                <span class="method-start">9293687 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddGroup</span>
+                <span class="method-start">9293688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyAddGroup status=SUCCESS method=TicketingGroupTest.verifyAddGroup()[pri:0, ins...)</span>
+                <span class="method-start">9332283 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingGroupTest.verifyCancelButton())</span>
+                <span class="method-start">9332284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCancelButton</span>
+                <span class="method-start">9332285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyCancelButton status=SUCCESS method=TicketingGroupTest.verifyCancelButton()[pr...)</span>
+                <span class="method-start">9383321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingGroupTest.verifyNoRecordsMessage())</span>
+                <span class="method-start">9383322 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNoRecordsMessage</span>
+                <span class="method-start">9383323 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyNoRecordsMessage status=SUCCESS method=TicketingGroupTest.verifyNoRecordsMess...)</span>
+                <span class="method-start">9425684 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketingServiceBoardTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9425686 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceboardElements</span>
+                <span class="method-start">9435391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingServiceBoardTest.verifyServiceboardElements())</span>
+                <span class="method-start">9435391 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyServiceboardElements status=SUCCESS method=TicketingServiceBoardTest.verifySe...)</span>
+                <span class="method-start">9465197 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupOne())</span>
+                <span class="method-start">9465198 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddServiceBoardGroupOne</span>
+                <span class="method-start">9465199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyAddServiceBoardGroupOne status=SUCCESS method=TicketingServiceBoardTest.verif...)</span>
+                <span class="method-start">9515537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo())</span>
+                <span class="method-start">9515538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddServiceBoardGroupTwo</span>
+                <span class="method-start">9515538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyAddServiceBoardGroupTwo status=SUCCESS method=TicketingServiceBoardTest.verif...)</span>
+                <span class="method-start">9558912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingServiceBoardTest.verifyCancelButtonFunctionality())</span>
+                <span class="method-start">9558913 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCancelButtonFunctionality</span>
+                <span class="method-start">9558913 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyCancelButtonFunctionality status=SUCCESS method=TicketingServiceBoardTest.ver...)</span>
+                <span class="method-start">9604357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation())</span>
+                <span class="method-start">9604359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateServiceBoardNavigation</span>
+                <span class="method-start">9604359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyUpdateServiceBoardNavigation status=SUCCESS method=TicketingServiceBoardTest....)</span>
+                <span class="method-start">9644197 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketListingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9644198 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyUrlOnClickingBreadCrumb())</span>
+                <span class="method-start">9655108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUrlOnClickingBreadCrumb</span>
+                <span class="method-start">9655109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyUrlOnClickingBreadCrumb status=SUCCESS method=TicketListingTest.verifyUrlOnCl...)</span>
+                <span class="method-start">9738308 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyResetButtonFunctionality())</span>
+                <span class="method-start">9738309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetButtonFunctionality</span>
+                <span class="method-start">9738310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyResetButtonFunctionality status=SUCCESS method=TicketListingTest.verifyResetB...)</span>
+                <span class="method-start">10144353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyExpandCollapseFeature())</span>
+                <span class="method-start">10144354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyExpandCollapseFeature</span>
+                <span class="method-start">10144354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyExpandCollapseFeature status=SUCCESS method=TicketListingTest.verifyExpandCol...)</span>
+                <span class="method-start">10231759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifySearchFunctionality())</span>
+                <span class="method-start">10231760 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchFunctionality</span>
+                <span class="method-start">10231760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifySearchFunctionality status=SUCCESS method=TicketListingTest.verifySearchFunct...)</span>
+                <span class="method-start">10589241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyUnassignedTicketWidget())</span>
+                <span class="method-start">10589242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnassignedTicketWidget</span>
+                <span class="method-start">10589242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyUnassignedTicketWidget status=SUCCESS method=TicketListingTest.verifyUnassign...)</span>
+                <span class="method-start">10680604 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyReplyCount())</span>
+                <span class="method-start">10680605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyReplyCount</span>
+                <span class="method-start">10680605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyReplyCount status=SUCCESS method=TicketListingTest.verifyReplyCount()[pri:5, ...)</span>
+                <span class="method-start">10940438 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyFollowUpFunctionality())</span>
+                <span class="method-start">10940439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFollowUpFunctionality</span>
+                <span class="method-start">10940439 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyFollowUpFunctionality status=SUCCESS method=TicketListingTest.verifyFollowUpF...)</span>
+                <span class="method-start">11223481 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyMergeButtonFunctionality())</span>
+                <span class="method-start">11223482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMergeButtonFunctionality</span>
+                <span class="method-start">11223483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyMergeButtonFunctionality status=SUCCESS method=TicketListingTest.verifyMergeB...)</span>
+                <span class="method-start">11330016 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateTicketFunctionality</span>
+                <span class="method-start">11330018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyUpdateTicketFunctionality())</span>
+                <span class="method-start">11330018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyUpdateTicketFunctionality status=SUCCESS method=TicketListingTest.verifyUpdat...)</span>
+                <span class="method-start">11614265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyDeleteTicketFunctionality())</span>
+                <span class="method-start">11614267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteTicketFunctionality</span>
+                <span class="method-start">11614267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyDeleteTicketFunctionality status=SUCCESS method=TicketListingTest.verifyDelet...)</span>
+                <span class="method-start">12024306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketListingTest.verifyNotesFunctionality())</span>
+                <span class="method-start">12024307 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNotesFunctionality</span>
+                <span class="method-start">12024308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reportWrapUp([TestResult name=verifyNotesFunctionality status=FAILURE method=TicketListingTest.verifyNotesFunctio...)</span>
+                <span class="method-start">12117676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12177743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAttachmentTabFunctionality</span>
+                <span class="method-start">12177802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reportWrapUp([TestResult name={null} status=CREATED method=TicketListingTest.verifyAttachmentTabFunctionality()[p...)</span>
+                <span class="method-start">12177805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12237847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWidgetsFunctionality</span>
+                <span class="method-start">12237848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reportWrapUp([TestResult name={null} status=CREATED method=TicketListingTest.verifyWidgetsFunctionality()[pri:12,...)</span>
+                <span class="method-start">12237851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12297902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCannedReplyFunctionality</span>
+                <span class="method-start">12297904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reportWrapUp([TestResult name={null} status=CREATED method=TicketListingTest.verifyCannedReplyFunctionality()[pri...)</span>
+                <span class="method-start">12297912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12357973 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDraftReplyFunctionality</span>
+                <span class="method-start">12357974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reportWrapUp([TestResult name={null} status=CREATED method=TicketListingTest.verifyDraftReplyFunctionality()[pri:...)</span>
+                <span class="method-start">12357976 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TicketSummaryReportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12418027 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.TicketSummaryReportTest.verifySearchTicket())</span>
+                <span class="method-start">12489980 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySearchTicket</span>
+                <span class="method-start">12489981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifySearchTicket status=FAILURE method=TicketSummaryReportTest.verifySearchTicket...)</span>
+                <span class="method-start">12773260 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.UnassignedTicketsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12773559 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnassignedTicketsCount</span>
+                <span class="method-start">12785735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void testcases.UnassignedTicketsTest.verifyUnassignedTicketsCount())</span>
+                <span class="method-start">12785735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">reportWrapUp([TestResult name=verifyUnassignedTicketsCount status=SUCCESS method=UnassignedTicketsTest.verifyUnas...)</span>
+                <span class="method-start">12849307 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AddSLA</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">close</span>
+                <span class="method-start">12850016 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

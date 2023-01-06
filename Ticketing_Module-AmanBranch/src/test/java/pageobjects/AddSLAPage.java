@@ -658,10 +658,15 @@ public class AddSLAPage extends WebBasePage {
 		staticWait(3000);
 		
 		String dateAttribute = getAtribute(By.xpath(
-				/*"//table[@class='table table-sm']//td[@class='day active today']//preceding-sibling::td[@class='day disabled'][1]"),
-				"class", 0);*/
-				"//tg-input/input[@id='txtPolicyDate']"),
+				/*
+				 * "//table[@class='table table-sm']//td[@class='day active today']//preceding-sibling::td[@class='day disabled'][1]"
+				 * ),
+				 */
+				"//table[@class='table table-sm']//td[@class='day active today']//preceding-sibling::td[@class='day disabled weekend'][1]"),
 				"class", 0);
+		/*
+		 * "//tg-input/input[@id='txtPolicyDate']"), "class", 0);
+		 */
 
 		if (dateAttribute.contains("disabled")) {
 		//if (dateAttribute.contains("txtPolicyDate")) {

@@ -215,6 +215,7 @@ public class TicketingDashboardPage extends WebBasePage {
 		} catch (Exception e) {
 			logger.error("Error from verifyWidgetsCount method." + e);
 		}
+		driver.navigate().refresh();
 	}
 
 	// verify Reports Validation message

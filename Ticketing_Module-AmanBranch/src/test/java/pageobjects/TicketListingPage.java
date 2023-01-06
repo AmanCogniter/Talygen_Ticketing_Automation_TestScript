@@ -68,6 +68,7 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void homeBreadcrumb() {
+		staticWait(3000);
 		click(By.xpath("//div[@id='SiteMapLink']/ol/li/a"), "Click om Home Breadcrumb", 20);
 	}
 
@@ -78,6 +79,7 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void validateUrlOfHomePage() {
+		staticWait(2000);
 		getCurrentUrl(prop.getProperty("homePageUrl"), "On clicking Home Page Breadcrumb");
 	}
 
@@ -340,8 +342,11 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void navigateToTicketListingPage() {
+		staticWait(2000);
 		pageNavigate(prop.getProperty("ticketListingPageUrl"), "Navigate to Ticket listing page");
-	}
+		staticWait(2000);
+		driver.navigate().refresh();
+		}
 
 	public void clickDeleteButton() {
 		click(By.cssSelector("#aIndexDelete"), "Delete button", 20);
@@ -772,7 +777,8 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void clickProduct() {
-		clickByJavascript(By.cssSelector("#headingOneProduct"), "Product", 0);
+		staticWait(2000);
+		clickByJavascript(By.cssSelector("#headingOneProduct"), "Product", 50);
 	}
 
 	public void selectNoProduct() {

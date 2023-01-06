@@ -3,15 +3,47 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.TicketingGroupTest">
+      <class name="testcases.TicketingDashboardTest">
         <methods>
+          <include name="verifyThisMonthByChannel"/>
           <include name="beforeMethod"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
-          <include name="verifyNoRecordsMessage"/>
+          <include name="verifyReportsValidation"/>
         </methods>
-      </class> <!-- testcases.TicketingGroupTest -->
+      </class> <!-- testcases.TicketingDashboardTest -->
+      <class name="testcases.TicketListingTest">
+        <methods>
+          <include name="verifyWidgetsFunctionality"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAttachmentTabFunctionality"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+          <include name="verifyNotesFunctionality"/>
+          <include name="verifyDraftReplyFunctionality"/>
+          <include name="verifyCannedReplyFunctionality"/>
+        </methods>
+      </class> <!-- testcases.TicketListingTest -->
+      <class name="testcases.TicketSummaryReportTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifySearchTicket"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.TicketSummaryReportTest -->
+      <class name="testcases.SLATest">
+        <methods>
+          <include name="verifyAddSLA"/>
+          <include name="beforeMethod"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.SLATest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

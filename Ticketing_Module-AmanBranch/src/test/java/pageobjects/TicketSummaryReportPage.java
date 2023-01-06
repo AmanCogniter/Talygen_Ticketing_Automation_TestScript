@@ -82,7 +82,7 @@ public class TicketSummaryReportPage extends WebBasePage {
 
 	// get TicketNo Text
 	public void ticketNoTextFromSearch() {
-		staticWait(3000);
+		staticWait(5000);
 		switchToFrame();
 		ticketNoText = gettextByJSexecuter(By.xpath("//table/tbody/tr[4]/td/div"), "", 20);
 		logger.info("ticket no :: " + ticketNoText);
@@ -138,6 +138,7 @@ public class TicketSummaryReportPage extends WebBasePage {
 
 	// click on ticket no from report
 	public void clickReportTicketNo() {
+		staticWait(3000);
 		click(By.xpath("//table/tbody/tr[4]/td/div"), "click on ticket no. on Report.", 20);
 
 		
