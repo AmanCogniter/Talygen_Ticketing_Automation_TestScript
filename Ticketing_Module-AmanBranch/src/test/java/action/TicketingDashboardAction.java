@@ -25,7 +25,8 @@ public class TicketingDashboardAction {
 
 	public void navigateToTicketingDashboard() {
 		ticketingDashboardPage.clickFullMenu();
-		ticketingDashboardPage.clickTicketingSideMenu();
+		ticketingDashboardPage.clickOnFSMLocate();
+		//ticketingDashboardPage.clickTicketingSideMenu();
 //		ticketingDashboardPage.clickTicketingOption();
 		ticketingDashboardPage.clickTicketingDashboard();
 	}

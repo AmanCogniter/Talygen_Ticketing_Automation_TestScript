@@ -58,7 +58,7 @@ public class UnassignedTicketListPage extends WebBasePage {
 	// get Text of Unassigned count
 	public void verifyUnassignedTicketsCount() {
 
-		String unassignedTickets = getText(By.xpath("//div[@id='divMinWidgetDetail']//ul[1]/li[@class='one_wid']//h3"),
+		String unassignedTickets = getText(By.xpath("//div[@id='divMinWidgetDetailChild']//ul[1]/li[@class='one_wid']//h3"),
 				20);
 		unassignedTickets = unassignedTickets.replaceAll("\\D+", "");
 

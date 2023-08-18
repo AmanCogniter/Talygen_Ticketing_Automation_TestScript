@@ -25,7 +25,7 @@ public class TicketingServiceBoardAction {
 
 	public void navigateToServiceBoard() {
 		ticketServiceBoardPage.clickFullMenu();
-		ticketServiceBoardPage.clickTicketingSideMenu();
+		ticketServiceBoardPage.clickOnFSMLocate();
 //		ticketServiceBoardPage.clickTicketingOption();
 		ticketServiceBoardPage.clickServiceBoard();
 	}

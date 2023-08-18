@@ -47,6 +47,10 @@ public class ExternalLinkPage extends WebBasePage {
 		staticWait(3000);
 		click(By.cssSelector("#navbarDropdownPortfolio"), "Full Menu", 20);
 	}
+	// click on Side menu
+		public void clickOnFSMLocate() {
+			clickByJavascript(By.xpath("//li[@data-name='FSM- Locate']/span"), "FSM Locate", 20);
+		}
 
 	// click on ticketing
 	public void clickTicketingOption() {
@@ -74,8 +78,9 @@ public class ExternalLinkPage extends WebBasePage {
 		 * "//ul[@class='submenu clschild_40361 d-flex']//a[@data-original-title='External Link' and @id='cadmin_messageboard_link']"
 		 * ), "External Link", 40);
 		 */
+		staticWait(2000);
 		click(By.xpath(
-				"//tg-input/input[@id='ExternalLayoutLink']"),
+				"(//div/ul/li/a[@data-original-title='External Link'])[last()]"),
 				"External Link", 40);
 	}
 

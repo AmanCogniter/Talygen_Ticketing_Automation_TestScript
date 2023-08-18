@@ -127,7 +127,7 @@ public class AddSLAPage extends WebBasePage {
 		 * "//div[@class='custom-control custom-checkbox custom-control-inline']/ancestor::div[@class='form-check form-check-inline  checkbox-inline font-weight-light']/descendant::label"
 		 * ), "SLA Policy checkbox", 20);
 		 */
-		WebElement selectcheckBox = driver.findElement(By.xpath("//div[@class='custom-control custom-checkbox custom-control-inline']/ancestor::div[@class='form-check form-check-inline  checkbox-inline font-weight-light']/descendant::div[@class='custom-control custom-checkbox custom-control-inline']"));
+		WebElement selectcheckBox = driver.findElement(By.xpath("//div[@class='custom-control custom-checkbox custom-control-inline']/ancestor::div[@class='form-check form-check-inline  checkbox-inline font-weight-light']/descendant::div[@class='custom-control custom-checkbox custom-control-inline']/label"));
 		Actions action= new Actions(driver);
 		action.moveToElement(selectcheckBox).click().perform();
 		Reporter.log("Policy checkbox clicked", true);
@@ -531,7 +531,7 @@ public class AddSLAPage extends WebBasePage {
 		click(By.xpath("//span[@class='multiselect-native-select']//select[@id='ResolveAssignToIds']//parent::span"),
 				"select user.", 30);
 		click(By.xpath(
-				 "(//span[@class='multiselect-native-select']//select[@id='ResolveAssignToIds']//parent::span/descendant::li/a/label)[5]"
+				 "(//span[@class='multiselect-native-select']//select[@id='ResolveAssignToIds']//parent::span/descendant::li/a/label)[2]"
 				  ), "select user in Resolve due violation reminder.", 30);
 		click(By.xpath("//span[@class='multiselect-native-select']//select[@id='ResolveAssignToIds']//parent::span"),
 				"select user.", 30);
@@ -635,7 +635,7 @@ public class AddSLAPage extends WebBasePage {
 
 	// select current date
 	public void selectCurrentDate() {
-		click(By.xpath("//td[@class='day active today']"), "Select Current Date.", 30);
+		click(By.xpath("//td[@class='day active today weekend']"), "Select Current Date.", 30);
 	}
 
 	// click PolicyDatePicker
@@ -662,7 +662,7 @@ public class AddSLAPage extends WebBasePage {
 				 * "//table[@class='table table-sm']//td[@class='day active today']//preceding-sibling::td[@class='day disabled'][1]"
 				 * ),
 				 */
-				"//table[@class='table table-sm']//td[@class='day active today']//preceding-sibling::td[@class='day disabled weekend'][1]"),
+				"//table[@class='table table-sm']/tbody/tr//td[@class='day active today weekend']//preceding-sibling::td[@class='day disabled'][1]"),
 				"class", 0);
 		/*
 		 * "//tg-input/input[@id='txtPolicyDate']"), "class", 0);

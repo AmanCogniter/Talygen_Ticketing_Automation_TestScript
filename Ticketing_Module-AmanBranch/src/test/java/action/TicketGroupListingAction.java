@@ -18,7 +18,7 @@ public class TicketGroupListingAction {
 
 	public void navigateGroupListing() {
 		ticketGroupListingPage.clickFullMenu();
-		ticketGroupListingPage.clickTicketingSideMenu();
+		ticketGroupListingPage.clickOnFSMLocate();
 //		ticketGroupListingPage.clickTicketingOption();
 		ticketGroupListingPage.clickTicketingGroup();
 	}

@@ -43,17 +43,25 @@ public class AddTicketAction extends AddTicketPage {
 //	String getTicketNo;
 	public void navigatetoAddTicket() {
 		clickFullMenu();
+		clickOnFSMLocate();
 		clickTicketingSideMenu();
 		clickAddTicket();
 //		clickTicketingOption();
 //		ticketingSubMenu();
 	}
+	public void navigatetoTicket() {
+		clickFullMenu();
+		clickOnFSMLocate();
+		clickTicketingSideMenu();
+		
+	}
 
 	public void navigatetoSLA() {
 
 		clickFullMenu();
-		clickTicketingSideMenu();
+		//clickTicketingSideMenu();
 //		clickTicketingOption();
+		clickOnFSMLocate();
 		clickSLA();
 	}
 
@@ -75,7 +83,7 @@ public class AddTicketAction extends AddTicketPage {
 		selectPriority();
 		selectProduct();
 		//selectCCUsers();
-		selectCategory();
+		//selectCategory();
 		selectTicketForOnBehalf();
 	}
 
@@ -112,7 +120,7 @@ public class AddTicketAction extends AddTicketPage {
 		selectPriority();
 		selectProduct();
 		//selectCCUsers();
-		selectCategory();
+		//selectCategory();
 		//selfButton();
 		uploadDocument();
 		enterDescription();
@@ -141,17 +149,17 @@ public class AddTicketAction extends AddTicketPage {
 		selectPriority();
 		selectProduct();
 		//selectCCUsers();
-		selectCategory();
+		//selectCategory();
 		selfButton();
 		uploadDocument();
 		enterDescription();
 		clickSubmitTicket();
 		verifySuccessMessage();
 		getTicketNoText();
-		ticketListingPage.navigateToTicketListingPage();
-		ticketListingPage.ticketNumber();
-		ticketListingPage.enterGeneratedTicketNumber();
-		ticketListingPage.clickSearchIcon();
+		//ticketListingPage.navigateToTicketListingPage();
+		//ticketListingPage.ticketNumber();
+		//ticketListingPage.enterGeneratedTicketNumber();
+		//ticketListingPage.clickSearchIcon();
 
 //			String ticketSubject = getTicketSubject();
 //			ticketSummaryReportPage.enterSubject(ticketSubject);
@@ -227,6 +235,9 @@ public class AddTicketAction extends AddTicketPage {
 	public void ticketCategory() {
 		clickTicketCategory();
 	}
+	public void notifyMessage() {
+		clickOnCloseNotifyMessage();
+	}
 
 	public void validateRadioButtons() {
 		verifyRadioButtons();
@@ -234,8 +245,9 @@ public class AddTicketAction extends AddTicketPage {
 
 	public void verifyValidations() {
 		verifyValidateMessage(prop.getProperty("subjectValidation"));
-		verifyValidateMessage(prop.getProperty("assignedValidation"));
+		
 		verifyValidateMessage(prop.getProperty("priorityValidation"));
+		verifyValidateMessage(prop.getProperty("descriptionValidation"));
 	}
 
 	public void priorityDropDown() {
@@ -359,12 +371,13 @@ public class AddTicketAction extends AddTicketPage {
 		selectPriority();
 		selectProduct();
 		//selectCCUsers();
-		selectCategory();
+		//selectCategory();
 		//selfButton();
 		uploadDocument();
 		enterDescription();
 		clickSubmitTicket();
 		verifySuccessMessage();
+		referenceNumText();
 	}
 
 }

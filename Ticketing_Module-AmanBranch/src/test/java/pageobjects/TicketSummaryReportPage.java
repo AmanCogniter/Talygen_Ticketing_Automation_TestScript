@@ -83,15 +83,15 @@ public class TicketSummaryReportPage extends WebBasePage {
 	// get TicketNo Text
 	public void ticketNoTextFromSearch() {
 		staticWait(5000);
-		switchToFrame();
-		ticketNoText = gettextByJSexecuter(By.xpath("//table/tbody/tr[4]/td/div"), "", 20);
+		//switchToFrame();
+		ticketNoText = gettextByJSexecuter(By.xpath("//table/tbody/tr/td[2]/span"), "", 20);
 		logger.info("ticket no :: " + ticketNoText);
 	}
 
 	// get Ticket subject Text
 	public void ticketSubjectFromSearch() {
 		staticWait(3000);
-		subjectTextFromReport = gettextByJSexecuter(By.xpath("//table/tbody/tr[4]/td[2]/div"), "", 20);
+		subjectTextFromReport = gettextByJSexecuter(By.xpath("//table/tbody/tr/td[3]/a"), "", 20);
 		logger.info("Subject from created ticket :: " + subjectTextFromReport);
 	}
 
@@ -121,7 +121,7 @@ public class TicketSummaryReportPage extends WebBasePage {
 
 	// click on Search
 	public void clickSearch() {
-		click(By.cssSelector("#aSearch"), "click on Search", 20);
+		click(By.xpath("//span[@data-original-title='Search']"), "click on Search", 20);
 		//findElementInVisibility(By.cssSelector("#reportViewer_AsyncWait_Wait"), 30);
 	}
 

@@ -229,6 +229,22 @@ public class WebBasePage extends WaitStatement {
 			Assert.fail(name + " -  element not present");
 		}
 	}
+	public void selectValueWithIndex(By by, int value, String name, int time) {
+		staticWait(200);
+		WebElement element = findElementPresence(by, time);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].scrollIntoView();", element);
+		staticWait(200);
+		if (element != null) {
+			Select se = new Select(element);
+			se.selectByIndex(value);
+			getTest().log(LogStatus.PASS, name + " selected with value - " + value);
+		} else {
+			getTest().log(LogStatus.FAIL, name + " not selected with value - " + value);
+			Assert.fail(name + " -  element not present");
+		}
+	}
+
 
 	public void staticWait(int time) {
 		try {

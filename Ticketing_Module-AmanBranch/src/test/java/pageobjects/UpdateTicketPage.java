@@ -56,6 +56,7 @@ public class UpdateTicketPage extends WebBasePage {
 	}
 
 	public void checkDetailsOnClickinMerge() {
+		staticWait(2000);
 		toCheckElementIsDisplayed(By.xpath("//div[@id='divMerge']"), 20, "merge pop-up ");
 	}
 
@@ -73,6 +74,18 @@ public class UpdateTicketPage extends WebBasePage {
 	public void clickUpdateTicket() {
 		click(By.xpath("//div[@class='theme-primary partition p-actions-expand']//a[@data-original-title='Update']"),
 				"update ticket", 20);
+	}
+	public void clickOnListView() {
+		try {
+			staticWait(2000);
+			WebElement listView = driver.findElement(By.xpath("//a[@data-original-title='List View']"));
+			if (listView.isDisplayed()) {
+				clickByJavascript(By.xpath("//a[@data-original-title='List View']"), "List View", 20);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			logger.info("Page is already in list view mode");
+		}
 	}
 
 	public void verifySuccessMessage() {

@@ -58,6 +58,7 @@ public class AddTicketTest extends WebTestBase {
 			AddTicketAction addTicket = new AddTicketAction(driver);
 			addTicket.navigatetoAddTicket();
 			addTicket.submitButton();
+			addTicket.notifyMessage();
 			addTicket.verifyValidations();
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -68,18 +68,17 @@ public class TicketingDashboardTest extends WebTestBase {
 	@Test(priority = 3)
 	public void verifyTodaysFilter() {
 		test = getTest("TC_Ticketing_Dashboard_verifyTodaysFilter");
-
-		new LoginAction(driver).logoutLogin();
-		CompanySetupAction companySetupAction = new CompanySetupAction(driver);
-		companySetupAction.navigateToCompanySetupUser();
-		companySetupAction.addUser();
-		companySetupAction.addDepartmentNotVisibleClient();
-		new LoginAction(driver).logoutLogin();
-		AddTicketAction addTicket = new AddTicketAction(driver);
-		addTicket.navigatetoAddTicket();
-		addTicket.addTicket();
-
-		new LoginAction(driver).logoutLogin();
+		
+		  new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		  = new CompanySetupAction(driver);
+		  companySetupAction.navigateToCompanySetupUser();
+		  companySetupAction.addUser();
+		  companySetupAction.addDepartmentNotVisibleClient(); new
+		  LoginAction(driver).logoutLogin(); AddTicketAction addTicket = new
+		  AddTicketAction(driver); addTicket.navigatetoAddTicket();
+		  addTicket.addTicket();
+		  
+		 		new LoginAction(driver).logoutLogin();
 		TicketingDashboardAction ticketingDashboardAction = new TicketingDashboardAction(driver);
 		ticketingDashboardAction.navigateToTicketingDashboard();
 		ticketingDashboardAction.selectMainFilter();
@@ -89,7 +88,7 @@ public class TicketingDashboardTest extends WebTestBase {
 		TicketDetailReportAction ticketSummaryReportAction = new TicketDetailReportAction(driver);
 		ticketSummaryReportAction.navigateToTicketingReport();
 		ticketSummaryReportAction.statusWidgetValues();
-		ticketSummaryReportAction.searchButton();
+		//ticketSummaryReportAction.searchButton();
 	}
 
 	@Test(priority = 4)
@@ -105,7 +104,7 @@ public class TicketingDashboardTest extends WebTestBase {
 		TicketDetailReportAction ticketSummaryReportAction = new TicketDetailReportAction(driver);
 		ticketSummaryReportAction.navigateToTicketingReport();
 		ticketSummaryReportAction.statusWidgetValues();
-		ticketSummaryReportAction.searchButton();
+		//ticketSummaryReportAction.searchButton();
 	}
 
 	@Test(priority = 5)
@@ -189,17 +188,18 @@ public class TicketingDashboardTest extends WebTestBase {
 	@Test(priority = 10)
 	public void verifyTodayFilterFromCategory() {
 		test = getTest("TC_Ticketing_Dashboard");
-		/*
-		 * new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
-		 * = new CompanySetupAction(driver);
-		 * companySetupAction.navigateToCompanySetupUser();
-		 * companySetupAction.addUser();
-		 * companySetupAction.addDepartmentNotVisibleClient();
-		 */
-		new LoginAction(driver).logoutLogin();
-		AddTicketAction addTicket = new AddTicketAction(driver);
-		addTicket.navigatetoAddTicket();
-		addTicket.addTicket();
+		
+		  new LoginAction(driver).logoutLogin(); CompanySetupAction companySetupAction
+		  = new CompanySetupAction(driver);
+		  companySetupAction.navigateToCompanySetupUser();
+		  companySetupAction.addUser();
+		  companySetupAction.addDepartmentNotVisibleClient();
+		 
+		
+		  new LoginAction(driver).logoutLogin(); AddTicketAction addTicket = new
+		  AddTicketAction(driver); addTicket.navigatetoAddTicket();
+		  addTicket.addTicket();
+		 
 		new LoginAction(driver).logoutLogin();
 		TicketingDashboardAction ticketingDashboardAction = new TicketingDashboardAction(driver);
 		ticketingDashboardAction.navigateToTicketingDashboard();

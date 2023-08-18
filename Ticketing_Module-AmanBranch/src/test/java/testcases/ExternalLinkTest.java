@@ -9,7 +9,12 @@ import org.testng.annotations.Test;
 import action.ExternalLinkAction;
 import action.LoginAction;
 import utils.WebTestBase;
-
+/**
+ * 
+ * @author aanand
+ *
+ */
+/* At this time this submodule is not available in ticketing module */
 public class ExternalLinkTest extends WebTestBase{
 
 	@Test(priority = 0)
@@ -44,7 +49,7 @@ public class ExternalLinkTest extends WebTestBase{
 
 	}
 	
-	@Test(dependsOnMethods = "verifyExternalLinkPageUrl")
+	@Test(priority=3, dependsOnMethods = "verifyExternalLinkPageUrl")
 	public void verifyCharactersLength() {
 		test = getTest("TC_Ticketing_ExternalLink_346");
 		ExternalLinkAction externalLinkAction = new ExternalLinkAction(driver);

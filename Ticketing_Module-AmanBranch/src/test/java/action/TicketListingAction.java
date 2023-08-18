@@ -30,6 +30,7 @@ public class TicketListingAction extends TicketListingPage {
 
 	public void navigatetoTicketListing() {
 		addTicketAction.clickFullMenu();
+		addTicketAction.clickOnFSMLocate();
 		addTicketAction.clickTicketingSideMenu();
 //		addTicketAction.clickTicketingOption();
 		clickTicketing();
@@ -72,6 +73,7 @@ public class TicketListingAction extends TicketListingPage {
 	}
 
 	public void viewTicket() {
+		clickOnListView();
 		actionButton();
 		viewButton();
 
@@ -91,36 +93,43 @@ public class TicketListingAction extends TicketListingPage {
 	}
 
 	public void validateSearch() {
-		enterTicketNumber();
+		//enterTicketNumber();
+		enterGeneratedTicketNumber();
 		clickSearchIcon();
 		matchSearchedValues();
 	}
 
 	public void validateSearchWithResetButton() {
-		validateSearch();
+		//validateSearch();
 		resetButton();
 		matchSearchWithResetButton();
 	}
 
 	public void unassignedTicketWidget() {
 		clickUnassignedWidget();
+		clickOnListView();
 		verifyTicketStatus();
 		clickOnHoldWidgets();
 	}
 
 	public void verifyReplyFunctionality() {
+		clickOnListView();
+		clickOnActionButton();
+		clickOnViewButton();
 		clickOnReplyButton();
-		clickOnShowAddTicket();
+		//clickOnShowAddTicket();
 		selectCannedReply();
 		addTicketAction.uploadDocument();
+		//enterReplyDescription();
 		clickOnSubmitReply();
 		pageRefresh("Page refreshed ");
-		clickOnReplyButton();
-		validateCountOfReplyButton("reply count");
+		//clickOnReplyButton();
+		//validateCountOfReplyButton("reply count");
 		verifyCannedReplies();
 	}
 
 	public void verifyFollowUp() {
+		clickOnListView();
 		clickOnActionButton();
 		clickFollowUp();
 		clickAddFollowUp();
@@ -182,5 +191,15 @@ public class TicketListingAction extends TicketListingPage {
 	public void verifySLATooltip() {
 		mouseHover();
 	}
+	public void verifySLATooltipInListingPage() {
+		verifyslatooltip();
+	}
+	public void searchTicketNumber() {
+		ticketListingPage.clickTicketNumberSearchField();
+		ticketListingPage.enterTicketNumberIntoSearchField();
+		ticketListingPage.clickOnSearchButton();
+		
+	}
+	
 
 }

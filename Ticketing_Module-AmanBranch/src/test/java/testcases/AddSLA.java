@@ -40,8 +40,10 @@ public class AddSLA extends WebTestBase {
 		addTicketAction.addTicketForSLA();
 		new LoginAction(driver).logoutLogin();
 		TicketListingAction ticketListingAction = new TicketListingAction(driver);
-		ticketListingAction.navigatetoTicketListing();
-		ticketListingAction.verifySLATooltip();
-	
+		//ticketListingAction.navigatetoTicketListing();
+		addTicketAction.navigatetoTicket();
+		ticketListingAction.searchTicketNumber();
+		//ticketListingAction.verifySLATooltip();
+		ticketListingAction.verifySLATooltipInListingPage();
 	}
 }

@@ -28,10 +28,10 @@ public class AddSLAAction {
 		addSLAPage.selectValuesFromTargetDropDown();
 		addSLAPage.selectDepartmentCheckbox();
 		addSLAPage.clickSaveButton();
-		addSLAPage.clickAddResult();
-		addSLAPage.resultPop();
-		addSLAPage.selectServiceBoard();
-		addSLAPage.saveResult();
+		//addSLAPage.clickAddResult();
+		//addSLAPage.resultPop();
+		//addSLAPage.selectServiceBoard();
+		//addSLAPage.saveResult();
 		configureSLA(20, 50);
 
 		//addSLAPage.violationTimeReminderUser();
@@ -115,10 +115,10 @@ public class AddSLAAction {
 		addSLAPage.selectValuesFromTargetDropDown();
 		addSLAPage.selectDepartmentCheckbox();
 		addSLAPage.clickSaveButton();
-		addSLAPage.clickAddResult();
-		addSLAPage.resultPop();
-		addSLAPage.selectServiceBoard();
-		addSLAPage.saveResult();
+		/*
+		 * addSLAPage.clickAddResult(); addSLAPage.resultPop();
+		 * addSLAPage.selectServiceBoard(); addSLAPage.saveResult();
+		 */
 		configureSLAWithLessTime(19, 50);
 		//addSLAPage.violationTimeReminderUser();
 		addSLAPage.clickSave();
@@ -143,10 +143,10 @@ public class AddSLAAction {
 		addSLAPage.selectValuesFromTargetDropDown();
 		addSLAPage.selectDepartmentCheckbox();
 		addSLAPage.clickSaveButton();
-		addSLAPage.clickAddResult();
-		addSLAPage.resultPop();
-		addSLAPage.selectServiceBoard();
-		addSLAPage.saveResult();
+		/*
+		 * addSLAPage.clickAddResult(); addSLAPage.resultPop();
+		 * addSLAPage.selectServiceBoard(); addSLAPage.saveResult();
+		 */
 		configureSLAWithLessResolveTime(11, 20);
 		//addSLAPage.voilationTimeReminderForLessResponsetime();
 		addSLAPage.clickSave();
@@ -163,10 +163,10 @@ public class AddSLAAction {
 		addSLAPage.selectValuesFromTargetDropDown();
 		addSLAPage.selectDepartmentCheckbox();
 		addSLAPage.clickSaveButton();
-		addSLAPage.clickAddResult();
-		addSLAPage.resultPop();
-		addSLAPage.selectServiceBoard();
-		addSLAPage.saveResult();
+		//addSLAPage.clickAddResult();
+		//addSLAPage.resultPop();
+		//addSLAPage.selectServiceBoard();
+		//addSLAPage.saveResult();
 		configureSLA(20, 50);
 		addSLAPage.violationTimeReminderUser();
 		addSLAPage.clickSave();
@@ -184,10 +184,10 @@ public class AddSLAAction {
 		addSLAPage.selectValuesFromTargetDropDown();
 		addSLAPage.selectDepartmentCheckbox();
 		addSLAPage.clickSaveButton();
-		addSLAPage.clickAddResult();
-		addSLAPage.resultPop();
-		addSLAPage.selectServiceBoard();
-		addSLAPage.saveResult();
+		/*
+		 * addSLAPage.clickAddResult(); addSLAPage.resultPop();
+		 * addSLAPage.selectServiceBoard(); addSLAPage.saveResult();
+		 */
 		configureSLA(20, 50);
 		addSLAPage.violationTimeReminderUser();
 		addSLAPage.clickSave();

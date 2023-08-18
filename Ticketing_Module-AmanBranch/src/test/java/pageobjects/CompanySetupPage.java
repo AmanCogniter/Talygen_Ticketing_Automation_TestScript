@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -28,10 +29,11 @@ public class CompanySetupPage extends WebBasePage {
 	static String departmentname;
 	public static String Channelnewname;
 	public static String skillname;
-
+	
 	public CompanySetupPage(WebDriver driver) {
 		super(driver, "CompanySetup Page");
 		this.driver = driver;
+		
 	}
 
 	// click on full menu
@@ -56,13 +58,18 @@ public class CompanySetupPage extends WebBasePage {
 	// click on user
 	public void clickUser() {
 		staticWait(3000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		 WebElement manageTax = driver.findElement(By.xpath("//div/ul/li/a[@data-original-title='Manage Tax']"));
+		js.executeScript("arguments[0].scrollIntoView();", manageTax);
 		//findElementVisibility(By.xpath("//ul[@class='submenu clschild_0 d-flex']//a[@data-original-title='User']"), 20);
 		click(By.xpath("//ul[@class='submenu clschild_0 d-flex']//a[@data-original-title='User']"), "User", 20);
 	}
 
 	// click on user
 	public void clickAddUser() {
-		click(By.cssSelector("#ancCreateDepartment"), "Add User", 20);
+		staticWait(2000);
+		
+		click(By.xpath("//div/span/a[@data-original-title='Add User']"), "Add User", 20);
 	}
 
 	// select title
@@ -186,7 +193,7 @@ public class CompanySetupPage extends WebBasePage {
 	// Select Shift
 	public void selectShift() {
 		selectValueWithText(By.cssSelector("#Clientdetail_shift_id"), "Select", "Select", 20);
-		selectValueWithText(By.cssSelector("#Clientdetail_shift_id"), "Day(Texas)", "CEO", 20);
+		selectValueWithText(By.cssSelector("#Clientdetail_shift_id"), "Day(Dallas)", "Shift", 20);
 	}
 
 	// enter Employee Id:

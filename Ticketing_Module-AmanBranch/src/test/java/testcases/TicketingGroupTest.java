@@ -32,8 +32,8 @@ public class TicketingGroupTest extends WebTestBase {
 		addGroupAction.addGroup();
 		//addGroupAction.selectDeptSkills();
 		addGroupAction.selectRouting();
-		addGroupAction.addFirstUser();
-		addGroupAction.addGroupConfiguration();
+		 addGroupAction.addFirstUser(); 
+		 addGroupAction.addGroupConfiguration(); 
 //		addGroupAction.validateCharactersLength();
 		addGroupAction.saveButton();
 	}
@@ -65,6 +65,7 @@ public class TicketingGroupTest extends WebTestBase {
 		addGroupAction.addGroup();
 		addGroupAction.selectDeptSkills();
 //		addGroupAction.addGroupConfiguration();
+		addGroupAction.saveButton();
 		addGroupAction.validateNoRecordsMessage();
 	}
 }

@@ -5,7 +5,9 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import utils.PropertiesLoader;
 import utils.WebBasePage;
@@ -48,12 +50,21 @@ public class TicketingServiceBoardPage extends WebBasePage {
 		click(By.xpath("//li[@data-name='Ticketing']//a//i//following::text()[1]//following::span[1]"),
 				"Ticketing Side menu", 20);
 	}
+	// click on Side menu
+			public void clickOnFSMLocate() {
+				clickByJavascript(By.xpath("//li[@data-name='FSM- Locate']/span"), "FSM Locate", 20);
+			}
 
 	// click on Manage Service Board
 	public void clickServiceBoard() {
 		staticWait(3000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement manageLayout = driver
+				.findElement(By.xpath("(//div/ul/li/a[@data-original-title='Manage Layout'])[last()]"));
+		js.executeScript("arguments[0].scrollIntoView();", manageLayout);
+		
 		click(By.xpath(
-				"//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='Manage Service Board' and @id='cadmin_messageboard_link']"),
+				"//div/ul/li/a[@data-original-title='Manage Service Board']"),
 				"Manage Service Board", 20);
 	}
 

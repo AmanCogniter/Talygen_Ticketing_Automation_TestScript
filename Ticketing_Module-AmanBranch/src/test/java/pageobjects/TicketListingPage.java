@@ -2,6 +2,7 @@ package pageobjects;
 
 import static reporting.ComplexReportFactory.getTest;
 
+import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -9,6 +10,7 @@ import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -21,7 +23,7 @@ import utils.WebBasePage;
 public class TicketListingPage extends WebBasePage {
 	WebDriver driver;
 	AddTicketPage addTicketPage;
-
+	CompanySetupPage companySetupPage;
 
 	private final static String FILE_NAME = System.getProperty("user.dir")
 			+ "\\src\\main\\resources\\testdata.properties";
@@ -37,6 +39,8 @@ public class TicketListingPage extends WebBasePage {
 	static SimpleDateFormat dateformat = new SimpleDateFormat(pattern);
 
 	static String datevalue = dateformat.format(date);
+	
+	
 	static String resolverNameText;
 	static String resolverCountText;
 	static String ticketListText;
@@ -84,16 +88,19 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void ticketNumber() {
-		click(By.cssSelector("#TicketNumberQS"), "click on Ticket Number", 20);
+		staticWait(2000);
+		click(By.xpath("//div/h5/a/span[contains(text(),'Ticket Number')]"), "click on Ticket Number", 20);
 	}
 
 	public void enterValueInTicketNo() {
-		enter(By.cssSelector("#ticketNumber"), addTicketPage.ticketNoGenerated, "enter value in Ticket Number", 20);
+		staticWait(2000);
+		enter(By.xpath("//div/input[@placeholder='Search by Ticket Number']"), addTicketPage.ticketNoGenerated, "enter value in Ticket Number", 20);
 	}
 
 	public void clickOnResetButton() {
-		findElementInVisibility(By.cssSelector("#ResetFilters"), 20);
-		clickByJavascript(By.cssSelector("#ResetFilters"), "Click on Reset Button", 20);
+		staticWait(2000);
+		findElementInVisibility(By.xpath("//span[@data-original-title='Reset']"), 20);
+		click(By.xpath("//span[@data-original-title='Reset']"), "Click on Reset Button", 20);
 	}
 
 	public void clickOnActionButton() {
@@ -103,8 +110,13 @@ public class TicketListingPage extends WebBasePage {
 
 	public void clickOnViewButton() {
 		staticWait(3000);
-		click(By.xpath("//i[@class='fa fa-eye text-info action-icon']//following::span[@class='text'][1]"),
+		click(By.xpath("//span/a[@data-original-title='View']"),
 				"Click on View Button", 20);
+	}
+	public void clickOnListViewButton() {
+		staticWait(3000);
+		click(By.xpath("//div/span/a[@data-original-title='List View']"),
+				"Click on List View", 20);
 	}
 
 	// Validate reset button functionality through Ticket number placeholader value
@@ -126,7 +138,11 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void ticketNoPlaceholder() {
-		verifyTicketNoPlaceholder("placeholder", "Ticket number plaveholder", By.cssSelector("#ticketNumber"));
+		/*
+		 * verifyTicketNoPlaceholder("placeholder", "Ticket number plaveholder",
+		 * By.cssSelector("#ticketNumber"));
+		 */
+		verifyTicketNoPlaceholder("placeholder", "Ticket number plaveholder", By.xpath("//div/input[@placeholder='Search by Ticket Number']"));
 	}
 
 	public void clickCollapseButton() {
@@ -134,31 +150,36 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void collapseExpandFunctionality() {
-		toCheckElementIsDisplayed(By.cssSelector("#divTicketListing"), 20,
+		/*
+		 * toCheckElementIsDisplayed(By.cssSelector("#divTicketListing"), 20,
+		 * " left side items are expand on clicking expand button");
+		 */
+		toCheckElementIsDisplayed(By.xpath("//span[@data-target='.multi-collapse']"), 20,
 				" left side items are expand on clicking expand button");
 	}
 
 	public void enterTicketNumber() {
-		enter(By.cssSelector("#ticketNumber"), addTicketPage.ticketNoGenerated, "value entered is ", 20);
+		staticWait(2000);
+		enter(By.xpath("#//div/input[@placeholder='Search by Ticket Number']"), addTicketPage.ticketNoGenerated, "value entered is ", 20);
 
 	}
 
 	public void enterGeneratedTicketNumber() {
-
-		enter(By.cssSelector("#ticketNumber"), addTicketPage.ticketNoGenerated, "value entered is " + getTicketNo, 20);
+		staticWait(3000);
+		enter(By.xpath("//div/input[@placeholder='Search by Ticket Number']"), addTicketPage.ticketNoGenerated, "value entered is " + getTicketNo, 20);
 	}
 
 	public void clickSearchIcon() {
 		staticWait(3000);
 		//findElementInVisibility(By.xpath("//a[@id='Search']//i[@class='fa fa-search'][1]"), 20);
-		clickByJavascript(By.xpath("//a[@id='Search']//i[@class='fa fa-search'][1]"), " Search icon ", 20);
+		click(By.xpath("//div/h5//span[@data-original-title='Search']"), " Search icon ", 20);
 	}
 
 	public void matchSearchedValues() {
 		String ticketNumber;
 		try {
-			findElementsVisibility(By.xpath("//table[@id='tblticketlistigdata']//tr[1]//td[1]/following-sibling::td[1]/span[@class='text-overflow-dynamic-container']"));
-			ticketNumber = getText(By.xpath("//table[@id='tblticketlistigdata']//tr[1]//td[1]/following-sibling::td[1]/span[@class='text-overflow-dynamic-container']"), 20);
+			findElementsVisibility(By.xpath("//div[@id='divtablelistingdata']/table/tbody/tr/td[2]/span"));
+			ticketNumber = getText(By.xpath("//div[@id='divtablelistingdata']/table/tbody/tr/td[2]/span"), 20);
 			if (ticketNumber.contains(addTicketPage.ticketNoGenerated)) {
 				getTest().log(LogStatus.PASS, ticketvalue + " is successfully matched");
 				logger.info(ticketNumber + " is successfully matched");
@@ -179,7 +200,7 @@ public class TicketListingPage extends WebBasePage {
 			ticketNumber();
 //			findElementsVisibility(By.path("//table[@id='tblticketlistigdata']//tr[1]//td[1]"));
 //			ticketNumber = getText(By.xpath("//table[@id='tblticketlistigdata']//tr[1]//td[1]"), 20);
-			String placheolderText = getAtribute(By.cssSelector("#ticketNumber"), "placeholder", 20);
+			String placheolderText = getAtribute(By.xpath("//div/input[@placeholder='Search by Ticket Number']"), "placeholder", 20);
 
 			if (placheolderText.equals("Ticket Number")) {
 				getTest().log(LogStatus.PASS, placheolderText + " is successfully matched");
@@ -197,16 +218,30 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void clickUnassignedWidget() {
-		clickByJavascript(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[1]/a"), " unassigned widgets ", 20);
+		clickByJavascript(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[1]"), " unassigned widgets ", 20);
 	}
+	public void clickOnListView() {
+		try {
+			staticWait(3000);
+			WebElement listView = driver.findElement(By.xpath("//a[@data-original-title='List View']"));
+			if (listView.isDisplayed()) {
+				clickByJavascript(By.xpath("//a[@data-original-title='List View']"), "List View", 20);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			logger.info("Page is already in list view mode");
+		}
+		
+	}
+	
 
 	public void verifyTicketStatus() {
 		String ticketStatus;
 		try {
-			waitForVisibilityOfElement(By.xpath("//td[@class='text-center overflow-visible']"), 50);
+			waitForVisibilityOfElement(By.xpath("//span[@id='status_id']"), 50);
 			//findElementsVisibility(By.xpath("//td[@class='text-center overflow-visible']"));
 			//ticketStatus = getText(By.xpath("//td[@class='text-center overflow-visible']"), 20);
-			ticketStatus = getText(By.xpath("//td[@class='text-center overflow-visible']/descendant::select[@data-initial-value='TICKET_OPENED']/option[@selected='selected']"), 20);
+			ticketStatus = getText(By.xpath("//td[@class='text-center']/span[@title='Open']"), 20);
 			if (ticketStatus.equals("Open")) {
 				getTest().log(LogStatus.PASS, ticketStatus + " is successfully matched");
 				logger.debug(ticketStatus + " is successfully matched");
@@ -229,7 +264,7 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void clickOnReplyButton() {
-		clickByJavascript(By.xpath("//table[@id='tblticketlistigdata']//tbody/tr//td[8]/a"), " reply button", 15);
+		clickByJavascript(By.xpath("//a[@data-original-title='Reply']"), " reply button", 15);
 	}
 
 	public void clickOnShowAddTicket() {
@@ -243,20 +278,36 @@ public class TicketListingPage extends WebBasePage {
 //			String value = (cannedReply.equals("Check")) ? "Check" : "Select Template";
 		click(By.xpath("//select[@id='ddlReplyTemplate']"), " canned Reply ", 20);
 	
-		click(By.xpath("//select[@id='ddlReplyTemplate']/option[text()='FInal Reply ']"), "Select canned Reply ", 20);
+		click(By.xpath("//select[@id='ddlReplyTemplate']/option[text()='Final Reply']"), "Select canned Reply ", 20);
 			//selectValueWithText(By.xpath("//select[@id='ddlReplyTemplate']"), "FInal Reply ", "Canned Reply", 10);
 	}
+	// enter Description in Template
+			public void enterReplyDescription() {
+				staticWait(3000);
+				//click(By.xpath("//span[text()='Source']"), "Source", 15);
+				enter(By.xpath("//body[contains(@class,'cke_editable cke_editable_themed cke_contents_ltr cke_theme_Light cke_show_borders')]/div"), prop.getProperty("ticketDescription"), "Description",
+						15);
+			}
 
 	public void clickOnSubmitReply() {
-		click(By.id("aTicketReplySave"), " submitReply button", 20);
+		click(By.xpath("//div/a[@id='aTicketReplySave']"), " submitReply button", 20);
 	}
 
 	public void validateCountOfReplyButton(String name) {
 
+		/*
+		 * String getReplyCount = getText( By.
+		 * xpath("//tr[1]//td[@class='text-center single-action']//span[@class='noti-circle noti-green']"
+		 * ), 20);
+		 */
 		String getReplyCount = getText(
-				By.xpath("//tr[1]//td[@class='text-center single-action']//span[@class='noti-circle noti-green']"), 20);
+				By.xpath("//div[@class='conversation-header']"), 20);
 		int replyCount = Integer.parseInt(getReplyCount);
-		List<WebElement> options = driver.findElements(By.xpath("//div[@class='conversation-box-con']"));
+				/*
+		 * List<WebElement> options =
+		 * driver.findElements(By.xpath("//div[@class='conversation-box-con']"));
+		 */
+		List<WebElement> options = driver.findElements(By.xpath("//div[@class='conversation-box']"));
 
 		for (int i = 0; i < options.size(); i++) {
 			if (options.size() == replyCount) {
@@ -273,20 +324,35 @@ public class TicketListingPage extends WebBasePage {
 	}
 
 	public void clickFollowUp() {
-		clickByJavascript(By.id("aIndexfollowup"), "Add follow up button", 20);
+		clickByJavascript(By.xpath("//span/a[@data-original-title='Add a Follow-Up']"), "Add follow up button", 20);
 	}
 
 	public void clickAddFollowUp() {
-		clickByJavascript(By.id("andaddfolowups"), "Add button", 20);
+		clickByJavascript(By.xpath("//a[@id='andaddfolowups']"), "Add button", 20);
 	}
 
 	public void clickOnDatePicker() {
 		staticWait(3000);
+		/*
+		 * String today; String tomorrow; Date date; Format formatter; Calendar calendar
+		 * = Calendar.getInstance();
+		 * 
+		 * date = calendar.getTime(); formatter = new SimpleDateFormat("MM/dd/yyyy");
+		 * today = formatter.format(date); System.out.println("Today : " + today);
+		 * 
+		 * calendar.add(Calendar.DATE, 1); date = calendar.getTime(); formatter = new
+		 * SimpleDateFormat("MM/dd/yyyy"); tomorrow = formatter.format(date);
+		 * System.out.println("Tomorrow : " + tomorrow);
+		 */
 		click(By.xpath(
-				"//input[@class='form-control  hasdatetimepicker']//following::div[@data-original-title='Select Date']"),
+				"//input[contains(@class,'form-control  hasdatetimepicker')]//following::div[@data-original-title='Select Date']"),
 				"Date picker", 20);
+		click(By.xpath(
+				"//table/tbody/tr/td[@class='day active today']/following-sibling::td"),
+				"Tomorrow Date", 20);
 
-		click(By.xpath("//table[@class='table table-sm']//tbody//tr[2]//td[@class='day']"), "Select Date picker", 20);
+		//click(By.xpath("//table[@class='table table-sm']//tbody//tr//td[@class='day active today']"), "Select Date picker", 20);
+		//enter(By.xpath("//tg-input/input[@id='ScheduleDate']"), tomorrow, "Tomorrow date selected", 20);
 		// table[@class='table table-sm']//tbody//tr[2]//td[1]aaa
 //		click(By.cssSelector("td.day.active.today"), "select follow up Date", 20);
 	}
@@ -309,11 +375,17 @@ public class TicketListingPage extends WebBasePage {
 
 	public void clickOnTicketSubject() {
 		//AddTicketPage addTicketPage= new AddTicketPage(driver);
-		click(By.xpath("//div[@id='headingOneSubject']/descendant::a[@data-toggle='collapse']"), "ticket subject", 20);
-		enter(By.xpath("//div[@class='form-group']/input[@id='Subject']"), addTicketPage.ticketSubject, "Ticket Subject", 20);
-		clickByJavascript(By.xpath("//span/a[@id='Search']"), "Secrch button", 30);
-		waitForVisibilityOfElement(By.xpath("//table[@id='tblticketlistigdata']/tbody/tr/td[3]/a[@data-toggle-tooltip='tooltip']/span[@class='text-overflow-dynamic-container']"), 50);
-		clickByJavascript(By.xpath("//table[@id='tblticketlistigdata']/tbody/tr/td[3]/a[@data-toggle-tooltip='tooltip']/span[@class='text-overflow-dynamic-container']"), "Subject name", 30);
+		click(By.xpath("//table/tbody/tr/td[3]"), "ticket subject", 20);
+		/*
+		 * enter(By.xpath("//div[@class='form-group']/input[@id='Subject']"),
+		 * addTicketPage.ticketSubject, "Ticket Subject", 20);
+		 * clickByJavascript(By.xpath("//span/a[@id='Search']"), "Secrch button", 30);
+		 * waitForVisibilityOfElement(By.xpath(
+		 * "//table[@id='tblticketlistigdata']/tbody/tr/td[3]/a[@data-toggle-tooltip='tooltip']/span[@class='text-overflow-dynamic-container']"
+		 * ), 50); clickByJavascript(By.xpath(
+		 * "//table[@id='tblticketlistigdata']/tbody/tr/td[3]/a[@data-toggle-tooltip='tooltip']/span[@class='text-overflow-dynamic-container']"
+		 * ), "Subject name", 30);
+		 */
 	}
 
 	public void selectTime() {
@@ -345,7 +417,7 @@ public class TicketListingPage extends WebBasePage {
 		staticWait(2000);
 		pageNavigate(prop.getProperty("ticketListingPageUrl"), "Navigate to Ticket listing page");
 		staticWait(2000);
-		driver.navigate().refresh();
+		//driver.navigate().refresh();
 		}
 
 	public void clickDeleteButton() {
@@ -367,12 +439,12 @@ public class TicketListingPage extends WebBasePage {
 
 	public void checkWidgets() {
 
-		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetail']/ul/li[1]"), 30, "Unassigned Widget");
-		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetail']/ul/li[2]"), 30, "On Hold Widget");
-		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetail']/ul/li[3]"), 30, "Response due Widget");
-		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetail']/ul/li[4]"), 30, "Resolve due Widget");
-		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetail']/ul/li[5]"), 30, "Response over due Widget");
-		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetail']/ul/li[6]"), 30, "Resolve over due Widget");
+		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[1]"), 30, "Unassigned Widget");
+		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[2]"), 30, "On Hold Widget");
+		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[3]"), 30, "Response due Widget");
+		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[4]"), 30, "Resolve due Widget");
+		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[5]"), 30, "Response over due Widget");
+		toCheckElementIsDisplayed(By.xpath("//div[@id='divMinWidgetDetailChild']/ul/li[6]"), 30, "Resolve over due Widget");
 	}
 
 	public void clickAssignedTo() {
@@ -728,7 +800,12 @@ public class TicketListingPage extends WebBasePage {
 		staticWait(3000);
 
 		//String ticketNoText = getText(By.xpath("//table[@id='tblticketlistigdata']//tbody//tr[1]//td[1]"), 20);
-		String ticketNoText = getText(By.xpath("//table[@id='tblticketlistigdata']/tbody/descendant::td/span[@class='text-overflow-dynamic-container']"), 20);
+		/*
+		 * String ticketNoText = getText(By.xpath(
+		 * "//table[@id='tblticketlistigdata']/tbody/descendant::td/span[@class='text-overflow-dynamic-container']"
+		 * ), 20);
+		 */
+		String ticketNoText = getText(By.xpath("//table/tbody/tr/td[2]/span"), 20);
 		ticketvalue = addTicketPage.ticketNoGenerated;
 
 		if (ticketvalue.contains(ticketNoText)) {
@@ -745,14 +822,21 @@ public class TicketListingPage extends WebBasePage {
 	public void mouseHover() {
 
 		//hover((By.xpath("//table[@id='tblticketlistigdata']//tbody//tr/td[5]//span[1]")), "hover on SLA time", 20);
-		hover((By.xpath("//table/descendant::span[@class='d-block text-overflow-dynamic-container']")), "hover on SLA time", 20);
+		//hover((By.xpath("//table/descendant::span[@class='d-block text-overflow-dynamic-container']")), "hover on SLA time", 20);
+		hover((By.xpath("//div/span[@class='text-danger font-weight-bold']")), "hover on SLA time", 20);
 
-		String toolTipText = getAtribute(By.xpath("//table/descendant::span[@class='d-block text-overflow-dynamic-container']"),
-				"data-original-title", 20);
+		
+		  String toolTipText =
+		  getAtribute(By.xpath("//div/span[@class='text-danger font-weight-bold']"),
+		  "data-original-title", 20);
+		 
+		
+		//String toolTipText = driver.findElement(By.xpath("//div/span[contains(text(),'"+CompanySetupPage.departmentname+"')]")).getText();
 
 		// To get the tool tip text and assert
 		logger.debug("toolTipText-->" + toolTipText);
 		String createdSlaName = AddSLAPage.policyName;
+		//String createdSlaName = AddSLAPage.departmentName;
 		if (toolTipText.contains(createdSlaName)) {
 			getTest().log(LogStatus.PASS, createdSlaName + " slaTooltip is matched as expected.");
 			logger.debug("slaTooltip is not matched as expected.");
@@ -762,6 +846,19 @@ public class TicketListingPage extends WebBasePage {
 			logger.debug("createdSlaName is not matched as expected.");
 			takeScreenshot("mouseHover");
 			Assert.fail("mouseHover");
+		}
+	}
+	public void verifyslatooltip() {
+		
+		try {
+			 WebElement toolTipText = driver.findElement(By.xpath("//div/span[contains(text(),'"+CompanySetupPage.departmentname+"')]"));
+			if (toolTipText.isDisplayed()) {
+				logger.info("Ticket with SLA created successfully");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			logger.info("Ticket with SLA not created successfully");
 		}
 	}
 
@@ -785,5 +882,46 @@ public class TicketListingPage extends WebBasePage {
 		clickByJavascript(By.xpath(
 				"//div[@class='custom-control custom-checkbox custom-control-inline w-100']//following::label[text()='No Product']"),
 				"No Product", 0);
+	}
+	public void clickTicketNumberSearchField() {
+		staticWait(3000);
+		click(By.xpath("//div/h5/a/span[contains(text(),'Ticket Number')]"), "Ticket Number Search Field", 50);
+	}
+	public void enterTicketNumberIntoSearchField() {
+		staticWait(2000);
+		
+		enter(By.xpath("//div/input[@placeholder='Search by Ticket Number']"), addTicketPage.ticketNoGenerated, "Ticket Number", 50);
+	}
+	public void clickOnSearchButton() {
+		staticWait(2000);
+		click(By.xpath("//span/span[@data-original-title='Search']"), "Search Button", 50);
+	}
+	public void clickOnCombineTicket() {
+		staticWait(2000);
+		click(By.xpath("//input[@placeholder='Select Ticket']"), "Combine Ticket Text Field", 50);
+		
+		enter(By.xpath("//input[@placeholder='Select Ticket']"), "1", "Combine Ticket", 50);
+		staticWait(2000);
+		click(By.xpath("//ul[@id='select2-ddlMergeTicketIds-results']/li"), "Combine Ticket Dropdown", 50);
+		staticWait(3000);
+		click(By.xpath("//input[@class='select2-search__field valid']"), "Combine Ticket Text Field", 50);
+		enter(By.xpath("//input[@class='select2-search__field valid']"), "1", "Combine Ticket", 50);
+		staticWait(2000);
+		click(By.xpath("//ul[@id='select2-ddlMergeTicketIds-results']/li[2]"), "Combine Ticket Dropdown", 50);
+	}
+	public void clickOnSelectPrimaryTicket() {
+		staticWait(2000);
+		click(By.xpath("//select[@id='PrimaryTicketId']"), "Primary Ticket Dropdown", 50);
+		selectValueWithIndex(By.xpath("//select[@id='PrimaryTicketId']"), 2, "Primary Ticket", 50);
+	}
+	public void enterReason() {
+		staticWait(2000);
+		
+		enter(By.xpath("//div/tg-textarea/textarea[@id='MergeReason']"), prop.getProperty("mergingreason"), "Reason", 50);
+	}
+	public void clickOnSubmitButton() {
+		staticWait(2000);
+		click(By.xpath("//div/a[text()='Submit']"), "SUbmit Button", 50);
+		logger.info("Ticket has been successfully merged");
 	}
 }

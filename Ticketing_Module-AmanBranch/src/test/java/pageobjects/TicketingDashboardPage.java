@@ -73,7 +73,10 @@ public class TicketingDashboardPage extends WebBasePage {
 		//findElementInVisibility(By.cssSelector("#navbarDropdownPortfolio"), 15);
 		click(By.cssSelector("#navbarDropdownPortfolio"), "Full Menu", 20);
 	}
-
+	// click on FSM Locate
+		public void clickOnFSMLocate() {
+			clickByJavascript(By.xpath("//li[@data-name='FSM- Locate']/span"), "FSM Locate", 20);
+		}
 	// click on ticketing
 	public void clickTicketingOption() {
 //		click(By.xpath("//li[@data-name='Ticketing']"), "Ticketing", 10);
@@ -105,7 +108,7 @@ public class TicketingDashboardPage extends WebBasePage {
 	public void clickAddReport() {
 		staticWait(7000);
 		//waitForVisibilityOfElement(By.xpath("//div[@class='graph-widget-heading float-left w-100']/span[text()='Tickets by Department']"), 30);
-		click(By.cssSelector("#hlkAddMoreReports"), "Add Report", 20);
+		clickByJavascript(By.xpath("//div/a[@id='hlkAddMoreReports']"), "Add Report", 20);
 
 	}
 

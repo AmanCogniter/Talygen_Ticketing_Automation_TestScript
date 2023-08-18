@@ -24,9 +24,9 @@ public class ExternalLinkAction {
 
 	public void navigateToExternalLink() {
 		externalLinkPage.clickFullMenu();
-		externalLinkPage.clickTicketingSideMenu();
+		externalLinkPage.clickOnFSMLocate();
 		//externalLinkPage.clickTicketingOption();
-		externalLinkPage.clickOnTicketLayoutSetting();
+		//externalLinkPage.clickOnTicketLayoutSetting();
 		externalLinkPage.clickExternalLink();
 	}
 

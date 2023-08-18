@@ -21,7 +21,7 @@ public class TicketDetailReportAction {
 
 	public void navigateToTicketingReport() {
 		ticketDetailReportPage.clickFullMenu();
-		ticketDetailReportPage.clickTicketingSideMenu();
+		ticketDetailReportPage.clickOnFSMLocate();
 //		ticketDetailReportPage.clickTicketingOption();
 		ticketDetailReportPage.clickTicketReport();
 	}
@@ -35,9 +35,14 @@ public class TicketDetailReportAction {
 	}
 
 	public void enterTicketToSearch() {
-		ticketDetailReportPage.navigateToTicketReportPage();
-		ticketDetailReportPage.enterTicketNumber();
-		ticketDetailReportPage.enterSubject();
+		//ticketDetailReportPage.navigateToTicketReportPage();
+		//ticketDetailReportPage.enterTicketNumber();
+		//ticketDetailReportPage.enterSubject();
+		//getTicketNoText();
+		ticketListingPage.navigateToTicketListingPage();
+		ticketListingPage.ticketNumber();
+		ticketListingPage.enterGeneratedTicketNumber();
+		ticketListingPage.clickSearchIcon();
 	}
 
 	public void validateSearchedValues() {
@@ -53,6 +58,7 @@ public class TicketDetailReportAction {
 
 	public void statusWidgetValues() {
 		ticketDetailReportPage.verifyStatusWidgetValues();
+		
 	}
 
 	public void verifyCategoryWidgetCount() {

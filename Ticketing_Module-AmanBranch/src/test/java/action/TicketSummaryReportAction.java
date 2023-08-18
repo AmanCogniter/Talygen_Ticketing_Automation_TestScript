@@ -10,6 +10,7 @@ public class TicketSummaryReportAction {
 
 	WebDriver driver;
 	TicketDetailReportPage ticketDetailReportPage;
+	
 	TicketListingPage ticketListingPage;
 	AddTicketAction addTicketAction;
 	TicketSummaryReportPage ticketSummaryReportPage;
@@ -43,9 +44,10 @@ public class TicketSummaryReportAction {
 	}
 
 	public void validateSearchedValues() {
+		ticketListingPage.clickOnListView();
 		ticketSummaryReportPage.ticketNoTextFromSearch();
 		ticketSummaryReportPage.ticketSubjectFromSearch();
 		ticketSummaryReportPage.verifyTicketNo();
-		ticketSummaryReportPage.clickReportTicketNo();
+		//ticketSummaryReportPage.clickReportTicketNo();
 	}
 }

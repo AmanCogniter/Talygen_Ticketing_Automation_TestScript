@@ -30,12 +30,14 @@ public class TicketSummaryReportTest extends WebTestBase {
 		  addTicketAction.navigatetoAddTicket(); 
 		  addTicketAction.addTicket();
 		TicketSummaryReportAction ticketSummaryReportAction = new TicketSummaryReportAction(driver);
+		TicketListingAction ticketListingAction = new TicketListingAction(driver);
 		new LoginAction(driver).logoutLogin();
-		ticketSummaryReportAction.navigateToTicketingReport();
-		ticketSummaryReportAction.enterTicketToSearch();
+		ticketListingAction.navigatetoTicketListing();
+		ticketListingAction.clickOnTicketNumber();
+		ticketListingAction.ticketNumberValues();
 		ticketSummaryReportAction.searchButton();
 		ticketSummaryReportAction.validateSearchedValues();
-		TicketListingAction ticketListingAction = new TicketListingAction(driver);
+		//TicketListingAction ticketListingAction = new TicketListingAction(driver);
 //		new LoginAction(driver).logoutLogin();
 		ticketListingAction.verifyTicketValuesFromReport();
 	}

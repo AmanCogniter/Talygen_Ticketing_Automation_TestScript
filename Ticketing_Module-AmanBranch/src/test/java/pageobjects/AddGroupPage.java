@@ -47,6 +47,7 @@ public class AddGroupPage extends WebBasePage {
 
 	// enter Group Name
 	public void enterGroupName() {
+		staticWait(2000);
 		groupName = prop.getProperty("enterGroupName") + dateValue;
 		enter(By.cssSelector("#TicketGroupName"), groupName, "Enter Group Name", 45);
 	}
@@ -96,13 +97,14 @@ public class AddGroupPage extends WebBasePage {
 
 	// select assigned department
 	public void selectSalesDept() {
-		selectValueWithText(By.xpath("//tg-select/select[@id='DepartmentId']"), "Networks", "Assigned Department", 50);
+		staticWait(2000);
+		selectValueWithText(By.xpath("//tg-select/select[@id='DepartmentId']"), "Sales", "Assigned Department", 50);
 		//findElementInVisibility(By.xpath("//div[@class='lds-ring']"), 40);
 	}
 
 	// Click add button
 	public void selectFirstAddButton() {
-
+staticWait(2000);
 		List<WebElement> userList = driver.findElements(By.xpath(
 
 				"//tbody[@id='UserListDiv']//tr//td[1]"));
@@ -138,6 +140,7 @@ public class AddGroupPage extends WebBasePage {
 
 	// select MarkAsDefault radio button
 	public void selectMarkAsDefault() {
+		staticWait(2000);
 		clickByJavascript(By.cssSelector("#rdo_2"), "Marks As Default", 40);
 	}
 
@@ -186,11 +189,18 @@ public class AddGroupPage extends WebBasePage {
 
 	// validation message
 	public void verifysuccessMessage() {
-		verifySuccessMessage(By.cssSelector("#notifymessage"), prop.getProperty("groupSuccessMessage"), 40);
+		staticWait(2000);
+		verifySuccessMessage(By.xpath("//div[@id='notifymessage']/div/span"), prop.getProperty("groupSuccessMessage"), 40);
 	}
+	// close notify message popup
+		public void closeNotifyMessagePopUp() {
+			staticWait(3000);
+			click(By.xpath("//div/button[@id='closenotifymessage']/span"), "Close button", 40);
+		}
 
 	// validation No records message message
 	public void verifyNoRecordsMessage() {
+		staticWait(2000);
 		verifySuccessMessage(By.cssSelector("#trNoRecordFond"), prop.getProperty("noRecordsMsg"), 40);
 	}
 

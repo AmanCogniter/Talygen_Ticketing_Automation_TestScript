@@ -3,15 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TicketingDashboardTest">
+      <class name="testcases.ExternalLinkTest">
         <methods>
+          <include name="verifyValidationMessage"/>
+          <include name="verifyCharactersLength"/>
           <include name="beforeMethod"/>
+          <include name="verifyFrameText"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
-          <include name="verifyReportsValidation"/>
+          <include name="verifyExternalLinkPageUrl"/>
         </methods>
-      </class> <!-- testcases.TicketingDashboardTest -->
+      </class> <!-- testcases.ExternalLinkTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

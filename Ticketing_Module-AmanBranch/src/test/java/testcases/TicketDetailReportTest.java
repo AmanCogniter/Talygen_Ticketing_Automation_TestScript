@@ -29,7 +29,7 @@ public class TicketDetailReportTest extends WebTestBase {
 		addTicketAction.addTicket();
 		TicketDetailReportAction ticketDetailReportAction = new TicketDetailReportAction(driver);
 		ticketDetailReportAction.enterTicketToSearch();
-		ticketDetailReportAction.searchButton();
+		//ticketDetailReportAction.searchButton();
 	
 	}
 }

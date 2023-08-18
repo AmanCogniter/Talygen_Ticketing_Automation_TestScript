@@ -7,7 +7,9 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -42,6 +44,10 @@ public class TicketGroupListingPage extends WebBasePage {
 
 	}
 	// click on Side menu
+			public void clickOnFSMLocate() {
+				clickByJavascript(By.xpath("//li[@data-name='FSM- Locate']/span"), "FSM Locate", 20);
+			}
+	// click on Side menu
 	public void clickTicketingSideMenu() {
 		staticWait(3000);
 		click(By.xpath("//li[@data-name='Ticketing']//a//i//following::text()[1]//following::span[1]"),
@@ -51,8 +57,15 @@ public class TicketGroupListingPage extends WebBasePage {
 	// click on Ticketing group
 	public void clickTicketingGroup() {
 		staticWait(3000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement manageLayout = driver
+				.findElement(By.xpath("(//div/ul/li/a[@data-original-title='Manage Layout'])[last()]"));
+		js.executeScript("arguments[0].scrollIntoView();", manageLayout);
+		WebElement serviceAppoitment = driver
+				.findElement(By.xpath("//div/ul/li/a[@data-original-title='Service Appointment']"));
+		js.executeScript("arguments[0].scrollIntoView();", serviceAppoitment);
 		click(By.xpath(
-				"//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='Ticket Group' and @id='cadmin_messageboard_link']"),
+				"//div/ul/li/a[@data-original-title='Ticket Group']"),
 				"Ticket Group", 20);
 	}
 

@@ -42,10 +42,18 @@ public class UpdateTicketAction extends UpdateTicketPage {
 		validateUrlOfUpdateTicketPage();
 		clickMergeButton();
 		checkDetailsOnClickinMerge();
+		ticketListingPage.clickOnCombineTicket();
+		ticketListingPage.clickOnSelectPrimaryTicket();
+		ticketListingPage.enterReason();
+		ticketListingPage.clickOnSubmitButton();
 
 	}
 
 	public void updateTicket() {
+		ticketListingPage.ticketNumber();
+		ticketListingPage.enterGeneratedTicketNumber();
+		ticketListingPage.clickSearchIcon();
+		clickOnListView();
 		ticketListingPage.clickOnTicketSubject();
 		clickUpdateTicket();
 		clickOnDatePicker();

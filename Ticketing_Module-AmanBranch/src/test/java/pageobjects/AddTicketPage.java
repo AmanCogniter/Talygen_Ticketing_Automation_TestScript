@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -32,8 +33,7 @@ public class AddTicketPage extends WebBasePage {
 	private final static String FILE_NAME = System.getProperty("user.dir")
 			+ "\\src\\main\\resources\\testdata.properties";
 	/* Modified */
-	String filePath = System.getProperty("user.dir") +
-			  "\\src\\main\\resources\\testfiles\\";
+	String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\testfiles\\";
 
 	private static Properties prop = new PropertiesLoader(FILE_NAME).load();
 
@@ -56,6 +56,7 @@ public class AddTicketPage extends WebBasePage {
 	String Ticketfor = "OnBehalf";
 	String UserorClient = "User";
 	String user = "Matthew";
+	
 
 //	public String ticketGeneratedNo = getTicketNoText();
 
@@ -68,14 +69,27 @@ public class AddTicketPage extends WebBasePage {
 	public void clickAddTicket() {
 		staticWait(3000);
 //		findElementVisibility(By.cssSelector("#menuiatem22"), 5);
-		click(By.xpath("//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='Add Ticket']"), "Add Ticket",
+		click(By.xpath("//div/span/a[@data-original-title='Add Ticket']"), "Add Ticket",
 				10);
 	}
 
 	// click on Side menu
 	public void clickTicketingSideMenu() {
-		clickByJavascript(By.xpath("//li[@data-name='Ticketing']//a//i//following::text()[1]//following::span[1]"),
+		staticWait(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement manageLayout = driver
+				.findElement(By.xpath("(//div/ul/li/a[@data-original-title='Manage Layout'])[last()]"));
+		js.executeScript("arguments[0].scrollIntoView();", manageLayout);
+		WebElement serviceAppoitment = driver
+				.findElement(By.xpath("//div/ul/li/a[@data-original-title='Service Appointment']"));
+		js.executeScript("arguments[0].scrollIntoView();", serviceAppoitment);
+		click(By.xpath("//div/ul/li/a[@data-original-title='Ticketing']"),
 				"Ticketing Side menu", 20);
+	}
+
+	// click on Side menu
+	public void clickOnFSMLocate() {
+		clickByJavascript(By.xpath("//li[@data-name='FSM- Locate']/span"), "FSM Locate", 20);
 	}
 
 	// click on Ticketing submenu
@@ -86,8 +100,15 @@ public class AddTicketPage extends WebBasePage {
 
 	// click on Ticketing submenu SLA
 	public void clickSLA() {
-		click(By.xpath("//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='SLA']"),
-				"SLA from full menu", 5);
+		staticWait(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement manageLayout = driver
+				.findElement(By.xpath("(//div/ul/li/a[@data-original-title='Manage Layout'])[last()]"));
+		js.executeScript("arguments[0].scrollIntoView();", manageLayout);
+		WebElement serviceAppoitment = driver
+				.findElement(By.xpath("//div/ul/li/a[@data-original-title='Service Appointment']"));
+		js.executeScript("arguments[0].scrollIntoView();", serviceAppoitment);
+		click(By.xpath("//a[@data-original-title='SLA']"), "SLA from FSM-Locate", 5);
 	}
 
 	// Click on Add ticket icon
@@ -189,16 +210,17 @@ public class AddTicketPage extends WebBasePage {
 	// upload file
 	public void uploadDocument() {
 		staticWait(3000);
-		//findElementVisibility(
-				//By.xpath("//span[@class='group-span-filestyle input-group-btn input-group-text bg-white']"), 20);
+		// findElementVisibility(
+		// By.xpath("//span[@class='group-span-filestyle input-group-btn
+		// input-group-text bg-white']"), 20);
 		/*
 		 * driver.findElement(By.
 		 * xpath("(//div[@class='bootstrap-filestyle input-group']/input[@type='text'])[2]"
 		 * )) .sendKeys(Config.testfilePDF);
 		 */
 
-		  findElementPresence(By.xpath("//div[@class='custom-file']/input[@name='FileSrc']"), 20)
-		  .sendKeys(filePath + prop.getProperty("testfileDoc"));
+		findElementPresence(By.xpath("//div[@class='custom-file']/input[@name='FileSrc']"), 20)
+				.sendKeys(filePath + prop.getProperty("testfileDoc"));
 
 	}
 
@@ -208,34 +230,43 @@ public class AddTicketPage extends WebBasePage {
 		verifyFileUploadTrue();
 	}
 
-	// enter document in Template
+	// enter Description in Template
 	public void enterDescription() {
 		staticWait(3000);
 		click(By.xpath("//span[text()='Source']"), "Source", 15);
-		enter(By.xpath("//div[@id='cke_1_contents']/textarea"), prop.getProperty("ticketDescription"), "Description", 15);
+		enter(By.xpath("//div[@id='cke_1_contents']/textarea"), prop.getProperty("ticketDescription"), "Description",
+				15);
 	}
+	
 
 	// click on save draft
 	public void clickSaveDraft() {
 		staticWait(2000);
 		click(By.cssSelector("a#btnSaveDraft"), "Save as Draft", 8);
 	}
+	// click on notify message
+		public void clickOnCloseNotifyMessage() {
+			staticWait(2000);
+			click(By.xpath("//button[@id='closenotifymessage']"), "Close notify message", 8);
+		}
 
 	// click on submit ticket
 	public void clickSubmitTicket() {
 		staticWait(3000);
 		WebElement submitButton = driver.findElement(By.xpath("//div/a[@id='btnSaveTicket']"));
-		Actions action= new Actions(driver);
+		Actions action = new Actions(driver);
 		action.moveToElement(submitButton).click().perform();
 		logger.info("Submit button clicked");
-		//clickByJavascript(By.xpath("//div/a[@id='btnSaveTicket']"), "Submit button", 10);
+		// clickByJavascript(By.xpath("//div/a[@id='btnSaveTicket']"), "Submit button",
+		// 10);
 	}
+
 	// click on Close notify message popup
-		public void clickOncloseNotifyMessagePopUp() {
-			staticWait(3000);
-			click(By.xpath("//button[@id='closenotifymessage']"), "Close Notify Message PopUp", 10);
-			driver.navigate().refresh();
-		}
+	public void clickOncloseNotifyMessagePopUp() {
+		staticWait(3000);
+		click(By.xpath("//button[@id='closenotifymessage']"), "Close Notify Message PopUp", 10);
+		driver.navigate().refresh();
+	}
 
 	// click on back to list
 	public void clickBackToList() {
@@ -260,32 +291,43 @@ public class AddTicketPage extends WebBasePage {
 
 	// click on Assigned to department dropdown
 	public void clickAssignedToDepartment() {
+		staticWait(3000);
 		click(By.cssSelector("#DepartmentId"), "Drop down select by department", 20);
 	}
 
 	// click on Ticket Category dropdown
 	public void clickTicketCategory() {
+		staticWait(3000);
 		click(By.cssSelector("#TicketCategoryId"), "Ticket Category Depatment", 10);
 	}
 
 	// click on Assigned to Priority dropdown
 	public void clickPriorityDropDown() {
+		staticWait(3000);
 		click(By.cssSelector("#PriorityId"), "Drop down select by Priority", 10);
 	}
+	// click on List View
+		public void clickOnListView() {
+			staticWait(3000);
+			clickByJavascript(By.xpath("//a[@data-original-title='List View']"), "List View", 10);
+		}
 
 	// click on Assigned to Product dropdown
 	public void clickProductDropDown() {
+		staticWait(3000);
 		click(By.cssSelector("#ProductId"), "Drop down select by Product", 10);
 	}
 
 	// click on behalf of client
 	public void clickOnBehalfOfClient() {
+		staticWait(2000);
 		click(By.xpath("//input[@class='form-check-input rdoOnBehalf rdoClient custom-control-input']"),
 				"on behalf of client.", 10);
 	}
 
 	// Verify success message
 	public void verifySuccessMessage() {
+		staticWait(2000);
 		findElementVisibility(By.cssSelector("#divAddTicket p"), 50);
 		String successMessage = getText(By.cssSelector("#divAddTicket p"), 50);
 		if (successMessage.equals("Ticket has been successfully Submitted with reference number")) {
@@ -299,8 +341,14 @@ public class AddTicketPage extends WebBasePage {
 		}
 	}
 
+	public void verifyTicketNumber() {
+		staticWait(1000);
+		logger.info("Ticket number displayed :" + ticketNoGenerated);
+	}
+
 	// Ticket listing page
 	public void verifyTicketListingPage() {
+		staticWait(2000);
 		String elementinListingPage = getText(By.cssSelector("span#showHideMenuParent"), 10);
 		if (elementinListingPage.equals("TICKETING")) {
 			getTest().log(LogStatus.PASS, "Ticket Listing page is successfully displayed");
@@ -322,6 +370,7 @@ public class AddTicketPage extends WebBasePage {
 		if (counter > 1) {
 			exp = valuesFromFile.split(",");
 		}
+		staticWait(1000);
 		List<WebElement> options = driver.findElements(By.xpath("//select[@name='" + deptValue + "']//option"));
 		staticWait(3000);
 		for (WebElement valuesFromWeb : options) {
@@ -347,6 +396,7 @@ public class AddTicketPage extends WebBasePage {
 	public void verifyValidateMessage(String value) {
 		String validationMessage;
 		try {
+			staticWait(2000);
 			findElementsVisibility(By.xpath("//span[text()='" + value + "']"));
 			validationMessage = getText(By.xpath("//span[text()='" + value + "']"), 20);
 			logger.debug("validation message is :: " + validationMessage);
@@ -366,6 +416,7 @@ public class AddTicketPage extends WebBasePage {
 
 	// verify Radio buttons
 	public void verifyRadioButtons() {
+		staticWait(3000);
 		toCheckElementIsDisplayed(By.xpath("//label[@class='mb-0' and @for='TicketFor']"), 5, "self radio button");
 		toCheckElementIsDisplayed(By
 				.xpath("//label[@class='custom-control-label' and @for='rdo_1']//following::label[@for='OnBehalf'][1]"),
@@ -407,6 +458,7 @@ public class AddTicketPage extends WebBasePage {
 	// click On Behalf radio button
 	public void clickOnBehalf(String name) {
 		try {
+			staticWait(2000);
 			clickByJavascript(
 					By.xpath("//input[@class='form-check-input rdoticketfor rdoBehalf custom-control-input']"),
 					"click on On behalf radio button", 10);
@@ -420,11 +472,13 @@ public class AddTicketPage extends WebBasePage {
 	}
 
 	public void checkPresenceOfRadioButtons() {
+		staticWait(3000);
 		toCheckElementIsDisplayed(By.xpath("//div[@class='form-control pl-0 border-0' ]"), 20,
 				"Both Radio buttons are displayed");
 	}
 
 	public void radioButtonsPresence() {
+		staticWait(3000);
 		toCheckElementIsDisplayed(By.cssSelector("#rdoTicketFor div div:nth-child(1)"), 20, " Self Radio button");
 		toCheckElementIsDisplayed(By.cssSelector("#rdoTicketFor div div div:nth-child(2)"), 20,
 				" On behalf Radio button");
@@ -466,27 +520,33 @@ public class AddTicketPage extends WebBasePage {
 	}
 
 	public void checkAddMoreFunctionality() {
-		//toCheckElementIsDisplayed(By.cssselector("#dvfile1000  >div"), 10, "Attachment added successfully");
+		// toCheckElementIsDisplayed(By.cssselector("#dvfile1000 >div"), 10, "Attachment
+		// added successfully");
 		toCheckElementIsDisplayed(By.xpath("//a[@id='addmailBlackListed']"), 10, "Attachment added successfully");
 	}
 
 	public void verifyFileUploadTrue() {
+		staticWait(2000);
 		verifyFileUploadSuccess("autocomplete", "File is ",
 				By.xpath("//div[@id='divFiles']//input[@type='text' and @disabled='' and @autocomplete='off' ]"));
 	}
 
 	public void verifyFileUploadFalse() {
+		staticWait(2000);
 		verifyFileNotUpload("autocomplete", "File is",
 				By.xpath("//div[@id='divFiles']//input[@type='text' and @disabled='' and @autocomplete='off' ]"));
 
 	}
 
 	public void clickOnClearButton() {
-		click(By.xpath("(//a[@class='round-icon-small btn-danger-light clsattclear' and @data-original-title='Clear'])[2]"),
+		staticWait(2000);
+		click(By.xpath(
+				"//span/a[@data-original-title='Clear']"),
 				"Clear Button clicked", 10);
 	}
 
 	public void checkFileClearFunctionality() {
+		staticWait(2000);
 
 		getAtribute(By.xpath("//div[@id='divFiles']//input[@type='text' and @disabled='' and @autocomplete='off' ]"),
 				"disabled", 40);
@@ -495,29 +555,33 @@ public class AddTicketPage extends WebBasePage {
 	}
 
 	public void clickOnRemoveButton() {
+		staticWait(2000);
 		click(By.xpath(
 				"//a[@class='round-icon-small btn-danger-light clsattremove' and @data-original-title='Remove']"),
 				"Click on Remove", 15);
 	}
 
 	public void enterDescriptionMoreCharacters() {
-
+		staticWait(2000);
 		click(By.cssSelector("#cke_12"), "Source", 15);
 		enter(By.cssSelector(".cke_source"), prop.getProperty("descriptionWithCharacters"),
 				"Description with more than 500 charcters", 15);
 	}
 
 	public void referenceNumText() {
-		ticketNoGenerated = getText(By.cssSelector("#divAddTicket > div b"), 20);
+		staticWait(2000);
+		ticketNoGenerated = getText(By.xpath("//div[@id='divAddTicket']//div/b"), 20);
 		System.out.println("ticket  :::::" + ticketNoGenerated);
 //		return ticketNoGenerated;
 	}
 
 	public void ClickOnuserGuide() {
+		staticWait(2000);
 		click(By.cssSelector("span.user-guide.ml-3"), "click on user guide", 20);
 	}
 
 	public void verifyFontOfUserGuide() {
+		staticWait(2000);
 		getCssValue(By.cssSelector("#mCSB_3_container > div"), prop.getProperty("fontCssValue"),
 				prop.getProperty("fontExpValue"), 15, "font of User gUide is verified");
 	}
@@ -538,28 +602,33 @@ public class AddTicketPage extends WebBasePage {
 	}
 
 	public void navigateToAddTicketPage() {
+		staticWait(2000);
 		pageNavigate(prop.getProperty("addTicketPageUrl"), "Navigate To Add Ticket Page");
 	}
 
 	public void selectClientRadio() {
+		staticWait(2000);
 		clickByJavascript(By.cssSelector("#rdo_3"), "client radio", 20);
 	}
 
 	public void selectClient() {
 		staticWait(3000);
-		click(By.xpath("//span[@id='select2-ddlOnBehalfClientId-container']/span[text()='Select Client']/ancestor::span[@class='selection']/descendant::span[@role='presentation']/b"),
+		click(By.xpath(
+				"//span[@id='select2-ddlOnBehalfClientId-container']/span[text()='Select Client']/ancestor::span[@class='selection']/descendant::span[@role='presentation']/b"),
 				"client", 20);
 
 //		clickByJavascript(By.cssSelector(
 //				"//label[@class='lblctrlname' and text()='Client:']//following::ul[@class='multiselect-container dropdown-menu select-custom show']//li[@class='active']//a[1]"),
 //				"client ", 20);
-		enter(By.xpath("//span[@class='select2-search select2-search--dropdown']/input"), "talygen .com", "Talygen", 30);
+		enter(By.xpath("//span[@class='select2-search select2-search--dropdown']/input"), "talygen .com", "Talygen",
+				30);
 		staticWait(3000);
 		click(By.xpath("//ul/li[contains(text(),'talygen')]"), "Talygen.com", 20);
 
 	}
 
 	public void enterClientDetails() {
+		staticWait(2000);
 
 		enter(By.cssSelector("#FirstName"), prop.getProperty("enterFirstName"), "First Name", 20);
 
@@ -574,6 +643,7 @@ public class AddTicketPage extends WebBasePage {
 	}
 
 	public void selectChannel() {
+		staticWait(2000);
 		selectValueWithText(By.cssSelector("#TicketChannel"), CompanySetupPage.Channelnewname, "ticket channel name",
 				20);
 	}

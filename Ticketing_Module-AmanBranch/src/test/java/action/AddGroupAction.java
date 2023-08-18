@@ -52,8 +52,10 @@ public class AddGroupAction {
 	}
 
 	public void addGroupConfiguration() {
-		addGroupPage.selectMarkAsDefault();
-		addGroupPage.enterDefaultValue();
+		
+		  addGroupPage.selectMarkAsDefault(); 
+		  addGroupPage.enterDefaultValue();
+		 
 		addGroupPage.enterGroupDescription();
 		addGroupPage.descriptionCharactersLength();
 	}
@@ -69,6 +71,8 @@ public class AddGroupAction {
 	}
 
 	public void validateNoRecordsMessage() {
+		addGroupPage.verifysuccessMessage();
+		addGroupPage.closeNotifyMessagePopUp();
 		addGroupPage.verifyNoRecordsMessage();
 	}
 }

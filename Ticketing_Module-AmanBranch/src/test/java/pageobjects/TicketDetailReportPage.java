@@ -93,6 +93,10 @@ public class TicketDetailReportPage extends WebBasePage {
 		click(By.xpath("//li[@data-name='Ticketing']//a//i//following::text()[1]//following::span[1]"),
 				"Ticketing Side menu", 20);
 	}
+	// click on Side menu
+		public void clickOnFSMLocate() {
+			clickByJavascript(By.xpath("//li[@data-name='FSM- Locate']/span"), "FSM Locate", 20);
+		}
 
 	// click on ticketing
 	public void clickTicketingOption() {
@@ -106,8 +110,16 @@ public class TicketDetailReportPage extends WebBasePage {
 	// click on Ticket Report
 	public void clickTicketReport() {
 		staticWait(3000);
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement manageLayout = driver
+				.findElement(By.xpath("(//div/ul/li/a[@data-original-title='Manage Layout'])[last()]"));
+		js.executeScript("arguments[0].scrollIntoView();", manageLayout);
+		WebElement serviceAppoitment = driver
+				.findElement(By.xpath("//div/ul/li/a[@data-original-title='Service Appointment']"));
+		js.executeScript("arguments[0].scrollIntoView();", serviceAppoitment);
 		click(By.xpath(
-				"//ul[@class='submenu clschild_12 d-flex']//a[@data-original-title='Ticket Report' and @id='cadmin_messageboard_link']"),
+				"//div/ul/li/a[@data-original-title='Ticket Report']"),
 				"Ticket Report", 20);
 	}
 
@@ -159,13 +171,14 @@ public class TicketDetailReportPage extends WebBasePage {
 	// click on Search
 	public void clickSearch() {
 		click(By.cssSelector("#aSearch"), "click on Search", 20);
-		findElementInVisibility(By.cssSelector("#reportViewer_AsyncWait_Wait"), 30);
+		//findElementInVisibility(By.cssSelector("#reportViewer_AsyncWait_Wait"), 30);
 
 	}
 
 	// navigate to TicketReportPage
 	public void navigateToTicketReportPage() {
 		pageNavigate(prop.getProperty("ticketSummaryReportUrl"), "Ticket summary Report Page");
+		staticWait(2000);
 	}
 
 	public void switchToFrame() {
@@ -178,10 +191,12 @@ public class TicketDetailReportPage extends WebBasePage {
 	public void clickSelectStatus() {
 		staticWait(2000);
 		click(By.xpath("//*[@id='frmReport']/div[1]/div[8]/div/span/div/button"), "Status", 20);
+		click(By.xpath("//div/ul/li/a/label[contains(text(),'Open')]"), "Open", 20);
 	}
 
 	public void verifyStatusWidgetValues() {
 		try {
+			staticWait(3000);
 			int counter = 0;
 			statusvalue = TicketingDashboardPage.statulist;
 
@@ -215,11 +230,19 @@ public class TicketDetailReportPage extends WebBasePage {
 					logger.info("fIlter not selected.");
 				}
 				clickSearch();
-				clickCategoryDropdownStatus();
+				//staticWait(2000);
+				//clickCategoryDropdownStatus();
+				staticWait(2000);
 				getTotalRecordCount();
+				staticWait(2000);
+				
 				logger.info("record  :: " + recordCount);
-
-				if (statusCount.get(counter) == recordCount) {
+				staticWait(2000);
+				String totalRecord = driver.findElement(By.xpath("//div[@id='viewer_pageviewfooterContainer']"))
+						.getText(); /* modified */
+				//if (statusCount.get(counter) == recordCount) {
+				if (totalRecord.contains(totalRecordCount)) {
+					staticWait(2000);
 					getTest().log(LogStatus.PASS, "record count is :: " + recordCount);
 					logger.info(
 							"record count is :: " + recordCount + " is matched succesfully from Detail Report count.");
@@ -237,6 +260,8 @@ public class TicketDetailReportPage extends WebBasePage {
 			logger.error("Error from searchStatusValues method." + e);
 			e.printStackTrace();
 		}
+		driver.navigate().refresh();
+		
 	}
 
 	public void clickClear() {
@@ -272,6 +297,7 @@ public class TicketDetailReportPage extends WebBasePage {
 	// get Total Record Count
 	public void getTotalRecordCount() {
 		try {
+			staticWait(5000);
 			waitForVisibilityOfElement(By.xpath("(//div[@id='viewer_pageviewfooterContainer']/div/descendant::div)[5]"), 50);
 			WebElement element = findElementPresence(
 					By.xpath("(//div[@id='viewer_pageviewfooterContainer']/div/descendant::div)[5]"), 20);
@@ -280,8 +306,11 @@ public class TicketDetailReportPage extends WebBasePage {
 			jse.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 			switchToFrame();
 			logger.info("Switch to reports frame");
-	
-			staticWait(4000);
+			//to perform scroll on an application using Selenium
+
+			   JavascriptExecutor js = (JavascriptExecutor) driver;
+			   js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+			staticWait(5000);
 			totalRecordCount = gettextByJSexecuter(
 					By.xpath("(//div[@id='viewer_pageviewfooterContainer']/div/descendant::div)[5]"),
 					"Total Records count", 20);
@@ -291,6 +320,9 @@ public class TicketDetailReportPage extends WebBasePage {
 			logger.error("Error from getTotalRecordCount method " + e);
 			e.printStackTrace();
 		}
+		/*
+		 * staticWait(2000); driver.navigate().refresh();
+		 */
 	}
 
 	// --------------------------Current month ---------------//

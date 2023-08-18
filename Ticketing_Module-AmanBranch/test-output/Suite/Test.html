@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>75/5/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>52/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 08 10:06:22 IST 2022</td>
+<td>Started on:</td><td>Fri Aug 11 22:31:59 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>12849 seconds (12849371 ms)</td>
+<tr><td>Total time:</td><td>5182 seconds (5182553 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,422 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.TicketListingTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testcases.TicketListingTest<br>Parameters: [TestResult name={null} status=CREATED method=TicketListingTest.verifyDraftReplyFunctionality()[pri:14, instance:testcases.TicketListingTest@1fa268de] output={null}], public void testcases.TicketListingTest.verifyDraftReplyFunctionality()</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1707358358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1707358358'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>60</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testcases.TicketListingTest<br>Parameters: [TestResult name={null} status=CREATED method=TicketListingTest.verifyAttachmentTabFunctionality()[pri:11, instance:testcases.TicketListingTest@1fa268de] output={null}], public void testcases.TicketListingTest.verifyAttachmentTabFunctionality()</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1354568600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1354568600'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>60</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testcases.TicketListingTest<br>Parameters: [TestResult name={null} status=CREATED method=TicketListingTest.verifyWidgetsFunctionality()[pri:12, instance:testcases.TicketListingTest@1fa268de] output={null}], public void testcases.TicketListingTest.verifyWidgetsFunctionality()</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1159453501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1159453501'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>60</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testcases.TicketListingTest<br>Parameters: [TestResult name={null} status=CREATED method=TicketListingTest.verifyCannedReplyFunctionality()[pri:13, instance:testcases.TicketListingTest@1fa268de] output={null}], public void testcases.TicketListingTest.verifyCannedReplyFunctionality()</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace986692103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace986692103'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>60</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.reportWrapUp()'><b>reportWrapUp</b><br>Test class: testcases.TicketListingTest<br>Parameters: [TestResult name=verifyNotesFunctionality status=FAILURE method=TicketListingTest.verifyNotesFunctionality()[pri:10, instance:testcases.TicketListingTest@1fa268de] output={null}], public void testcases.TicketListingTest.verifyNotesFunctionality()</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1896064524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1896064524'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>60</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.TicketListingTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>-1670486541</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>-1670486480</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>-1670486420</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>-1670486360</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -491,251 +75,11 @@ Session ID: 001ff77af679af95bcbef8c4944b792e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TicketSummaryReportTest.verifySearchTicket()'><b>verifySearchTicket</b><br>Test class: testcases.TicketSummaryReportTest</td>
-<td><div><pre>java.lang.AssertionError: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table/tbody/tr[4]/td/div&quot;}
-  (Session info: chrome=108.0.5359.96)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f2bad0701d8481433cb94c4db995d6e
-*** Element info: {Using=xpath, value=//table/tbody/tr[4]/td/div}
-	at utils.WebBasePage.gettextByJSexecuter(WebBasePage.java:320)
-	at pageobjects.TicketSummaryReportPage.ticketNoTextFromSearch(TicketSummaryReportPage.java:87)
-	at action.TicketSummaryReportAction.validateSearchedValues(TicketSummaryReportAction.java:46)
-	at testcases.TicketSummaryReportTest.verifySearchTicket(TicketSummaryReportTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1125823273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1125823273'><pre>java.lang.AssertionError: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table/tbody/tr[4]/td/div&quot;}
-  (Session info: chrome=108.0.5359.96)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f2bad0701d8481433cb94c4db995d6e
-*** Element info: {Using=xpath, value=//table/tbody/tr[4]/td/div}
-	at org.testng.Assert.fail(Assert.java:99)
-	at utils.WebBasePage.gettextByJSexecuter(WebBasePage.java:320)
-	at pageobjects.TicketSummaryReportPage.ticketNoTextFromSearch(TicketSummaryReportPage.java:87)
-	at action.TicketSummaryReportAction.validateSearchedValues(TicketSummaryReportAction.java:46)
-	at testcases.TicketSummaryReportTest.verifySearchTicket(TicketSummaryReportTest.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>283</td>
-<td>testcases.TicketSummaryReportTest@4f6ee6e4</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifyNotesFunctionality()'><b>verifyNotesFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebBasePage.takeScreenshot(WebBasePage.java:249)
-	at utils.WebBasePage.enter(WebBasePage.java:62)
-	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
-	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
-	at action.LoginAction.logoutLogin(LoginAction.java:26)
-	at testcases.TicketListingTest.verifyNotesFunctionality(TicketListingTest.java:201)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774629168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1774629168'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebBasePage.takeScreenshot(WebBasePage.java:249)
-	at utils.WebBasePage.enter(WebBasePage.java:62)
-	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
-	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
-	at action.LoginAction.logoutLogin(LoginAction.java:26)
-	at testcases.TicketListingTest.verifyNotesFunctionality(TicketListingTest.java:201)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>93</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisMonthByChannel()'><b>verifyThisMonthByChannel</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
-	at utils.WebBasePage.enter(WebBasePage.java:64)
-	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
-	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
-	at action.LoginAction.logoutLogin(LoginAction.java:26)
-	at testcases.TicketingDashboardTest.verifyThisMonthByChannel(TicketingDashboardTest.java:460)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2110889286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2110889286'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
-	at org.testng.Assert.fail(Assert.java:99)
-	at utils.WebBasePage.enter(WebBasePage.java:64)
-	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
-	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
-	at action.LoginAction.logoutLogin(LoginAction.java:26)
-	at testcases.TicketingDashboardTest.verifyThisMonthByChannel(TicketingDashboardTest.java:460)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>334</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyReportsValidation()'><b>verifyReportsValidation</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td><div><pre>java.lang.AssertionError: Save -  element not clikabke
-	at utils.WebBasePage.click(WebBasePage.java:91)
-	at pageobjects.TicketingDashboardPage.clickSaveButton(TicketingDashboardPage.java:156)
-	at pageobjects.TicketingDashboardPage.selectAllReports(TicketingDashboardPage.java:161)
-	at action.TicketingDashboardAction.validateReportsValidation(TicketingDashboardAction.java:40)
-	at testcases.TicketingDashboardTest.verifyReportsValidation(TicketingDashboardTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace649327195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace649327195'><pre>java.lang.AssertionError: Save -  element not clikabke
-	at org.testng.Assert.fail(Assert.java:99)
-	at utils.WebBasePage.click(WebBasePage.java:91)
-	at pageobjects.TicketingDashboardPage.clickSaveButton(TicketingDashboardPage.java:156)
-	at pageobjects.TicketingDashboardPage.selectAllReports(TicketingDashboardPage.java:161)
-	at action.TicketingDashboardAction.validateReportsValidation(TicketingDashboardAction.java:40)
-	at testcases.TicketingDashboardTest.verifyReportsValidation(TicketingDashboardTest.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>82</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
 <td title='testcases.SLATest.verifyAddSLA()'><b>verifyAddSLA</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-2088388998" onClick='toggleBox("Output-2088388998", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-636913877" onClick='toggleBox("Output-636913877", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2088388998" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2088388998">
+<a href="#Output-636913877" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-636913877">
 Policy checkbox clicked<br/>
 </div>
 </td>
@@ -745,8 +89,8 @@ Policy checkbox clicked<br/>
 	at action.SLAAction.searchPolicy(SLAAction.java:25)
 	at testcases.SLATest.verifyAddSLA(SLATest.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2088388998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2088388998'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636913877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636913877'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
 	at org.testng.Assert.fail(Assert.java:99)
 	at utils.WebBasePage.enter(WebBasePage.java:64)
 	at pageobjects.SLAPage.searchPolicyName(SLAPage.java:35)
@@ -781,8 +125,340 @@ Policy checkbox clicked<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>191</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
+<td>218</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.TicketingGroupTest.verifyNoRecordsMessage()'><b>verifyNoRecordsMessage</b><br>Test class: testcases.TicketingGroupTest</td>
+<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.TicketingGroupTest.verifyNoRecordsMessage(TicketingGroupTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace610554977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace610554977'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.TicketingGroupTest.verifyNoRecordsMessage(TicketingGroupTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>69</td>
+<td>testcases.TicketingGroupTest@6c80d78a</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyResetButtonFunctionality()'><b>verifyResetButtonFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.TicketListingTest.verifyResetButtonFunctionality(TicketListingTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659620684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659620684'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.TicketListingTest.verifyResetButtonFunctionality(TicketListingTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>138</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.addOwnTickets()'><b>addOwnTickets</b><br>Test class: testcases.AddTicketTest</td>
+<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.AddTicketTest.addOwnTickets(AddTicketTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1522250355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1522250355'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.AddTicketTest.addOwnTickets(AddTicketTest.java:128)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>37</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyPolicyDatePickerFunctionality()'><b>verifyPolicyDatePickerFunctionality</b><br>Test class: testcases.SLATest</td>
+<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getAttribute(String)&quot; because &quot;ele&quot; is null
+	at utils.WebBasePage.getAtribute(WebBasePage.java:200)
+	at pageobjects.AddSLAPage.verifyPolicyDate(AddSLAPage.java:660)
+	at action.AddSLAAction.verifyPolicyDate(AddSLAAction.java:246)
+	at testcases.SLATest.verifyPolicyDatePickerFunctionality(SLATest.java:158)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31669722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31669722'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getAttribute(String)&quot; because &quot;ele&quot; is null
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.getAtribute(WebBasePage.java:200)
+	at pageobjects.AddSLAPage.verifyPolicyDate(AddSLAPage.java:660)
+	at action.AddSLAAction.verifyPolicyDate(AddSLAAction.java:246)
+	at testcases.SLATest.verifyPolicyDatePickerFunctionality(SLATest.java:158)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>47</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.SLATest.VerifyCharactersValidation()'><b>VerifyCharactersValidation</b><br>Test class: testcases.SLATest</td>
+<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.SLATest.VerifyCharactersValidation(SLATest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2008852182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2008852182'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;element&quot; is null
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.enter(WebBasePage.java:64)
+	at pageobjects.UserLoginPage.enterUserName(UserLoginPage.java:77)
+	at pageobjects.UserLoginPage.forcefulLogOutLogin(UserLoginPage.java:123)
+	at action.LoginAction.logoutLogin(LoginAction.java:26)
+	at testcases.SLATest.VerifyCharactersValidation(SLATest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>96</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyMergeButtonFunctionality()'><b>verifyMergeButtonFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td><div><pre>java.lang.AssertionError: Action Button -  element not present
+	at utils.WebBasePage.clickByJavascript(WebBasePage.java:285)
+	at pageobjects.TicketListingPage.clickOnActionButton(TicketListingPage.java:108)
+	at action.TicketListingAction.actionButton(TicketListingAction.java:68)
+	at action.TicketListingAction.viewTicket(TicketListingAction.java:77)
+	at testcases.TicketListingTest.verifyMergeButtonFunctionality(TicketListingTest.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1862254804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1862254804'><pre>java.lang.AssertionError: Action Button -  element not present
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.clickByJavascript(WebBasePage.java:285)
+	at pageobjects.TicketListingPage.clickOnActionButton(TicketListingPage.java:108)
+	at action.TicketListingAction.actionButton(TicketListingAction.java:68)
+	at action.TicketListingAction.viewTicket(TicketListingAction.java:77)
+	at testcases.TicketListingTest.verifyMergeButtonFunctionality(TicketListingTest.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>86</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td><div><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getText()&quot; because &quot;ele&quot; is null
+	at utils.WebBasePage.getText(WebBasePage.java:106)
+	at pageobjects.TicketListingPage.matchSearchedValues(TicketListingPage.java:182)
+	at action.TicketListingAction.validateSearch(TicketListingAction.java:99)
+	at testcases.TicketListingTest.verifySearchFunctionality(TicketListingTest.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2023332277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2023332277'><pre>java.lang.AssertionError: java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getText()&quot; because &quot;ele&quot; is null
+	at org.testng.Assert.fail(Assert.java:99)
+	at utils.WebBasePage.getText(WebBasePage.java:106)
+	at pageobjects.TicketListingPage.matchSearchedValues(TicketListingPage.java:182)
+	at action.TicketListingAction.validateSearch(TicketListingAction.java:99)
+	at testcases.TicketListingTest.verifySearchFunctionality(TicketListingTest.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>76</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -792,769 +468,335 @@ Policy checkbox clicked<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TicketListingTest.verifyUpdateTicketFunctionality()'><b>verifyUpdateTicketFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>284</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisMonthFilterByProduct()'><b>verifyThisMonthFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>379</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyLastMonthByChannel()'><b>verifyLastMonthByChannel</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>140</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyTodaysFilterByProduct()'><b>verifyTodaysFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>421</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyPolicyDatePickerFunctionality()'><b>verifyPolicyDatePickerFunctionality</b><br>Test class: testcases.SLATest</td>
-<td></td>
-<td>41</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyYesterdayFilterByProduct()'><b>verifyYesterdayFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>162</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyClientCategoryFunctionality()'><b>verifyClientCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-257412817" onClick='toggleBox("Output-257412817", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-257412817" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-257412817">
-Policy checkbox clicked<br/>
-</div>
-</td>
-<td></td>
-<td>49</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketDetailReportTest.verifySearchTicket()'><b>verifySearchTicket</b><br>Test class: testcases.TicketDetailReportTest</td>
-<td></td>
-<td>248</td>
-<td>testcases.TicketDetailReportTest@4567f35d</td></tr>
-<tr>
-<td title='testcases.TicketingGroupTest.verifyNoRecordsMessage()'><b>verifyNoRecordsMessage</b><br>Test class: testcases.TicketingGroupTest</td>
-<td></td>
-<td>42</td>
-<td>testcases.TicketingGroupTest@4f18837a</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyFontOfUserGuide()'><b>verifyFontOfUserGuide</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>37</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisYearFilter()'><b>verifyThisYearFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>208</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingGroupTest.verifyCancelButton()'><b>verifyCancelButton</b><br>Test class: testcases.TicketingGroupTest</td>
-<td></td>
-<td>51</td>
-<td>testcases.TicketingGroupTest@4f18837a</td></tr>
-<tr>
-<td title='testcases.TicketGroupListingTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: testcases.TicketGroupListingTest</td>
-<td></td>
-<td>49</td>
-<td>testcases.TicketGroupListingTest@5ffead27</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyRadioButtonsFunctionality()'><b>verifyRadioButtonsFunctionality</b><br>Test class: testcases.SLATest</td>
-<td></td>
-<td>42</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyTwoRadioButtons()'><b>verifyTwoRadioButtons</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>45</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisWeekByChannel()'><b>verifyThisWeekByChannel</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>168</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisWeekFilterByProduct()'><b>verifyThisWeekFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>205</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyBooleanSaveButtonFunctionality()'><b>verifyBooleanSaveButtonFunctionality</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-1558425201" onClick='toggleBox("Output-1558425201", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1558425201" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1558425201">
-Policy checkbox clicked<br/>
-</div>
-</td>
+<td title='testcases.AddTicketTest.verifyTicketCategoryDropdown()'><b>verifyTicketCategoryDropdown</b><br>Test class: testcases.AddTicketTest</td>
 <td></td>
 <td>63</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
 <tr>
-<td title='testcases.TicketGroupListingTest.verifyResetFunctionality()'><b>verifyResetFunctionality</b><br>Test class: testcases.TicketGroupListingTest</td>
-<td></td>
-<td>64</td>
-<td>testcases.TicketGroupListingTest@5ffead27</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.checkAddMoreFunctionality()'><b>checkAddMoreFunctionality</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>44</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyPriorityDeptDropDown()'><b>verifyPriorityDeptDropDown</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>41</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.AddSLA.addTicketForSLA()'><b>addTicketForSLA</b><br>Test class: testcases.AddSLA<br/>
-<a href="#Output-2015455415" onClick='toggleBox("Output-2015455415", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcases.SLATest.verifyBooleanFunctionality()'><b>verifyBooleanFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1532296795" onClick='toggleBox("Output-1532296795", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2015455415" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2015455415">
+<a href="#Output-1532296795" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1532296795">
 Policy checkbox clicked<br/>
 </div>
 </td>
 <td></td>
-<td>330</td>
-<td>testcases.AddSLA@7fa98a66</td></tr>
-<tr>
-<td title='testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupOne()'><b>verifyAddServiceBoardGroupOne</b><br>Test class: testcases.TicketingServiceBoardTest</td>
-<td></td>
-<td>50</td>
-<td>testcases.TicketingServiceBoardTest@359f7cdf</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyTodayFilterFromCategory()'><b>verifyTodayFilterFromCategory</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>265</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifyResetButtonFunctionality()'><b>verifyResetButtonFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>406</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisMonthFilter()'><b>verifyThisMonthFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>213</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyResponseTimeValidations()'><b>verifyResponseTimeValidations</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-1307634517" onClick='toggleBox("Output-1307634517", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1307634517" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1307634517">
-Policy checkbox clicked<br/>
-</div>
-</td>
-<td></td>
-<td>92</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo()'><b>verifyAddServiceBoardGroupTwo</b><br>Test class: testcases.TicketingServiceBoardTest</td>
-<td></td>
-<td>43</td>
-<td>testcases.TicketingServiceBoardTest@359f7cdf</td></tr>
+<td>65</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
 <tr>
 <td title='testcases.AddTicketTest.verifyProductDropDown()'><b>verifyProductDropDown</b><br>Test class: testcases.AddTicketTest</td>
 <td></td>
-<td>41</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
+<td>61</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
 <tr>
-<td title='testcases.TicketingDashboardTest.verifyYesterDayFilter()'><b>verifyYesterDayFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
+<td title='testcases.TicketingServiceBoardTest.verifyCancelButtonFunctionality()'><b>verifyCancelButtonFunctionality</b><br>Test class: testcases.TicketingServiceBoardTest</td>
 <td></td>
-<td>148</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
+<td>51</td>
+<td>testcases.TicketingServiceBoardTest@62150f9e</td></tr>
 <tr>
-<td title='testcases.SLATest.verifyBooleanFunctionality()'><b>verifyBooleanFunctionality</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-648840449" onClick='toggleBox("Output-648840449", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcases.TicketListingTest.verifyUnassignedTicketWidget()'><b>verifyUnassignedTicketWidget</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>69</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.CompanySetupConfiguration.addChannel()'><b>addChannel</b><br>Test class: testcases.CompanySetupConfiguration</td>
+<td></td>
+<td>91</td>
+<td>testcases.CompanySetupConfiguration@4d9e68d0</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyTicketForRadioButtons()'><b>verifyTicketForRadioButtons</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>59</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.TicketSummaryReportTest.verifySearchTicket()'><b>verifySearchTicket</b><br>Test class: testcases.TicketSummaryReportTest</td>
+<td></td>
+<td>202</td>
+<td>testcases.TicketSummaryReportTest@7fa98a66</td></tr>
+<tr>
+<td title='testcases.TicketGroupListingTest.verifyResetFunctionality()'><b>verifyResetFunctionality</b><br>Test class: testcases.TicketGroupListingTest</td>
+<td></td>
+<td>68</td>
+<td>testcases.TicketGroupListingTest@52e6fdee</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyResponseTimeValidations()'><b>verifyResponseTimeValidations</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-937830592" onClick='toggleBox("Output-937830592", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-648840449" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-648840449">
+<a href="#Output-937830592" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-937830592">
 Policy checkbox clicked<br/>
 </div>
 </td>
 <td></td>
-<td>63</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
+<td>86</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
 <tr>
 <td title='testcases.TicketingServiceBoardTest.verifyServiceboardElements()'><b>verifyServiceboardElements</b><br>Test class: testcases.TicketingServiceBoardTest</td>
 <td></td>
-<td>29</td>
-<td>testcases.TicketingServiceBoardTest@359f7cdf</td></tr>
+<td>37</td>
+<td>testcases.TicketingServiceBoardTest@62150f9e</td></tr>
 <tr>
-<td title='testcases.TicketListingTest.verifyUrlOnClickingBreadCrumb()'><b>verifyUrlOnClickingBreadCrumb</b><br>Test class: testcases.TicketListingTest</td>
+<td title='testcases.AddTicketTest.verifyTwoRadioButtons()'><b>verifyTwoRadioButtons</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>67</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyCannedReplyFunctionality()'><b>verifyCannedReplyFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>61</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.UnassignedTicketsTest.verifyUnassignedTicketsCount()'><b>verifyUnassignedTicketsCount</b><br>Test class: testcases.UnassignedTicketsTest</td>
+<td></td>
+<td>34</td>
+<td>testcases.UnassignedTicketsTest@15ff3e9e</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyRadioButtonsFunctionality()'><b>verifyRadioButtonsFunctionality</b><br>Test class: testcases.SLATest</td>
+<td></td>
+<td>31</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.addTicket()'><b>addTicket</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>100</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyFontOfUserGuide()'><b>verifyFontOfUserGuide</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>47</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyResolveTimeValidations()'><b>verifyResolveTimeValidations</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1453627035" onClick='toggleBox("Output-1453627035", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1453627035" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1453627035">
+Policy checkbox clicked<br/>
+</div>
+</td>
 <td></td>
 <td>83</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyMandatoryValidation()'><b>verifyMandatoryValidation</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-472483689" onClick='toggleBox("Output-472483689", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-472483689" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472483689">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>104</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyNoValidations()'><b>verifyNoValidations</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>57</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.TicketingGroupTest.verifyAddGroup()'><b>verifyAddGroup</b><br>Test class: testcases.TicketingGroupTest</td>
+<td></td>
+<td>56</td>
+<td>testcases.TicketingGroupTest@6c80d78a</td></tr>
 <tr>
 <td title='testcases.TicketListingTest.verifyExpandCollapseFeature()'><b>verifyExpandCollapseFeature</b><br>Test class: testcases.TicketListingTest</td>
 <td></td>
-<td>87</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
+<td>31</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 <tr>
-<td title='testcases.AddTicketTest.verifyAssignToDeptDropDown()'><b>verifyAssignToDeptDropDown</b><br>Test class: testcases.AddTicketTest</td>
+<td title='testcases.TicketListingTest.verifyDraftReplyFunctionality()'><b>verifyDraftReplyFunctionality</b><br>Test class: testcases.TicketListingTest</td>
 <td></td>
-<td>63</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
+<td>65</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 <tr>
-<td title='testcases.TicketingServiceBoardTest.verifyCancelButtonFunctionality()'><b>verifyCancelButtonFunctionality</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td title='testcases.AddTicketTest.verifyValidationOnClientsField()'><b>verifyValidationOnClientsField</b><br>Test class: testcases.AddTicketTest</td>
 <td></td>
-<td>45</td>
-<td>testcases.TicketingServiceBoardTest@359f7cdf</td></tr>
+<td>55</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
 <tr>
-<td title='testcases.TicketingDashboardTest.verifyLastMonthFilter()'><b>verifyLastMonthFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>146</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyValidations()'><b>verifyValidations</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>39</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifyDeleteTicketFunctionality()'><b>verifyDeleteTicketFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>410</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyTicketForRadioButtons()'><b>verifyTicketForRadioButtons</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>35</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyLastWeekByChannel()'><b>verifyLastWeekByChannel</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>158</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyDepartmentCategoryFunctionality()'><b>verifyDepartmentCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-48420828" onClick='toggleBox("Output-48420828", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcases.SLATest.verifyDeleteButtonFunctionality()'><b>verifyDeleteButtonFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-324470431" onClick='toggleBox("Output-324470431", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-48420828" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-48420828">
+<a href="#Output-324470431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-324470431">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyClientCategoryFunctionality()'><b>verifyClientCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1178584054" onClick='toggleBox("Output-1178584054", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1178584054" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1178584054">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.CompanySetupConfiguration.addNewUser()'><b>addNewUser</b><br>Test class: testcases.CompanySetupConfiguration</td>
+<td></td>
+<td>261</td>
+<td>testcases.CompanySetupConfiguration@4d9e68d0</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyProductCategoryFunctionality()'><b>verifyProductCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1471452798" onClick='toggleBox("Output-1471452798", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1471452798" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1471452798">
 Policy checkbox clicked<br/>
 </div>
 </td>
 <td></td>
 <td>64</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
+<td>testcases.SLATest@42e99e4a</td></tr>
 <tr>
-<td title='testcases.SLATest.verifyDeleteButtonFunctionality()'><b>verifyDeleteButtonFunctionality</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-545710008" onClick='toggleBox("Output-545710008", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-545710008" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-545710008">
-Policy checkbox clicked<br/>
-</div>
-</td>
+<td title='testcases.TicketingGroupTest.verifyCancelButton()'><b>verifyCancelButton</b><br>Test class: testcases.TicketingGroupTest</td>
 <td></td>
-<td>61</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>357</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyResolveTimeValidations()'><b>verifyResolveTimeValidations</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-1479091350" onClick='toggleBox("Output-1479091350", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1479091350" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1479091350">
-Policy checkbox clicked<br/>
-</div>
-</td>
-<td></td>
-<td>93</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyLastWeekFilterByProduct()'><b>verifyLastWeekFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>359</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.addOwnTickets()'><b>addOwnTickets</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>142</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyTicketCategoryDropdown()'><b>verifyTicketCategoryDropdown</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>42</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyValidationOnClientsField()'><b>verifyValidationOnClientsField</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>49</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyProductCategoryFunctionality()'><b>verifyProductCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-1174935745" onClick='toggleBox("Output-1174935745", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1174935745" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1174935745">
-Policy checkbox clicked<br/>
-</div>
-</td>
-<td></td>
-<td>48</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.validateWidgetsCount()'><b>validateWidgetsCount</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>100</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyValidationForEmptyUser()'><b>verifyValidationForEmptyUser</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>107</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisWeekFilterFromCategory()'><b>verifyThisWeekFilterFromCategory</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>154</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.verifyMandatoryValidation()'><b>verifyMandatoryValidation</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-727265047" onClick='toggleBox("Output-727265047", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-727265047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-727265047">
-Policy checkbox clicked<br/>
-</div>
-</td>
-<td></td>
-<td>96</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisWeekFilterByResolver()'><b>verifyThisWeekFilterByResolver</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>479</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.SLATest.VerifyCharactersValidation()'><b>VerifyCharactersValidation</b><br>Test class: testcases.SLATest<br/>
-<a href="#Output-911396356" onClick='toggleBox("Output-911396356", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-911396356" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-911396356">
-Policy checkbox clicked<br/>
-</div>
-</td>
-<td></td>
-<td>94</td>
-<td>testcases.SLATest@2e005c4b</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyTodayFilterByResolver()'><b>verifyTodayFilterByResolver</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>246</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyLastWeekFilter()'><b>verifyLastWeekFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>201</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation()'><b>verifyUpdateServiceBoardNavigation</b><br>Test class: testcases.TicketingServiceBoardTest</td>
-<td></td>
-<td>39</td>
-<td>testcases.TicketingServiceBoardTest@359f7cdf</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifyReplyCount()'><b>verifyReplyCount</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>259</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifyMergeButtonFunctionality()'><b>verifyMergeButtonFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>106</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketListingTest.verifyUnassignedTicketWidget()'><b>verifyUnassignedTicketWidget</b><br>Test class: testcases.TicketListingTest</td>
-<td></td>
-<td>91</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyYesterdayFilterFromCategory()'><b>verifyYesterdayFilterFromCategory</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>151</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyTodaysFilterByChannel()'><b>verifyTodaysFilterByChannel</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>157</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyLastMonthFilterByProduct()'><b>verifyLastMonthFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>313</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.addTicket()'><b>addTicket</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>161</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.UnassignedTicketsTest.verifyUnassignedTicketsCount()'><b>verifyUnassignedTicketsCount</b><br>Test class: testcases.UnassignedTicketsTest</td>
-<td></td>
-<td>63</td>
-<td>testcases.UnassignedTicketsTest@4466af20</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyCharctersInDescriptionField()'><b>verifyCharctersInDescriptionField</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>78</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisYearFilterByProduct()'><b>verifyThisYearFilterByProduct</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>359</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyThisWeekFilter()'><b>verifyThisWeekFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>200</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyYesterdayFilterByChannel()'><b>verifyYesterdayFilterByChannel</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>390</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.AddTicketTest.verifyNoValidations()'><b>verifyNoValidations</b><br>Test class: testcases.AddTicketTest</td>
-<td></td>
-<td>38</td>
-<td>testcases.AddTicketTest@694abbdc</td></tr>
-<tr>
-<td title='testcases.TicketingDashboardTest.verifyTodaysFilter()'><b>verifyTodaysFilter</b><br>Test class: testcases.TicketingDashboardTest</td>
-<td></td>
-<td>381</td>
-<td>testcases.TicketingDashboardTest@6356695f</td></tr>
-<tr>
-<td title='testcases.TicketingGroupTest.verifyAddGroup()'><b>verifyAddGroup</b><br>Test class: testcases.TicketingGroupTest</td>
-<td></td>
-<td>38</td>
-<td>testcases.TicketingGroupTest@4f18837a</td></tr>
+<td>54</td>
+<td>testcases.TicketingGroupTest@6c80d78a</td></tr>
 <tr>
 <td title='testcases.TicketListingTest.verifyFollowUpFunctionality()'><b>verifyFollowUpFunctionality</b><br>Test class: testcases.TicketListingTest</td>
 <td></td>
-<td>283</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>66</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 <tr>
-<td title='testcases.TicketListingTest.verifyDraftReplyFunctionality()'><b>verifyDraftReplyFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace294328363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace294328363'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
+<td title='testcases.TicketListingTest.verifyNotesFunctionality()'><b>verifyNotesFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>77</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 <tr>
-<td title='testcases.TicketListingTest.verifyWidgetsFunctionality()'><b>verifyWidgetsFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace797817385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace797817385'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
+<td title='testcases.TicketListingTest.verifyUpdateTicketFunctionality()'><b>verifyUpdateTicketFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>84</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.TicketDetailReportTest.verifySearchTicket()'><b>verifySearchTicket</b><br>Test class: testcases.TicketDetailReportTest</td>
+<td></td>
+<td>165</td>
+<td>testcases.TicketDetailReportTest@14dd9eb7</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyDepartmentCategoryFunctionality()'><b>verifyDepartmentCategoryFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-2094601216" onClick='toggleBox("Output-2094601216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2094601216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2094601216">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>64</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyUrlOnClickingBreadCrumb()'><b>verifyUrlOnClickingBreadCrumb</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>66</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyValidationForEmptyUser()'><b>verifyValidationForEmptyUser</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>70</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupOne()'><b>verifyAddServiceBoardGroupOne</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>57</td>
+<td>testcases.TicketingServiceBoardTest@62150f9e</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyValidations()'><b>verifyValidations</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>66</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
 <tr>
 <td title='testcases.TicketListingTest.verifyAttachmentTabFunctionality()'><b>verifyAttachmentTabFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96125421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace96125421'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
+<td></td>
+<td>56</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 <tr>
-<td title='testcases.TicketListingTest.verifyCannedReplyFunctionality()'><b>verifyCannedReplyFunctionality</b><br>Test class: testcases.TicketListingTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771580743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1771580743'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=108.0.5359.96)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;COG-WIN-MAC03&apos;, ip: &apos;192.168.0.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.96, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\aanand\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001ff77af679af95bcbef8c4944b792e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at utils.WebTestBase.reportWrapUp(WebTestBase.java:85)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testcases.TicketListingTest@1fa268de</td></tr>
+<td title='testcases.TicketGroupListingTest.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: testcases.TicketGroupListingTest</td>
+<td></td>
+<td>76</td>
+<td>testcases.TicketGroupListingTest@52e6fdee</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyCharctersInDescriptionField()'><b>verifyCharctersInDescriptionField</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>85</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyAddServiceBoardGroupTwo()'><b>verifyAddServiceBoardGroupTwo</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>47</td>
+<td>testcases.TicketingServiceBoardTest@62150f9e</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyPriorityDeptDropDown()'><b>verifyPriorityDeptDropDown</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>63</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyReplyCount()'><b>verifyReplyCount</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>74</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyWidgetsFunctionality()'><b>verifyWidgetsFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>43</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.checkAddMoreFunctionality()'><b>checkAddMoreFunctionality</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>55</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.AddTicketTest.verifyAssignToDeptDropDown()'><b>verifyAssignToDeptDropDown</b><br>Test class: testcases.AddTicketTest</td>
+<td></td>
+<td>67</td>
+<td>testcases.AddTicketTest@1d9b7cce</td></tr>
+<tr>
+<td title='testcases.AddSLA.addTicketForSLA()'><b>addTicketForSLA</b><br>Test class: testcases.AddSLA<br/>
+<a href="#Output-32206364" onClick='toggleBox("Output-32206364", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32206364" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32206364">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>289</td>
+<td>testcases.AddSLA@72057ecf</td></tr>
+<tr>
+<td title='testcases.TicketingServiceBoardTest.verifyUpdateServiceBoardNavigation()'><b>verifyUpdateServiceBoardNavigation</b><br>Test class: testcases.TicketingServiceBoardTest</td>
+<td></td>
+<td>52</td>
+<td>testcases.TicketingServiceBoardTest@62150f9e</td></tr>
+<tr>
+<td title='testcases.CompanySetupConfiguration.addUserAndDepartment()'><b>addUserAndDepartment</b><br>Test class: testcases.CompanySetupConfiguration</td>
+<td></td>
+<td>85</td>
+<td>testcases.CompanySetupConfiguration@4d9e68d0</td></tr>
+<tr>
+<td title='testcases.SLATest.verifyBooleanSaveButtonFunctionality()'><b>verifyBooleanSaveButtonFunctionality</b><br>Test class: testcases.SLATest<br/>
+<a href="#Output-1581847861" onClick='toggleBox("Output-1581847861", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1581847861" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1581847861">
+Policy checkbox clicked<br/>
+</div>
+</td>
+<td></td>
+<td>70</td>
+<td>testcases.SLATest@42e99e4a</td></tr>
+<tr>
+<td title='testcases.TicketListingTest.verifyDeleteTicketFunctionality()'><b>verifyDeleteTicketFunctionality</b><br>Test class: testcases.TicketListingTest</td>
+<td></td>
+<td>295</td>
+<td>testcases.TicketListingTest@1a451d4d</td></tr>
 </table><p>
 </body>
 </html>

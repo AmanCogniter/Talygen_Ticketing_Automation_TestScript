@@ -3,47 +3,46 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.TicketingDashboardTest">
+      <class name="testcases.TicketingGroupTest">
         <methods>
-          <include name="verifyThisMonthByChannel"/>
           <include name="beforeMethod"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
-          <include name="verifyReportsValidation"/>
+          <include name="verifyNoRecordsMessage"/>
         </methods>
-      </class> <!-- testcases.TicketingDashboardTest -->
-      <class name="testcases.TicketListingTest">
+      </class> <!-- testcases.TicketingGroupTest -->
+      <class name="testcases.AddTicketTest">
         <methods>
-          <include name="verifyWidgetsFunctionality"/>
+          <include name="addOwnTickets"/>
           <include name="beforeMethod"/>
-          <include name="verifyAttachmentTabFunctionality"/>
-          <include name="close"/>
-          <include name="reportWrapUp"/>
-          <include name="setUp"/>
-          <include name="verifyNotesFunctionality"/>
-          <include name="verifyDraftReplyFunctionality"/>
-          <include name="verifyCannedReplyFunctionality"/>
-        </methods>
-      </class> <!-- testcases.TicketListingTest -->
-      <class name="testcases.TicketSummaryReportTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="verifySearchTicket"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.TicketSummaryReportTest -->
+      </class> <!-- testcases.AddTicketTest -->
       <class name="testcases.SLATest">
         <methods>
           <include name="verifyAddSLA"/>
+          <include name="verifyPolicyDatePickerFunctionality"/>
+          <include name="VerifyCharactersValidation"/>
           <include name="beforeMethod"/>
           <include name="close"/>
           <include name="reportWrapUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.SLATest -->
+      <class name="testcases.TicketListingTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="close"/>
+          <include name="reportWrapUp"/>
+          <include name="setUp"/>
+          <include name="verifyMergeButtonFunctionality"/>
+          <include name="verifyResetButtonFunctionality"/>
+          <include name="verifySearchFunctionality"/>
+        </methods>
+      </class> <!-- testcases.TicketListingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
